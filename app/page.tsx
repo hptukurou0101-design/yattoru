@@ -8,11 +8,10 @@ import {
 import {
   ArrowRight,
   ChevronRight,
-  Clock3,
   Mail,
-  MapPin,
   Phone,
 } from "lucide-react";
+import { SiteFrame } from "@/components/site-chrome";
 
 const services = [
   {
@@ -97,63 +96,13 @@ const faqs = [
   },
 ];
 
-function BrandMark() {
-  return (
-    <span className="brand-mark" aria-hidden="true">
-      <span />
-      <span />
-    </span>
-  );
-}
-
 function SectionArrow() {
   return <ChevronRight className="section-arrow" aria-hidden="true" />;
 }
 
 export default function Home() {
   return (
-    <div id="top" className="site-shell">
-      <header className="site-header">
-        <a className="brand" href="#top" aria-label="やっとる建設株式会社 トップへ">
-          <BrandMark />
-          <span className="brand-text">
-            <strong>やっとる建設</strong>
-            <small>YATTORU CONSTRUCTION</small>
-          </span>
-        </a>
-
-        <nav className="desktop-nav" aria-label="メインナビゲーション">
-          <a href="#strength">私たちの特長</a>
-          <a href="#first">初めての方へ</a>
-          <a href="#service">リフォーム</a>
-          <a href="#works">施工事例</a>
-          <a href="#company">会社情報</a>
-          <a href="#faq">よくある質問</a>
-        </nav>
-
-        <a className="header-contact" href="#contact">
-          ご相談・お問い合わせ
-        </a>
-
-        <details className="mobile-menu">
-          <summary aria-label="メニューを開く">
-            <span />
-            <span />
-            <span />
-          </summary>
-          <nav aria-label="モバイルナビゲーション">
-            <a href="#strength">私たちの特長</a>
-            <a href="#first">初めての方へ</a>
-            <a href="#service">リフォーム</a>
-            <a href="#works">施工事例</a>
-            <a href="#voice">お客様の声</a>
-            <a href="#company">会社情報</a>
-            <a href="#faq">よくある質問</a>
-            <a href="#contact">ご相談・お問い合わせ</a>
-          </nav>
-        </details>
-      </header>
-
+    <SiteFrame>
       <main>
         <section className="hero" aria-labelledby="hero-title">
           <Image
@@ -169,7 +118,7 @@ export default function Home() {
             <p>住まいの安心を、まじめに、丁寧に。</p>
             <h1 id="hero-title">ご予算も、仕上がりも。<br />納得できるリフォームを。</h1>
           </div>
-          <a className="hero-button" href="#works">
+          <a className="hero-button" href="/works">
             リフォームの施工事例を見る
             <ArrowRight aria-hidden="true" />
           </a>
@@ -196,7 +145,7 @@ export default function Home() {
             <p className="feature-lead">やっとる建設のリフォーム</p>
             <h2>相談しやすく、仕事はきっちり。</h2>
             <p>ご希望とご予算を最初に整理し、必要な工事と選べる方法を丁寧にご説明します。工事が終わったあとも、住まいのことを気軽に相談できる関係を大切にしています。</p>
-            <a className="white-button" href="#first">
+            <a className="white-button" href="/features">
               私たちの考え方を知る
               <SectionArrow />
             </a>
@@ -222,7 +171,7 @@ export default function Home() {
               <li><span>3</span>ご納得後に施工・完了確認</li>
               <li><span>4</span>施工後のアフターフォロー</li>
             </ol>
-            <a className="line-button" href="#contact">
+            <a className="line-button" href="/first-time">
               まずは住まいのことを相談する
               <SectionArrow />
             </a>
@@ -238,7 +187,7 @@ export default function Home() {
           <div className="service-grid">
             {services.map((service, index) => (
               <article className="service-card" key={service.title}>
-                <a href="#contact" className="service-image">
+                <a href={["/reform/exterior", "/reform/roof", "/reform/water"][index]} className="service-image">
                   <Image
                     src={service.image}
                     alt={service.alt}
@@ -262,9 +211,9 @@ export default function Home() {
             <p>ご要望とご予算に向き合い、一つひとつ丁寧に形にした事例をご紹介します。</p>
           </div>
           <div className="works-grid">
-            {works.map((work) => (
+            {works.map((work, index) => (
               <article className="work-card" key={work.title}>
-                <a href="#contact" className="work-image">
+                <a href={["/works/bright-ldk", "/works/exterior-roof", "/works/kitchen-flow"][index]} className="work-image">
                   <Image src={work.image} alt={work.alt} fill sizes="(max-width: 760px) 100vw, 33vw" />
                 </a>
                 <h3>{work.title}</h3>
@@ -274,7 +223,7 @@ export default function Home() {
               </article>
             ))}
           </div>
-          <a className="wide-button" href="#contact">
+          <a className="wide-button" href="/works">
             施工事例をもっと見る
             <SectionArrow />
           </a>
@@ -306,7 +255,7 @@ export default function Home() {
             <h2>リフォームの<br />ご相談・お問い合わせ</h2>
             <p>費用や工事内容で気になることがあれば、まずはご相談ください。まだ希望がまとまっていない段階でも大丈夫です。</p>
             <div className="consult-actions">
-              <a className="primary-action" href="mailto:info@yattoru-kensetsu.jp">
+              <a className="primary-action" href="/contact">
                 <Mail aria-hidden="true" />
                 メールで相談する
                 <SectionArrow />
@@ -354,49 +303,11 @@ export default function Home() {
             <h2>お知らせ</h2>
           </div>
           <div className="news-list">
-            <a href="#contact"><time>2026.08.31</time><span>ホームページを公開しました。</span><SectionArrow /></a>
-            <a href="#contact"><time>2026.08.20</time><span>住まいのリフォーム相談を受け付けています。</span><SectionArrow /></a>
+            <a href="/news"><time>2026.08.31</time><span>ホームページを公開しました。</span><SectionArrow /></a>
+            <a href="/news"><time>2026.08.20</time><span>住まいのリフォーム相談を受け付けています。</span><SectionArrow /></a>
           </div>
         </section>
       </main>
-
-      <footer className="site-footer">
-        <div className="footer-main section-wrap">
-          <div>
-            <a className="brand footer-brand" href="#top">
-              <BrandMark />
-              <span className="brand-text">
-                <strong>やっとる建設</strong>
-                <small>YATTORU CONSTRUCTION</small>
-              </span>
-            </a>
-            <p className="footer-message">住まいの安心を、まじめに、丁寧に。</p>
-          </div>
-          <div className="footer-contact">
-            <p><MapPin aria-hidden="true" />福岡県福岡市博多区博多駅前○丁目○-○</p>
-            <p><Phone aria-hidden="true" /><a href="tel:0921234567">092-123-4567</a></p>
-            <p><Clock3 aria-hidden="true" />9:00〜18:00（日曜・祝日定休）</p>
-          </div>
-          <nav aria-label="フッターナビゲーション">
-            <a href="#strength">私たちの特長</a>
-            <a href="#service">リフォーム</a>
-            <a href="#works">施工事例</a>
-            <a href="#voice">お客様の声</a>
-            <a href="#company">会社情報</a>
-            <a href="#faq">よくある質問</a>
-          </nav>
-        </div>
-        <div className="footer-bottom section-wrap">
-          <div><a href="#top">プライバシーポリシー</a><a href="#top">利用規約</a></div>
-          <small>© YATTORU CONSTRUCTION CO., LTD.</small>
-        </div>
-      </footer>
-
-      <aside className="fixed-consult" aria-label="お問い合わせ窓口">
-        <p>ご自宅で気になるところがあれば、<br />まずはご相談を。</p>
-        <a className="fixed-main" href="mailto:info@yattoru-kensetsu.jp">ご相談・お問い合わせ<Mail aria-hidden="true" /></a>
-        <a className="fixed-sub" href="tel:0921234567">電話で相談する<ChevronRight aria-hidden="true" /></a>
-      </aside>
-    </div>
+    </SiteFrame>
   );
 }

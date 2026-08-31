@@ -152,12 +152,21 @@ const data = await page.evaluate(() => {
     // 閉じた <details> の中身は画面に出ておらず押せないので対象外
     // （閉じていても getBoundingClientRect は 0 以外を返すことがある）
     if (el.closest("details:not([open])")) continue;
+
+    // チェックボックス／ラジオが <label> に包まれている場合、実際に押せる範囲は
+    // ラベル全体になる。要素そのものではなくラベルの寸法で判定する。
+    let hitRect = r;
+    if (/^(checkbox|radio)$/.test(el.getAttribute("type") ?? "")) {
+      const wrapper = el.closest("label");
+      if (wrapper) hitRect = wrapper.getBoundingClientRect();
+    }
+
     tap.push({
       selector: label(el),
       text: (el.innerText ?? el.getAttribute("aria-label") ?? "").replace(/\s+/g, " ").trim().slice(0, 22),
-      width: Math.round(r.width),
-      height: Math.round(r.height),
-      pass: r.width >= 44 && r.height >= 44,
+      width: Math.round(hitRect.width),
+      height: Math.round(hitRect.height),
+      pass: hitRect.width >= 44 && hitRect.height >= 44,
     });
   }
 

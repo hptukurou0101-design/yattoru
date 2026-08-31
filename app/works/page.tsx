@@ -22,7 +22,7 @@ export default function WorksPage() {
           <div className="works-list-grid">
             {workExamples.map((work) => (
               <article key={work.slug}>
-                <a className="works-list-image" href={`/works/${work.slug}`}><Image src={work.image} alt={work.alt} fill sizes="(max-width: 760px) 100vw, 50vw" /></a>
+                <a className="works-list-image" href={`/works/${work.slug}`} aria-label={`施工事例「${work.title}」の詳細`}><Image src={work.image} alt={work.alt} fill sizes="(max-width: 760px) 100vw, 50vw" /></a>
                 <div className="works-list-copy"><ul>{work.tags.map(tag => <li key={tag}>{tag}</li>)}</ul><h3>{work.title}</h3><a className="text-arrow-link" href={`/works/${work.slug}`}>事例の詳細を見る<ChevronRight aria-hidden="true" /></a></div>
               </article>
             ))}

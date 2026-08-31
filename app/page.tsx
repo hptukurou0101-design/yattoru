@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { SiteFrame } from "@/components/site-chrome";
 import { WrapText } from "@/components/wrap-text";
+import { HeroSlideshow } from "@/components/hero-slideshow";
 
 const services = [
   {
@@ -106,14 +107,7 @@ export default function Home() {
     <SiteFrame>
       <main>
         <section className="hero" aria-labelledby="hero-title">
-          <Image
-            className="hero-image"
-            src="/hero-living.webp"
-            alt="丁寧にリフォームされた明るい住まい"
-            fill
-            priority
-            sizes="100vw"
-          />
+          <HeroSlideshow />
           <div className="hero-shade" />
           <div className="hero-copy">
             <p>住まいの安心を、まじめに、丁寧に。</p>

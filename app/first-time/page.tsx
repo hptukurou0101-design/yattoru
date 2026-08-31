@@ -18,7 +18,7 @@ export default function FirstTimePage() {
   return (
     <SiteFrame>
       <main>
-        <PageHero title="初めてリフォームを検討する方へ" lead="分からないことを、一つずつ整理しながら進めます。" image="/hero-living.webp" alt="明るく整えたリビングダイニング" position="center 54%" />
+        <PageHero title="初めてリフォームを検討する方へ" lead="分からないことを、一つずつ整理しながら進めます。" image="/hero-01-ldk.webp" alt="梁をあらわしにした明るいリビングダイニング" position="center 58%" />
         <Breadcrumb items={[["初めての方へ"]]} />
         <PageLead title={<>「いくらかかるのか」「希望どおりになるのか」<br />その不安からお聞かせください。</>}>
           <p>最初から工事内容を決めていただく必要はありません。現在困っていること、変えたいこと、ご予算を確認しながら、必要な工事を一緒に考えます。</p>

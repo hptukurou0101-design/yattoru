@@ -11,7 +11,7 @@ export default function ReformPage() {
   return (
     <SiteFrame>
       <main>
-        <PageHero title="住まいのお悩みに合わせたリフォーム" lead="外壁・屋根・水まわりを中心に、戸建てリフォームに対応します。" image="/service-exterior.webp" alt="外壁と屋根を整えた住宅" position="center 56%" />
+        <PageHero title="住まいのお悩みに合わせたリフォーム" lead="外壁・屋根・水まわりを中心に、戸建てリフォームに対応します。" image="/hero-03-water.webp" alt="入れ替えた浴室と洗面室" position="center 55%" />
         <Breadcrumb items={[["リフォーム"]]} />
         <PageLead title={<>必要な工事を見極め、<br />暮らしに合う方法をご提案します。</>}>
           <p>建物の状態、ご希望、ご予算によって、選ぶべき工事は変わります。まずは現状を確認し、今行うことと将来考えることを整理します。</p>
@@ -21,7 +21,7 @@ export default function ReformPage() {
           <div className="reform-menu-grid">
             {reformServices.map((service) => (
               <article key={service.href}>
-                <a className="reform-menu-image" href={service.href}><Image src={service.image} alt={service.alt} fill sizes="(max-width: 800px) 100vw, 33vw" /></a>
+                <a className="reform-menu-image" href={service.href} aria-label={`${service.title}の詳細`}><Image src={service.image} alt={service.alt} fill sizes="(max-width: 800px) 100vw, 33vw" /></a>
                 <div><h3>{service.title}</h3><p>{service.text}</p><a className="text-arrow-link" href={service.href}>詳しく見る<ChevronRight aria-hidden="true" /></a></div>
               </article>
             ))}

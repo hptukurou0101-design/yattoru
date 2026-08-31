@@ -42,8 +42,9 @@
   /* --ink-9 / 10 / 11 は小さい文字に使うため、コントラスト 4.5:1 を満たす値に調整済み
      （調整前 #71767a / #767a7e / #7a7f83 はいずれも 4.05〜4.33 で基準未満だった） */
   --ink-9: #686d70;           /* コピーライト・フッターリンク 10px（対 #eef1f3 で 4.62:1） */
-  --ink-10: #73777b;          /* ロゴ英字 8px（対 白 で 4.50:1） */
-  --ink-11: #72777b;          /* 日付 12px（対 白 で 4.52:1） */
+  --ink-10: #6e7276;          /* 小さい補助文字・日付・定義リストの見出し
+                                 （対 白 4.85:1 / 対 #f6f7f8 4.52:1）
+                                 淡い面の上でも基準を満たすため --ink-11 を統合した */
 
   /* ---- 罫線 ---- */
   --line: #d8dadd;            /* 主要な区切り線 */
@@ -81,6 +82,19 @@
   --fs-micro: 10px;
   --fs-nano: 8px;
   --fs-nano-sm: 7px;
+
+  /* ---- 下層ページで追加された文字サイズ ---- */
+  --fs-hero-lg: clamp(34px, 3.1vw, 48px);
+  --fs-hero-sm: clamp(31px, 3vw, 44px);
+  --fs-h2-xl: clamp(27px, 2.35vw, 36px);
+  --fs-h2-l: clamp(27px, 2.25vw, 35px);
+  --fs-h2-m: clamp(26px, 2.45vw, 37px);
+  --fs-h2-s: clamp(25px, 2.2vw, 34px);
+  --fs-xxl: 29px;
+  --fs-x: 28px;
+  --fs-l: 21px;
+  --fs-ml: 18px;
+  --fs-pico: 9px;
 
   /* ---- 行間 ---- */
   --lh-flat: 1;      /* ロゴなど詰めて重ねる箇所 */
@@ -294,6 +308,33 @@ summary:focus-visible {
 .hero-image {
   object-fit: cover;
   object-position: center 53%;
+}
+
+/* =========================================================================
+   ヒーローのスライドショー（3 秒ごとに切り替え）
+   1 周 9 秒。各画像を 2.4 秒表示し、0.6 秒かけて重ねながら次へ移る。
+   JavaScript は使わない。切り替えのタイミングは animation-delay（0s / 3s / 6s）で決める。
+   ========================================================================= */
+.hero-slides {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  /* 出番が来るまでは非表示。animation-delay の間はこの値が使われる */
+  opacity: 0;
+  animation: hero-slide-fade 9s linear infinite;
+  will-change: opacity;
+}
+
+@keyframes hero-slide-fade {
+  0% { opacity: 1; }
+  26.67% { opacity: 1; }   /* 2.4 秒間そのまま表示 */
+  33.33% { opacity: 0; }   /* 0.6 秒かけて消える */
+  93.33% { opacity: 0; }
+  100% { opacity: 1; }     /* 1 周の終わりに次の出番へ向けて現れる */
 }
 
 .hero-shade {
@@ -932,7 +973,7 @@ summary:focus-visible {
 }
 
 .news-list time {
-  color: var(--ink-11);
+  color: var(--ink-10);
   font-size: var(--fs-caption-sm);
 }
 
@@ -1095,7 +1136,7 @@ summary:focus-visible {
   position: relative;
   height: 390px;
   overflow: hidden;
-  background: #8a979f;
+  background: var(--hero-fallback);
 }
 
 .page-hero > img {
@@ -1105,29 +1146,39 @@ summary:focus-visible {
 .page-hero-shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(10, 22, 30, 0.64), rgba(10, 22, 30, 0.17) 68%, rgba(10, 22, 30, 0.04));
+  /* 写真の明るい部分に文字が重なると 4.38〜4.48 まで落ちるため、右側の覆いを濃くする */
+  background: linear-gradient(90deg, rgba(10, 22, 30, 0.68), rgba(10, 22, 30, 0.42) 68%, rgba(10, 22, 30, 0.3));
 }
 
 .page-hero-copy {
   position: absolute;
   left: max(6vw, calc((100% - 1120px) / 2));
-  bottom: 64px;
+  /* 見出しの 1 行目を全ページで同じ高さに揃える。
+     bottom だけで固定していたため、見出しが 1 行のページと 2 行のページで
+     開始位置が上下にずれていた（/features は 1 行、/first-time は 2 行）。
+     上端を固定し、説明文だけを下端に置く。 */
+  top: 132px;
+  bottom: 48px;
   width: min(680px, calc(100% - 48px));
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+  color: var(--paper);
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.36);
 }
 
 .page-hero-copy h1 {
   margin: 0;
-  font-size: clamp(34px, 3.1vw, 48px);
+  font-size: var(--fs-hero-lg);
   font-weight: 700;
   letter-spacing: 0.06em;
-  line-height: 1.45;
+  line-height: var(--lh-tight);
 }
 
 .page-hero-copy p {
+  /* 説明文は下端に寄せる（見出しが 1 行でも 2 行でも位置が変わらない） */
   margin: 13px 0 0;
-  font-size: 16px;
+  margin-top: auto;
+  font-size: var(--fs-body-sm);
   font-weight: 700;
   letter-spacing: 0.04em;
 }
@@ -1135,16 +1186,28 @@ summary:focus-visible {
 .breadcrumb {
   display: flex;
   align-items: center;
+  /* 現在ページ名が長いと 1 行に収まらず画面をはみ出すため折り返しを許可する
+     （/works/exterior-roof の 26 字で 360px 画面を 80px はみ出していた） */
+  flex-wrap: wrap;
   gap: 9px;
   min-height: 56px;
-  color: #777c80;
-  font-size: 11px;
+  padding-block: 8px;
+  color: var(--ink-10);
+  font-size: var(--fs-note);
 }
 
 .breadcrumb > span {
   display: flex;
   align-items: center;
+  /* flex アイテムの既定 min-width:auto を解除し、中の文字を折り返せるようにする */
+  min-width: 0;
   gap: 9px;
+}
+
+.breadcrumb > span:last-child {
+  /* 現在ページ名。折り返して表示する */
+  flex: 1 1 auto;
+  overflow-wrap: anywhere;
 }
 
 .breadcrumb svg {
@@ -1167,16 +1230,16 @@ summary:focus-visible {
 
 .page-lead h2 {
   margin: 0;
-  font-size: clamp(27px, 2.35vw, 36px);
+  font-size: var(--fs-h2-xl);
   letter-spacing: 0.04em;
-  line-height: 1.75;
+  line-height: var(--lh-base);
 }
 
 .page-lead p {
   margin: 4px 0 20px;
-  color: #50555a;
-  font-size: 15px;
-  line-height: 2.2;
+  color: var(--ink-4);
+  font-size: var(--fs-ui);
+  line-height: var(--lh-loose);
 }
 
 .sub-section {
@@ -1198,15 +1261,15 @@ summary:focus-visible {
 
 .sub-section-title h2 {
   margin: 0;
-  font-size: clamp(27px, 2.25vw, 35px);
+  font-size: var(--fs-h2-l);
   letter-spacing: 0.04em;
-  line-height: 1.65;
+  line-height: var(--lh-tight);
 }
 
 .sub-section-title p {
   margin: 17px 0 0;
   color: var(--ink-soft);
-  font-size: 14px;
+  font-size: var(--fs-ui-sm);
 }
 
 .promise-grid {
@@ -1220,20 +1283,20 @@ summary:focus-visible {
 .promise-grid article {
   min-height: 305px;
   padding: 45px 38px;
-  background: #fff;
+  background: var(--paper);
 }
 
 .promise-grid span {
   color: var(--blue);
-  font-size: 13px;
+  font-size: var(--fs-caption);
   font-weight: 700;
   letter-spacing: 0.16em;
 }
 
 .promise-grid h3 {
   margin: 22px 0 19px;
-  font-size: 20px;
-  line-height: 1.7;
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
 }
 
 .promise-grid p,
@@ -1241,9 +1304,9 @@ summary:focus-visible {
 .two-note-grid p,
 .sign-grid p {
   margin: 0;
-  color: #555a5f;
-  font-size: 14px;
-  line-height: 2;
+  color: var(--ink-4);
+  font-size: var(--fs-ui-sm);
+  line-height: var(--lh-loose);
 }
 
 .image-copy-split {
@@ -1294,20 +1357,20 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1px;
-  background: #cfd4d7;
-  border: 1px solid #cfd4d7;
+  background: var(--line-card);
+  border: 1px solid var(--line-card);
 }
 
 .two-note-grid article {
   min-height: 235px;
   padding: 40px 44px;
-  background: #fff;
+  background: var(--paper);
 }
 
 .two-note-grid h3 {
   margin: 0 0 18px;
-  font-size: 18px;
-  line-height: 1.75;
+  font-size: var(--fs-ml);
+  line-height: var(--lh-base);
 }
 
 .numbered-steps {
@@ -1327,26 +1390,26 @@ summary:focus-visible {
 
 .numbered-steps > li > span {
   color: var(--blue);
-  font-size: 16px;
+  font-size: var(--fs-body-sm);
   font-weight: 700;
   letter-spacing: 0.12em;
 }
 
 .numbered-steps h3 {
   margin: 0;
-  font-size: 17px;
+  font-size: var(--fs-body);
 }
 
 .numbered-steps p {
   margin: 7px 0 0;
-  color: #5a5f63;
-  font-size: 14px;
+  color: var(--ink-5);
+  font-size: var(--fs-ui-sm);
 }
 
 .sub-consult {
   padding: 82px 0 122px;
-  background: #33495b;
-  color: #fff;
+  background: var(--navy);
+  color: var(--paper);
 }
 
 .sub-consult-inner {
@@ -1358,16 +1421,16 @@ summary:focus-visible {
 
 .sub-consult h2 {
   margin: 0;
-  font-size: clamp(25px, 2.2vw, 34px);
+  font-size: var(--fs-h2-s);
   letter-spacing: 0.04em;
-  line-height: 1.72;
+  line-height: var(--lh-base);
 }
 
 .sub-consult p {
   margin: 19px 0 0;
-  color: #dbe4ea;
-  font-size: 14px;
-  line-height: 2;
+  color: var(--blue-on-dark);
+  font-size: var(--fs-ui-sm);
+  line-height: var(--lh-loose);
 }
 
 .sub-consult-actions {
@@ -1381,15 +1444,15 @@ summary:focus-visible {
   gap: 13px;
   min-height: 61px;
   padding: 0 22px;
-  background: #fff;
+  background: var(--paper);
   color: var(--ink);
-  font-size: 15px;
+  font-size: var(--fs-ui);
   font-weight: 700;
 }
 
 .sub-consult-actions a:first-child {
   background: var(--blue);
-  color: #fff;
+  color: var(--paper);
 }
 
 .sub-consult-actions a svg:last-child {
@@ -1402,8 +1465,8 @@ summary:focus-visible {
 }
 
 .sub-consult-actions small {
-  color: #c9d6df;
-  font-size: 11px;
+  color: var(--blue-on-dark);
+  font-size: var(--fs-note);
 }
 
 .reform-menu-grid {
@@ -1440,13 +1503,13 @@ summary:focus-visible {
 
 .reform-menu-grid h3 {
   margin: 0 0 13px;
-  font-size: 21px;
+  font-size: var(--fs-l);
 }
 
 .reform-menu-grid p {
   margin: 0;
-  color: #555a5f;
-  font-size: 14px;
+  color: var(--ink-4);
+  font-size: var(--fs-ui-sm);
 }
 
 .text-arrow-link {
@@ -1455,7 +1518,7 @@ summary:focus-visible {
   gap: 8px;
   margin-top: 17px;
   color: var(--blue);
-  font-size: 13px;
+  font-size: var(--fs-caption);
   font-weight: 700;
 }
 
@@ -1469,7 +1532,7 @@ summary:focus-visible {
   gap: 1px;
   margin: 0;
   padding: 1px;
-  background: #d6dade;
+  background: var(--line);
   list-style: none;
 }
 
@@ -1477,15 +1540,15 @@ summary:focus-visible {
   display: grid;
   place-items: center;
   min-height: 82px;
-  background: #fff;
+  background: var(--paper);
   font-weight: 700;
 }
 
 .center-note,
 .data-note {
-  color: #6a6f73;
-  font-size: 12px;
-  line-height: 1.9;
+  color: var(--ink-7);
+  font-size: var(--fs-caption-sm);
+  line-height: var(--lh-base);
 }
 
 .center-note {
@@ -1507,7 +1570,7 @@ summary:focus-visible {
 
 .sign-grid h3 {
   margin: 0 0 15px;
-  font-size: 18px;
+  font-size: var(--fs-ml);
 }
 
 .detail-split {
@@ -1527,15 +1590,15 @@ summary:focus-visible {
   padding: 8px 18px;
   border: 1px solid var(--line);
   border-radius: 24px;
-  color: #666b70;
-  font-size: 12px;
+  color: var(--ink-6);
+  font-size: var(--fs-caption-sm);
   text-align: center;
 }
 
 .work-filter .active {
   border-color: var(--blue);
   background: var(--blue);
-  color: #fff;
+  color: var(--paper);
 }
 
 .works-list-grid {
@@ -1567,17 +1630,17 @@ summary:focus-visible {
 .works-list-copy li,
 .work-detail header li {
   padding: 3px 11px;
-  border: 1px solid #cfd2d4;
+  border: 1px solid var(--line-card);
   border-radius: 18px;
-  color: #666b6f;
-  font-size: 11px;
-  line-height: 1.5;
+  color: var(--ink-6);
+  font-size: var(--fs-note);
+  line-height: var(--lh-tight);
 }
 
 .works-list-copy h3 {
   margin: 13px 0 0;
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: var(--fs-ml);
+  line-height: var(--lh-base);
 }
 
 .works-list-grid + .data-note {
@@ -1602,9 +1665,9 @@ summary:focus-visible {
 
 .work-detail header h1 {
   margin: 20px 0 0;
-  font-size: clamp(26px, 2.45vw, 37px);
+  font-size: var(--fs-h2-m);
   letter-spacing: 0.04em;
-  line-height: 1.65;
+  line-height: var(--lh-tight);
 }
 
 .work-detail-image {
@@ -1634,13 +1697,13 @@ summary:focus-visible {
 }
 
 .work-data dt {
-  color: #73787c;
-  font-size: 11px;
+  color: var(--ink-10);
+  font-size: var(--fs-note);
 }
 
 .work-data dd {
   margin: 7px 0 0;
-  font-size: 13px;
+  font-size: var(--fs-caption);
   font-weight: 700;
 }
 
@@ -1660,9 +1723,9 @@ summary:focus-visible {
 
 .work-story p {
   margin: 0;
-  color: #50555a;
-  font-size: 15px;
-  line-height: 2.1;
+  color: var(--ink-4);
+  font-size: var(--fs-ui);
+  line-height: var(--lh-loose);
 }
 
 .work-detail > .data-note {
@@ -1684,27 +1747,27 @@ summary:focus-visible {
 
 .voice-list article > span {
   color: var(--blue);
-  font-size: 13px;
+  font-size: var(--fs-caption);
   font-weight: 700;
   letter-spacing: 0.15em;
 }
 
 .voice-list h3 {
   margin: 0 0 16px;
-  font-size: 20px;
+  font-size: var(--fs-base);
 }
 
 .voice-list p {
   margin: 0;
-  color: #51565a;
-  font-size: 15px;
-  line-height: 2.05;
+  color: var(--ink-4);
+  font-size: var(--fs-ui);
+  line-height: var(--lh-loose);
 }
 
 .voice-list small {
   display: block;
   margin-top: 16px;
-  color: #74797d;
+  color: var(--ink-10);
   text-align: right;
 }
 
@@ -1728,11 +1791,11 @@ summary:focus-visible {
   gap: 35px;
   padding: 20px 9px;
   border-bottom: 1px solid var(--line);
-  font-size: 14px;
+  font-size: var(--fs-ui-sm);
 }
 
 .company-overview dt {
-  color: #72777b;
+  color: var(--ink-10);
 }
 
 .company-overview dd {
@@ -1752,7 +1815,7 @@ summary:focus-visible {
   margin: 0;
   padding-bottom: 17px;
   border-bottom: 2px solid var(--blue);
-  font-size: 24px;
+  font-size: var(--fs-base-lg);
 }
 
 .contact-choice {
@@ -1769,7 +1832,7 @@ summary:focus-visible {
   min-height: 156px;
   padding: 28px 35px;
   border: 1px solid var(--line);
-  background: #fff;
+  background: var(--paper);
   transition: border-color 180ms ease, box-shadow 180ms ease;
 }
 
@@ -1790,19 +1853,19 @@ summary:focus-visible {
 }
 
 .contact-choice small {
-  color: #686d71;
+  color: var(--ink-9);
 }
 
 .contact-choice strong {
   margin-top: 4px;
-  font-size: 21px;
+  font-size: var(--fs-l);
   letter-spacing: 0.02em;
 }
 
 .contact-choice em {
   margin-top: 4px;
-  color: #7a7f83;
-  font-size: 11px;
+  color: var(--ink-10);
+  font-size: var(--fs-note);
   font-style: normal;
 }
 
@@ -1827,7 +1890,7 @@ summary:focus-visible {
 }
 
 .contact-form label > span {
-  font-size: 14px;
+  font-size: var(--fs-ui-sm);
   font-weight: 700;
 }
 
@@ -1835,17 +1898,17 @@ summary:focus-visible {
   margin-left: 7px;
   padding: 2px 7px;
   background: var(--blue);
-  color: #fff;
-  font-size: 9px;
+  color: var(--paper);
+  font-size: var(--fs-pico);
 }
 
 .contact-form input[type="text"],
 .contact-form select,
 .contact-form textarea {
   width: 100%;
-  border: 1px solid #c8cccf;
+  border: 1px solid var(--line-card);
   border-radius: 0;
-  background: #fff;
+  background: var(--paper);
   color: var(--ink);
   font: inherit;
 }
@@ -1880,17 +1943,17 @@ summary:focus-visible {
   margin: 0 auto;
   border: 0;
   background: var(--blue);
-  color: #fff;
-  font-size: 15px;
+  color: var(--paper);
+  font-size: var(--fs-ui);
   font-weight: 700;
   cursor: pointer;
 }
 
 .form-note {
   margin: 17px 0 0;
-  color: #6a6f73;
-  font-size: 11px;
-  line-height: 1.8;
+  color: var(--ink-7);
+  font-size: var(--fs-note);
+  line-height: var(--lh-base);
   text-align: center;
 }
 
@@ -1914,43 +1977,43 @@ summary:focus-visible {
 }
 
 .news-archive time {
-  color: #72777b;
-  font-size: 12px;
+  color: var(--ink-10);
+  font-size: var(--fs-caption-sm);
 }
 
 .news-archive header span {
   padding: 2px 11px;
   border: 1px solid var(--line);
-  font-size: 10px;
+  font-size: var(--fs-micro);
 }
 
 .news-archive h2 {
   margin: 16px 0 11px;
-  font-size: 21px;
+  font-size: var(--fs-l);
 }
 
 .news-archive p {
   margin: 0;
-  color: #565b5f;
-  font-size: 14px;
+  color: var(--ink-4);
+  font-size: var(--fs-ui-sm);
 }
 
 .text-page-header {
   padding: 105px 24px 91px;
-  background: #eef3f5;
+  background: var(--surface-footer);
   text-align: center;
 }
 
 .text-page-header h1 {
   margin: 0;
-  font-size: clamp(31px, 3vw, 44px);
+  font-size: var(--fs-hero-sm);
   letter-spacing: 0.05em;
 }
 
 .text-page-header p {
   margin: 12px 0 0;
-  color: #687177;
-  font-size: 13px;
+  color: var(--ink-9);
+  font-size: var(--fs-caption);
 }
 
 .legal-page {
@@ -1971,13 +2034,13 @@ summary:focus-visible {
   margin: 0 0 16px;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--line);
-  font-size: 20px;
+  font-size: var(--fs-base);
 }
 
 .legal-page p {
-  color: #50555a;
-  font-size: 14px;
-  line-height: 2.1;
+  color: var(--ink-4);
+  font-size: var(--fs-ui-sm);
+  line-height: var(--lh-loose);
 }
 
 @media (max-width: 1180px) {
@@ -2397,13 +2460,13 @@ summary:focus-visible {
   }
 
   .page-hero-copy h1 {
-    font-size: 29px;
-    line-height: 1.55;
+    font-size: var(--fs-xxl);
+    line-height: var(--lh-tight);
   }
 
   .page-hero-copy p {
-    font-size: 13px;
-    line-height: 1.8;
+    font-size: var(--fs-caption);
+    line-height: var(--lh-base);
   }
 
   .breadcrumb {
@@ -2418,13 +2481,13 @@ summary:focus-visible {
   }
 
   .page-lead h2 {
-    font-size: 25px;
-    line-height: 1.8;
+    font-size: var(--fs-md);
+    line-height: var(--lh-base);
   }
 
   .page-lead p {
-    font-size: 14px;
-    line-height: 2.05;
+    font-size: var(--fs-ui-sm);
+    line-height: var(--lh-loose);
   }
 
   .sub-section {
@@ -2443,7 +2506,7 @@ summary:focus-visible {
   }
 
   .sub-section-title h2 {
-    font-size: 25px;
+    font-size: var(--fs-md);
   }
 
   .promise-grid,
@@ -2494,7 +2557,7 @@ summary:focus-visible {
   }
 
   .numbered-steps p {
-    font-size: 13px;
+    font-size: var(--fs-caption);
   }
 
   .sub-consult {
@@ -2506,7 +2569,7 @@ summary:focus-visible {
   }
 
   .sub-consult h2 {
-    font-size: 24px;
+    font-size: var(--fs-base-lg);
   }
 
   .reform-menu-grid {
@@ -2520,7 +2583,7 @@ summary:focus-visible {
   .plain-service-list li {
     min-height: 72px;
     padding: 10px;
-    font-size: 13px;
+    font-size: var(--fs-caption);
     text-align: center;
   }
 
@@ -2579,7 +2642,7 @@ summary:focus-visible {
   }
 
   .voice-list h3 {
-    font-size: 18px;
+    font-size: var(--fs-ml);
   }
 
   .company-overview dl > div {
@@ -2593,7 +2656,7 @@ summary:focus-visible {
   }
 
   .faq-groups h2 {
-    font-size: 21px;
+    font-size: var(--fs-l);
   }
 
   .contact-choice {
@@ -2611,7 +2674,7 @@ summary:focus-visible {
   }
 
   .contact-choice strong {
-    font-size: 17px;
+    font-size: var(--fs-body);
   }
 
   .contact-form-wrap {
@@ -2633,7 +2696,7 @@ summary:focus-visible {
   }
 
   .news-archive h2 {
-    font-size: 18px;
+    font-size: var(--fs-ml);
   }
 
   .text-page-header {
@@ -2641,7 +2704,7 @@ summary:focus-visible {
   }
 
   .text-page-header h1 {
-    font-size: 28px;
+    font-size: var(--fs-x);
   }
 
   .legal-page {
@@ -2681,6 +2744,18 @@ summary:focus-visible {
     scroll-behavior: auto;
   }
 
+  /* スライドショーは止めて 1 枚目だけを静止表示する。
+     下の一括ルール（animation-duration: 0.01ms）だけだと
+     全スライドが opacity 0 のまま残り、ヒーローの画像が消えてしまう。 */
+  .hero-slide {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+
+  .hero-slide:first-child {
+    opacity: 1 !important;
+  }
+
   *,
   *::before,
   *::after {
@@ -2689,4 +2764,52 @@ summary:focus-visible {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+}
+
+/* =========================================================================
+   タップ領域の最小サイズ（44×44px）
+   下層ページで実測 44px 未満だった要素に最小サイズを与える。
+   align-items: center と併用しているため、文字の位置は変わらない。
+   ========================================================================= */
+.breadcrumb a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* 「トップ」は文字幅 33px しかないため最小のタップ領域を確保する */
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.text-arrow-link {
+  min-height: 44px;
+}
+
+.company-overview dd a[href^="tel:"] {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+/* 同意チェックボックスは見た目 13px のままだと押しにくいので、
+   ラベル全体を押せるようにしたうえで、チェックボックス自体も広げる。 */
+.check-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.check-label > input {
+  width: 20px;
+  height: 20px;
+  /* 見た目は 20px のまま、押せる範囲を 44px に広げる */
+  outline-offset: 3px;
+  box-shadow: 0 0 0 12px transparent;
+}
+
+.contact-form label span a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }

@@ -15,7 +15,7 @@ export default function FeaturesPage() {
   return (
     <SiteFrame>
       <main>
-        <PageHero title="私たちが大切にしていること" lead="相談しやすく、仕事はきっちり。住まいに長く向き合います。" image="/service-exterior.webp" alt="丁寧に外壁と屋根を整えた住宅" position="center 58%" />
+        <PageHero title="私たちが大切にしていること" lead="相談しやすく、仕事はきっちり。住まいに長く向き合います。" image="/hero-02-exterior.webp" alt="外壁と屋根を整えた戸建て住宅の外観" position="center 62%" />
         <Breadcrumb items={[["私たちの特長"]]} />
         <PageLead title={<>工事の前も、工事のあとも、<br />安心して話せる会社でありたい。</>}>
           <p>リフォームは、完成するまで仕上がりが見えにくい工事です。だからこそ、私たちはご希望とご予算を最初に確認し、必要なことを分かりやすくお伝えします。</p>

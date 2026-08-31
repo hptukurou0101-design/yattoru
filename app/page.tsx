@@ -229,6 +229,7 @@ export default function Home() {
           </div>
         </section>
 
+        {services.length > 0 && (
         <section id="service" className="services section-wrap">
           <div className="section-heading">
             <p className="section-index">02</p>
@@ -254,7 +255,9 @@ export default function Home() {
             ))}
           </div>
         </section>
+        )}
 
+        {works.length > 0 && (
         <section id="works" className="works section-wrap">
           <div className="section-heading centered">
             <p className="section-index">03</p>
@@ -279,7 +282,9 @@ export default function Home() {
             <SectionArrow />
           </a>
         </section>
+        )}
 
+        {voices.length > 0 && (
         <section id="voice" className="voices">
           <div className="section-wrap">
             <div className="section-heading centered light">
@@ -297,6 +302,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        )}
 
         <section id="contact" className="consultation section-wrap">
           <div className="consult-image">
@@ -334,6 +340,7 @@ export default function Home() {
             </dl>
           </div>
 
+          {faqs.length > 0 && (
           <div id="faq" className="faq-card">
             <p className="section-index">06</p>
             <h2>よくある質問</h2>
@@ -346,6 +353,7 @@ export default function Home() {
               ))}
             </Accordion>
           </div>
+          )}
         </section>
 
         <section className="news section-wrap">

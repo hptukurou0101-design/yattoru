@@ -1,0 +1,114 @@
+[layout] http://127.0.0.1:4173/  幅 390px
+
+=== No.10 / No.12  main 直下セクションの余白と隙間 ===
+idx  padTop padBot  marTop marBot  gapPrev  height  セレクタ
+  0       0      0       0      0        -     560  section.hero
+  1      75     70       0      0        0     321  section.intro
+  2       0      0       0     96        0     485  section#strength.feature-panel
+  3       0      0       0     96       96     925  section#first.first-guide.section-wrap
+  4       0      0       0     96       96     973  section#service.services.section-wrap
+  5       0      0       0     96       96    1422  section#works.works.section-wrap
+  6      78     85       0      0       96     923  section#voice.voices
+  7       0      0      96     96       96     793  section#contact.consultation.section-wrap
+  8       0      0       0     96       96     917  section.info-area.section-wrap
+  9       0      0       0     96       96     244  section.news.section-wrap
+  padding-top の値の種類    : 3 (0, 75, 78)
+  padding-bottom の値の種類 : 3 (0, 70, 85)
+  セクション間に実隙間があるもの（margin 由来の疑い）: 7 件
+      ! section#first.first-guide.section-wrap  gap=96px  自marginTop=0  前marginBottom=96
+      ! section#service.services.section-wrap  gap=96px  自marginTop=0  前marginBottom=96
+      ! section#works.works.section-wrap  gap=96px  自marginTop=0  前marginBottom=96
+      ! section#voice.voices  gap=96px  自marginTop=0  前marginBottom=96
+      ! section#contact.consultation.section-wrap  gap=96px  自marginTop=96  前marginBottom=0
+      ! section.info-area.section-wrap  gap=96px  自marginTop=0  前marginBottom=96
+      ! section.news.section-wrap  gap=96px  自marginTop=0  前marginBottom=96
+
+=== No.13  min-height 指定要素の上下スペース ===
+  div#top.site-shell
+      min-height=900px 実高=9038 display=block align-items=normal
+      上スペース=0px  下スペース=0px  差=0px
+  a.hero-button
+      min-height=58px 実高=58 display=flex align-items=center
+      上スペース=17px  下スペース=17px  差=0px
+  section#strength.feature-panel
+      min-height=485px 実高=485 display=block align-items=normal
+      上スペース=0px  下スペース=0px  差=0px
+  a.white-button
+      min-height=60px 実高=60 display=flex align-items=center
+      上スペース=21px  下スペース=21px  差=0px
+  section#first.first-guide.section-wrap
+      min-height=550px 実高=925 display=grid align-items=normal
+      上スペース=0px  下スペース=0px  差=0px
+  div.first-visual
+      min-height=310px 実高=310 display=block align-items=normal
+      上スペース=0px  下スペース=0px  差=0px
+  li
+      min-height=47px 実高=47 display=flex align-items=center
+      上スペース=12px  下スペース=13px  差=1px
+  li
+      min-height=47px 実高=47 display=flex align-items=center
+      上スペース=12px  下スペース=13px  差=1px
+  li
+      min-height=47px 実高=47 display=flex align-items=center
+      上スペース=12px  下スペース=13px  差=1px
+  li
+      min-height=47px 実高=47 display=flex align-items=center
+      上スペース=12px  下スペース=13px  差=1px
+  a.line-button
+      min-height=58px 実高=58 display=flex align-items=center
+      上スペース=20px  下スペース=20px  差=0px
+  a.service-image
+      min-height=140px 実高=140 display=flex align-items=center
+      上スペース=0px  下スペース=0px  差=0px
+  a.service-image
+      min-height=140px 実高=140 display=flex align-items=center
+      上スペース=0px  下スペース=0px  差=0px
+  a.service-image
+      min-height=140px 実高=140 display=flex align-items=center
+      上スペース=0px  下スペース=0px  差=0px
+  a.wide-button
+      min-height=60px 実高=60 display=flex align-items=center
+      上スペース=21px  下スペース=21px  差=0px
+  div.consult-image
+      min-height=310px 実高=310 display=block align-items=normal
+      上スペース=0px  下スペース=0px  差=0px
+  a.primary-action
+      min-height=60px 実高=60 display=flex align-items=center
+      上スペース=18px  下スペース=18px  差=0px
+  a.secondary-action
+      min-height=60px 実高=60 display=flex align-items=center
+      上スペース=18px  下スペース=18px  差=0px
+  button#radix-_R_7kl6_.flex.flex-1.items-start.justify-between.gap-4.rounded-md.py-4.text-left.text-sm.font-medium.transition-all.outline-none.hover:underline.focus-visible:border-ring.focus-visible:ring-[3px].focus-visible:ring-ring/50.disabled:pointer-events-none.disabled:opacity-50.[&[data-state=open]>svg]:rotate-180
+      min-height=63px 実高=63 display=flex align-items=flex-start
+      上スペース=17px  下スペース=30px  差=13px  ← 片側寄り
+  button#radix-_R_bkl6_.flex.flex-1.items-start.justify-between.gap-4.rounded-md.py-4.text-left.text-sm.font-medium.transition-all.outline-none.hover:underline.focus-visible:border-ring.focus-visible:ring-[3px].focus-visible:ring-ring/50.disabled:pointer-events-none.disabled:opacity-50.[&[data-state=open]>svg]:rotate-180
+      min-height=63px 実高=63 display=flex align-items=flex-start
+      上スペース=17px  下スペース=30px  差=13px  ← 片側寄り
+  button#radix-_R_fkl6_.flex.flex-1.items-start.justify-between.gap-4.rounded-md.py-4.text-left.text-sm.font-medium.transition-all.outline-none.hover:underline.focus-visible:border-ring.focus-visible:ring-[3px].focus-visible:ring-ring/50.disabled:pointer-events-none.disabled:opacity-50.[&[data-state=open]>svg]:rotate-180
+      min-height=63px 実高=63 display=flex align-items=flex-start
+      上スペース=17px  下スペース=30px  差=13px  ← 片側寄り
+  button#radix-_R_jkl6_.flex.flex-1.items-start.justify-between.gap-4.rounded-md.py-4.text-left.text-sm.font-medium.transition-all.outline-none.hover:underline.focus-visible:border-ring.focus-visible:ring-[3px].focus-visible:ring-ring/50.disabled:pointer-events-none.disabled:opacity-50.[&[data-state=open]>svg]:rotate-180
+      min-height=63px 実高=63 display=flex align-items=flex-start
+      上スペース=17px  下スペース=30px  差=13px  ← 片側寄り
+  a
+      min-height=70px 実高=70 display=grid align-items=center
+      上スペース=22px  下スペース=23px  差=1px
+  a
+      min-height=70px 実高=70 display=grid align-items=center
+      上スペース=10px  下スペース=11px  差=1px
+  aside.fixed-consult
+      min-height=60px 実高=62 display=grid align-items=center
+      上スペース=7px  下スペース=7px  差=0px
+  a.fixed-sub
+      min-height=48px 実高=48 display=flex align-items=center
+      上スペース=12px  下スペース=12px  差=0px
+
+=== No.16  コンテナ先頭の子が margin-top に依存していないか ===
+  先頭要素に margin-top が付いているもの: 0 / 14 件
+
+=== No.14  justify-content: space-between の使用箇所 ===
+  button#radix-_R_7kl6_.flex.flex-1.items-start.justify-between.gap-4.rounded-md.py-4.text-left.text-sm.font-medium.transition-all.outline-none.hover:underline.focus-visible:border-ring.focus-visible:ring-[3px].focus-visible:ring-ring/50.disabled:pointer-events-none.disabled:opacity-50.[&[data-state=open]>svg]:rotate-180  幅=354 親幅=354 親幅いっぱい=true 子要素数=1
+  button#radix-_R_bkl6_.flex.flex-1.items-start.justify-between.gap-4.rounded-md.py-4.text-left.text-sm.font-medium.transition-all.outline-none.hover:underline.focus-visible:border-ring.focus-visible:ring-[3px].focus-visible:ring-ring/50.disabled:pointer-events-none.disabled:opacity-50.[&[data-state=open]>svg]:rotate-180  幅=354 親幅=354 親幅いっぱい=true 子要素数=1
+  button#radix-_R_fkl6_.flex.flex-1.items-start.justify-between.gap-4.rounded-md.py-4.text-left.text-sm.font-medium.transition-all.outline-none.hover:underline.focus-visible:border-ring.focus-visible:ring-[3px].focus-visible:ring-ring/50.disabled:pointer-events-none.disabled:opacity-50.[&[data-state=open]>svg]:rotate-180  幅=354 親幅=354 親幅いっぱい=true 子要素数=1
+  button#radix-_R_jkl6_.flex.flex-1.items-start.justify-between.gap-4.rounded-md.py-4.text-left.text-sm.font-medium.transition-all.outline-none.hover:underline.focus-visible:border-ring.focus-visible:ring-[3px].focus-visible:ring-ring/50.disabled:pointer-events-none.disabled:opacity-50.[&[data-state=open]>svg]:rotate-180  幅=354 親幅=354 親幅いっぱい=true 子要素数=1
+  div.footer-bottom.section-wrap  幅=354 親幅=390 親幅いっぱい=false 子要素数=2

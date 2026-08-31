@@ -1,0 +1,126 @@
+[static] サイト本体のソース: 72 ファイル（app/ は 4）
+
+=== No.20/25 仮文言の残留: 0 件 ===
+
+=== 伏字・仮の事実値（○ 等）: 2 件 ===
+  app/page.tsx:338  <div><dt>所在地</dt><dd>福岡県福岡市博多区博多駅前○丁目○-○</dd></div>
+  app/page.tsx:384  <p><MapPin aria-hidden="true" />福岡県福岡市博多区博多駅前○丁目○-○</p>
+
+=== No.21 href="#..."（ページ内アンカー含む）: 32 件 ===
+  app/page.tsx:117  <a className="brand" href="#top" aria-label="やっとる建設株式会社 トップへ">
+  app/page.tsx:126  <a href="#strength">私たちの特長</a>
+  app/page.tsx:127  <a href="#first">初めての方へ</a>
+  app/page.tsx:128  <a href="#service">リフォーム</a>
+  app/page.tsx:129  <a href="#works">施工事例</a>
+  app/page.tsx:130  <a href="#company">会社情報</a>
+  app/page.tsx:131  <a href="#faq">よくある質問</a>
+  app/page.tsx:134  <a className="header-contact" href="#contact">
+  app/page.tsx:145  <a href="#strength">私たちの特長</a>
+  app/page.tsx:146  <a href="#first">初めての方へ</a>
+  app/page.tsx:147  <a href="#service">リフォーム</a>
+  app/page.tsx:148  <a href="#works">施工事例</a>
+  app/page.tsx:149  <a href="#voice">お客様の声</a>
+  app/page.tsx:150  <a href="#company">会社情報</a>
+  app/page.tsx:151  <a href="#faq">よくある質問</a>
+  app/page.tsx:152  <a href="#contact">ご相談・お問い合わせ</a>
+  app/page.tsx:172  <a className="hero-button" href="#works">
+  app/page.tsx:199  <a className="white-button" href="#first">
+  app/page.tsx:225  <a className="line-button" href="#contact">
+  app/page.tsx:242  <a href="#contact" className="service-image">
+  app/page.tsx:270  <a href="#contact" className="work-image">
+  app/page.tsx:280  <a className="wide-button" href="#contact">
+  app/page.tsx:365  <a href="#contact"><time>2026.08.31</time><span>ホームページを公開しました。</span><SectionArrow /></a>
+  app/page.tsx:366  <a href="#contact"><time>2026.08.20</time><span>住まいのリフォーム相談を受け付けています。</span><SectionArrow /></a>
+  app/page.tsx:374  <a className="brand footer-brand" href="#top">
+  app/page.tsx:389  <a href="#strength">私たちの特長</a>
+  app/page.tsx:390  <a href="#service">リフォーム</a>
+  app/page.tsx:391  <a href="#works">施工事例</a>
+  app/page.tsx:392  <a href="#voice">お客様の声</a>
+  app/page.tsx:393  <a href="#company">会社情報</a>
+  app/page.tsx:394  <a href="#faq">よくある質問</a>
+  app/page.tsx:398  <div><a href="#top">プライバシーポリシー</a><a href="#top">利用規約</a></div>
+
+=== No.21 ダミーURL・ダミー画像: 0 件 ===
+
+=== No.22 デバッグ残留: 0 件 ===
+
+=== No.26 電話番号: 4 件 ===
+  app/page.tsx:320  <a className="secondary-action" href="tel:0921234567">
+  app/page.tsx:322  092-123-4567
+  app/page.tsx:385  <p><Phone aria-hidden="true" /><a href="tel:0921234567">092-123-4567</a></p>
+  app/page.tsx:406  <a className="fixed-sub" href="tel:0921234567">電話で相談する<ChevronRight aria-hidden="true" /></a>
+
+=== No.27 メールアドレス: 2 件 ===
+  app/page.tsx:315  <a className="primary-action" href="mailto:info@yattoru-kensetsu.jp">
+  app/page.tsx:405  <a className="fixed-main" href="mailto:info@yattoru-kensetsu.jp">ご相談・お問い合わせ<Mail aria-hidden="true" /></a>
+
+=== No.23 未参照コンポーネント: 49 件 ===
+  components/ui/alert-dialog.tsx
+  components/ui/alert.tsx
+  components/ui/aspect-ratio.tsx
+  components/ui/attachment.tsx
+  components/ui/avatar.tsx
+  components/ui/badge.tsx
+  components/ui/breadcrumb.tsx
+  components/ui/bubble.tsx
+  components/ui/button-group.tsx
+  components/ui/calendar.tsx
+  components/ui/card.tsx
+  components/ui/carousel.tsx
+  components/ui/chart.tsx
+  components/ui/checkbox.tsx
+  components/ui/collapsible.tsx
+  components/ui/combobox.tsx
+  components/ui/command.tsx
+  components/ui/context-menu.tsx
+  components/ui/direction.tsx
+  components/ui/drawer.tsx
+  components/ui/dropdown-menu.tsx
+  components/ui/empty.tsx
+  components/ui/field.tsx
+  components/ui/form.tsx
+  components/ui/hover-card.tsx
+  components/ui/input-otp.tsx
+  components/ui/item.tsx
+  components/ui/kbd.tsx
+  components/ui/marker.tsx
+  components/ui/menubar.tsx
+  components/ui/message-scroller.tsx
+  components/ui/message.tsx
+  components/ui/native-select.tsx
+  components/ui/navigation-menu.tsx
+  components/ui/pagination.tsx
+  components/ui/popover.tsx
+  components/ui/progress.tsx
+  components/ui/radio-group.tsx
+  components/ui/resizable.tsx
+  components/ui/scroll-area.tsx
+  ...ほか 9 件
+
+=== No.23 未参照アセット: 3 件 ===
+  public/file.svg
+  public/globe.svg
+  public/window.svg
+
+=== No.23 未参照ディレクトリ: 2 件 ===
+  examples
+  drizzle
+
+=== No.15 未使用クラス（CSS 定義のみ）: 0 件 ===
+
+=== No.15 複数箇所で使われているクラス（流用候補）: 8 件 ===
+  .section-wrap         使用 9 箇所  app/page.tsx:206, app/page.tsx:233, app/page.tsx:261, app/page.tsx:289, app/page.tsx:307, app/page.tsx:329, app/page.tsx:359, app/page.tsx:372, app/page.tsx:397
+  .brand                使用 5 箇所  app/page.tsx:102, app/page.tsx:117, app/page.tsx:119, app/page.tsx:374, app/page.tsx:376
+  .brand-text           使用 2 箇所  app/page.tsx:119, app/page.tsx:376
+  .hero                 使用 5 箇所  app/page.tsx:158, app/page.tsx:160, app/page.tsx:167, app/page.tsx:168, app/page.tsx:172
+  .section-index        使用 7 箇所  app/page.tsx:216, app/page.tsx:235, app/page.tsx:263, app/page.tsx:291, app/page.tsx:331, app/page.tsx:345, app/page.tsx:361
+  .section-heading      使用 3 箇所  app/page.tsx:234, app/page.tsx:262, app/page.tsx:290
+  .news                 使用 3 箇所  app/page.tsx:359, app/page.tsx:360, app/page.tsx:364
+  .works                使用 2 箇所  app/page.tsx:261, app/page.tsx:267
+
+=== No.24 設定ファイルのプロジェクト名 ===
+  package.json:name                 : yattoru-sekisui-reform
+  package.json:displayName          : やっとる建設｜積水ハウスリフォーム参考版
+  app/layout.tsx:title              : やっとる建設｜積水ハウスリフォーム参考版
+  README.md:先頭見出し                   : # vinext-starter
+  .openai/hosting.json:project_id   : appgprj_6a95150b32888191985f3ed7880cc9ad

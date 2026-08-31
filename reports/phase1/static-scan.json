@@ -1,0 +1,963 @@
+{
+  "checkedAt": "2026-08-31T07:57:02.015Z",
+  "counts": {
+    "siteSourceFiles": 72,
+    "placeholderText": 0,
+    "maskedFacts": 2,
+    "anchorHrefs": 32,
+    "dummyUrls": 0,
+    "debugLeft": 0,
+    "phones": 4,
+    "emails": 2,
+    "unusedComponents": 49,
+    "unusedAssets": 3,
+    "unusedClasses": 0
+  },
+  "placeholderText": [],
+  "maskedFacts": [
+    {
+      "file": "app/page.tsx",
+      "line": 338,
+      "match": "○",
+      "excerpt": "<div><dt>所在地</dt><dd>福岡県福岡市博多区博多駅前○丁目○-○</dd></div>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 384,
+      "match": "○",
+      "excerpt": "<p><MapPin aria-hidden=\"true\" />福岡県福岡市博多区博多駅前○丁目○-○</p>"
+    }
+  ],
+  "anchorHrefs": [
+    {
+      "file": "app/page.tsx",
+      "line": 117,
+      "match": "href=\"#top\"",
+      "excerpt": "<a className=\"brand\" href=\"#top\" aria-label=\"やっとる建設株式会社 トップへ\">"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 126,
+      "match": "href=\"#strength\"",
+      "excerpt": "<a href=\"#strength\">私たちの特長</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 127,
+      "match": "href=\"#first\"",
+      "excerpt": "<a href=\"#first\">初めての方へ</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 128,
+      "match": "href=\"#service\"",
+      "excerpt": "<a href=\"#service\">リフォーム</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 129,
+      "match": "href=\"#works\"",
+      "excerpt": "<a href=\"#works\">施工事例</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 130,
+      "match": "href=\"#company\"",
+      "excerpt": "<a href=\"#company\">会社情報</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 131,
+      "match": "href=\"#faq\"",
+      "excerpt": "<a href=\"#faq\">よくある質問</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 134,
+      "match": "href=\"#contact\"",
+      "excerpt": "<a className=\"header-contact\" href=\"#contact\">"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 145,
+      "match": "href=\"#strength\"",
+      "excerpt": "<a href=\"#strength\">私たちの特長</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 146,
+      "match": "href=\"#first\"",
+      "excerpt": "<a href=\"#first\">初めての方へ</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 147,
+      "match": "href=\"#service\"",
+      "excerpt": "<a href=\"#service\">リフォーム</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 148,
+      "match": "href=\"#works\"",
+      "excerpt": "<a href=\"#works\">施工事例</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 149,
+      "match": "href=\"#voice\"",
+      "excerpt": "<a href=\"#voice\">お客様の声</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 150,
+      "match": "href=\"#company\"",
+      "excerpt": "<a href=\"#company\">会社情報</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 151,
+      "match": "href=\"#faq\"",
+      "excerpt": "<a href=\"#faq\">よくある質問</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 152,
+      "match": "href=\"#contact\"",
+      "excerpt": "<a href=\"#contact\">ご相談・お問い合わせ</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 172,
+      "match": "href=\"#works\"",
+      "excerpt": "<a className=\"hero-button\" href=\"#works\">"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 199,
+      "match": "href=\"#first\"",
+      "excerpt": "<a className=\"white-button\" href=\"#first\">"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 225,
+      "match": "href=\"#contact\"",
+      "excerpt": "<a className=\"line-button\" href=\"#contact\">"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 242,
+      "match": "href=\"#contact\"",
+      "excerpt": "<a href=\"#contact\" className=\"service-image\">"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 270,
+      "match": "href=\"#contact\"",
+      "excerpt": "<a href=\"#contact\" className=\"work-image\">"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 280,
+      "match": "href=\"#contact\"",
+      "excerpt": "<a className=\"wide-button\" href=\"#contact\">"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 365,
+      "match": "href=\"#contact\"",
+      "excerpt": "<a href=\"#contact\"><time>2026.08.31</time><span>ホームページを公開しました。</span><SectionArrow /></a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 366,
+      "match": "href=\"#contact\"",
+      "excerpt": "<a href=\"#contact\"><time>2026.08.20</time><span>住まいのリフォーム相談を受け付けています。</span><SectionArrow /></a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 374,
+      "match": "href=\"#top\"",
+      "excerpt": "<a className=\"brand footer-brand\" href=\"#top\">"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 389,
+      "match": "href=\"#strength\"",
+      "excerpt": "<a href=\"#strength\">私たちの特長</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 390,
+      "match": "href=\"#service\"",
+      "excerpt": "<a href=\"#service\">リフォーム</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 391,
+      "match": "href=\"#works\"",
+      "excerpt": "<a href=\"#works\">施工事例</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 392,
+      "match": "href=\"#voice\"",
+      "excerpt": "<a href=\"#voice\">お客様の声</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 393,
+      "match": "href=\"#company\"",
+      "excerpt": "<a href=\"#company\">会社情報</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 394,
+      "match": "href=\"#faq\"",
+      "excerpt": "<a href=\"#faq\">よくある質問</a>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 398,
+      "match": "href=\"#top\"",
+      "excerpt": "<div><a href=\"#top\">プライバシーポリシー</a><a href=\"#top\">利用規約</a></div>"
+    }
+  ],
+  "dummyUrls": [],
+  "debugLeft": [],
+  "phones": [
+    {
+      "file": "app/page.tsx",
+      "line": 320,
+      "match": "tel:0921234567",
+      "excerpt": "<a className=\"secondary-action\" href=\"tel:0921234567\">"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 322,
+      "match": "092-123-4567",
+      "excerpt": "092-123-4567"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 385,
+      "match": "tel:0921234567",
+      "excerpt": "<p><Phone aria-hidden=\"true\" /><a href=\"tel:0921234567\">092-123-4567</a></p>"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 406,
+      "match": "tel:0921234567",
+      "excerpt": "<a className=\"fixed-sub\" href=\"tel:0921234567\">電話で相談する<ChevronRight aria-hidden=\"true\" /></a>"
+    }
+  ],
+  "emails": [
+    {
+      "file": "app/page.tsx",
+      "line": 315,
+      "match": "info@yattoru-kensetsu.jp",
+      "excerpt": "<a className=\"primary-action\" href=\"mailto:info@yattoru-kensetsu.jp\">"
+    },
+    {
+      "file": "app/page.tsx",
+      "line": 405,
+      "match": "info@yattoru-kensetsu.jp",
+      "excerpt": "<a className=\"fixed-main\" href=\"mailto:info@yattoru-kensetsu.jp\">ご相談・お問い合わせ<Mail aria-hidden=\"true\" /></a>"
+    }
+  ],
+  "classUsage": [
+    {
+      "class": "section-wrap",
+      "definedAtLines": 2,
+      "usedCount": 9,
+      "usedAt": [
+        "app/page.tsx:206",
+        "app/page.tsx:233",
+        "app/page.tsx:261",
+        "app/page.tsx:289",
+        "app/page.tsx:307",
+        "app/page.tsx:329",
+        "app/page.tsx:359",
+        "app/page.tsx:372",
+        "app/page.tsx:397"
+      ]
+    },
+    {
+      "class": "section-index",
+      "definedAtLines": 2,
+      "usedCount": 7,
+      "usedAt": [
+        "app/page.tsx:216",
+        "app/page.tsx:235",
+        "app/page.tsx:263",
+        "app/page.tsx:291",
+        "app/page.tsx:331",
+        "app/page.tsx:345",
+        "app/page.tsx:361"
+      ]
+    },
+    {
+      "class": "brand",
+      "definedAtLines": 3,
+      "usedCount": 5,
+      "usedAt": [
+        "app/page.tsx:102",
+        "app/page.tsx:117",
+        "app/page.tsx:119",
+        "app/page.tsx:374",
+        "app/page.tsx:376"
+      ]
+    },
+    {
+      "class": "hero",
+      "definedAtLines": 2,
+      "usedCount": 5,
+      "usedAt": [
+        "app/page.tsx:158",
+        "app/page.tsx:160",
+        "app/page.tsx:167",
+        "app/page.tsx:168",
+        "app/page.tsx:172"
+      ]
+    },
+    {
+      "class": "section-heading",
+      "definedAtLines": 9,
+      "usedCount": 3,
+      "usedAt": [
+        "app/page.tsx:234",
+        "app/page.tsx:262",
+        "app/page.tsx:290"
+      ]
+    },
+    {
+      "class": "news",
+      "definedAtLines": 4,
+      "usedCount": 3,
+      "usedAt": [
+        "app/page.tsx:359",
+        "app/page.tsx:360",
+        "app/page.tsx:364"
+      ]
+    },
+    {
+      "class": "brand-text",
+      "definedAtLines": 5,
+      "usedCount": 2,
+      "usedAt": [
+        "app/page.tsx:119",
+        "app/page.tsx:376"
+      ]
+    },
+    {
+      "class": "works",
+      "definedAtLines": 1,
+      "usedCount": 2,
+      "usedAt": [
+        "app/page.tsx:261",
+        "app/page.tsx:267"
+      ]
+    },
+    {
+      "class": "site-shell",
+      "definedAtLines": 1,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:115"
+      ]
+    },
+    {
+      "class": "site-header",
+      "definedAtLines": 3,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:116"
+      ]
+    },
+    {
+      "class": "brand-mark",
+      "definedAtLines": 4,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:102"
+      ]
+    },
+    {
+      "class": "desktop-nav",
+      "definedAtLines": 5,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:125"
+      ]
+    },
+    {
+      "class": "header-contact",
+      "definedAtLines": 4,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:134"
+      ]
+    },
+    {
+      "class": "mobile-menu",
+      "definedAtLines": 8,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:138"
+      ]
+    },
+    {
+      "class": "hero-image",
+      "definedAtLines": 2,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:160"
+      ]
+    },
+    {
+      "class": "hero-shade",
+      "definedAtLines": 2,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:167"
+      ]
+    },
+    {
+      "class": "hero-copy",
+      "definedAtLines": 8,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:168"
+      ]
+    },
+    {
+      "class": "hero-button",
+      "definedAtLines": 6,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:172"
+      ]
+    },
+    {
+      "class": "white-button",
+      "definedAtLines": 3,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:199"
+      ]
+    },
+    {
+      "class": "line-button",
+      "definedAtLines": 3,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:225"
+      ]
+    },
+    {
+      "class": "wide-button",
+      "definedAtLines": 3,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:280"
+      ]
+    },
+    {
+      "class": "scroll-guide",
+      "definedAtLines": 4,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:176"
+      ]
+    },
+    {
+      "class": "intro",
+      "definedAtLines": 6,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:182"
+      ]
+    },
+    {
+      "class": "feature-panel",
+      "definedAtLines": 4,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:187"
+      ]
+    },
+    {
+      "class": "feature-overlay",
+      "definedAtLines": 1,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:194"
+      ]
+    },
+    {
+      "class": "feature-content",
+      "definedAtLines": 6,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:195"
+      ]
+    },
+    {
+      "class": "feature-lead",
+      "definedAtLines": 1,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:196"
+      ]
+    },
+    {
+      "class": "section-arrow",
+      "definedAtLines": 3,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:110"
+      ]
+    },
+    {
+      "class": "first-guide",
+      "definedAtLines": 3,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:206"
+      ]
+    },
+    {
+      "class": "first-visual",
+      "definedAtLines": 4,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:207"
+      ]
+    },
+    {
+      "class": "first-copy",
+      "definedAtLines": 5,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:215"
+      ]
+    },
+    {
+      "class": "company-card",
+      "definedAtLines": 7,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:330"
+      ]
+    },
+    {
+      "class": "faq-card",
+      "definedAtLines": 2,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:344"
+      ]
+    },
+    {
+      "class": "flow-list",
+      "definedAtLines": 3,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:219"
+      ]
+    },
+    {
+      "class": "services",
+      "definedAtLines": 1,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:233"
+      ]
+    },
+    {
+      "class": "service-grid",
+      "definedAtLines": 4,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:239"
+      ]
+    },
+    {
+      "class": "service-image",
+      "definedAtLines": 8,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:242"
+      ]
+    },
+    {
+      "class": "service-card",
+      "definedAtLines": 1,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:241"
+      ]
+    },
+    {
+      "class": "works-grid",
+      "definedAtLines": 4,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:267"
+      ]
+    },
+    {
+      "class": "work-image",
+      "definedAtLines": 3,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:270"
+      ]
+    },
+    {
+      "class": "work-card",
+      "definedAtLines": 4,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:269"
+      ]
+    },
+    {
+      "class": "voices",
+      "definedAtLines": 2,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:288"
+      ]
+    },
+    {
+      "class": "voice-grid",
+      "definedAtLines": 7,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:295"
+      ]
+    },
+    {
+      "class": "consultation",
+      "definedAtLines": 3,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:307"
+      ]
+    },
+    {
+      "class": "consult-image",
+      "definedAtLines": 4,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:308"
+      ]
+    },
+    {
+      "class": "consult-copy",
+      "definedAtLines": 5,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:311"
+      ]
+    },
+    {
+      "class": "consult-actions",
+      "definedAtLines": 1,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:314"
+      ]
+    },
+    {
+      "class": "primary-action",
+      "definedAtLines": 5,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:315"
+      ]
+    },
+    {
+      "class": "secondary-action",
+      "definedAtLines": 3,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:320"
+      ]
+    },
+    {
+      "class": "hours",
+      "definedAtLines": 1,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:325"
+      ]
+    },
+    {
+      "class": "info-area",
+      "definedAtLines": 5,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:329"
+      ]
+    },
+    {
+      "class": "faq-list",
+      "definedAtLines": 5,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:347"
+      ]
+    },
+    {
+      "class": "news-list",
+      "definedAtLines": 5,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:364"
+      ]
+    },
+    {
+      "class": "site-footer",
+      "definedAtLines": 2,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:371"
+      ]
+    },
+    {
+      "class": "footer-main",
+      "definedAtLines": 6,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:372"
+      ]
+    },
+    {
+      "class": "footer-brand",
+      "definedAtLines": 1,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:374"
+      ]
+    },
+    {
+      "class": "footer-message",
+      "definedAtLines": 1,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:381"
+      ]
+    },
+    {
+      "class": "footer-contact",
+      "definedAtLines": 3,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:383"
+      ]
+    },
+    {
+      "class": "footer-bottom",
+      "definedAtLines": 6,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:397"
+      ]
+    },
+    {
+      "class": "fixed-consult",
+      "definedAtLines": 9,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:403"
+      ]
+    },
+    {
+      "class": "fixed-main",
+      "definedAtLines": 5,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:405"
+      ]
+    },
+    {
+      "class": "fixed-sub",
+      "definedAtLines": 3,
+      "usedCount": 1,
+      "usedAt": [
+        "app/page.tsx:406"
+      ]
+    }
+  ],
+  "unusedClasses": [],
+  "sharedClasses": [
+    {
+      "class": "section-wrap",
+      "definedAtLines": 2,
+      "usedCount": 9,
+      "usedAt": [
+        "app/page.tsx:206",
+        "app/page.tsx:233",
+        "app/page.tsx:261",
+        "app/page.tsx:289",
+        "app/page.tsx:307",
+        "app/page.tsx:329",
+        "app/page.tsx:359",
+        "app/page.tsx:372",
+        "app/page.tsx:397"
+      ]
+    },
+    {
+      "class": "brand",
+      "definedAtLines": 3,
+      "usedCount": 5,
+      "usedAt": [
+        "app/page.tsx:102",
+        "app/page.tsx:117",
+        "app/page.tsx:119",
+        "app/page.tsx:374",
+        "app/page.tsx:376"
+      ]
+    },
+    {
+      "class": "brand-text",
+      "definedAtLines": 5,
+      "usedCount": 2,
+      "usedAt": [
+        "app/page.tsx:119",
+        "app/page.tsx:376"
+      ]
+    },
+    {
+      "class": "hero",
+      "definedAtLines": 2,
+      "usedCount": 5,
+      "usedAt": [
+        "app/page.tsx:158",
+        "app/page.tsx:160",
+        "app/page.tsx:167",
+        "app/page.tsx:168",
+        "app/page.tsx:172"
+      ]
+    },
+    {
+      "class": "section-index",
+      "definedAtLines": 2,
+      "usedCount": 7,
+      "usedAt": [
+        "app/page.tsx:216",
+        "app/page.tsx:235",
+        "app/page.tsx:263",
+        "app/page.tsx:291",
+        "app/page.tsx:331",
+        "app/page.tsx:345",
+        "app/page.tsx:361"
+      ]
+    },
+    {
+      "class": "section-heading",
+      "definedAtLines": 9,
+      "usedCount": 3,
+      "usedAt": [
+        "app/page.tsx:234",
+        "app/page.tsx:262",
+        "app/page.tsx:290"
+      ]
+    },
+    {
+      "class": "news",
+      "definedAtLines": 4,
+      "usedCount": 3,
+      "usedAt": [
+        "app/page.tsx:359",
+        "app/page.tsx:360",
+        "app/page.tsx:364"
+      ]
+    },
+    {
+      "class": "works",
+      "definedAtLines": 1,
+      "usedCount": 2,
+      "usedAt": [
+        "app/page.tsx:261",
+        "app/page.tsx:267"
+      ]
+    }
+  ],
+  "unusedComponents": [
+    "components/ui/alert-dialog.tsx",
+    "components/ui/alert.tsx",
+    "components/ui/aspect-ratio.tsx",
+    "components/ui/attachment.tsx",
+    "components/ui/avatar.tsx",
+    "components/ui/badge.tsx",
+    "components/ui/breadcrumb.tsx",
+    "components/ui/bubble.tsx",
+    "components/ui/button-group.tsx",
+    "components/ui/calendar.tsx",
+    "components/ui/card.tsx",
+    "components/ui/carousel.tsx",
+    "components/ui/chart.tsx",
+    "components/ui/checkbox.tsx",
+    "components/ui/collapsible.tsx",
+    "components/ui/combobox.tsx",
+    "components/ui/command.tsx",
+    "components/ui/context-menu.tsx",
+    "components/ui/direction.tsx",
+    "components/ui/drawer.tsx",
+    "components/ui/dropdown-menu.tsx",
+    "components/ui/empty.tsx",
+    "components/ui/field.tsx",
+    "components/ui/form.tsx",
+    "components/ui/hover-card.tsx",
+    "components/ui/input-otp.tsx",
+    "components/ui/item.tsx",
+    "components/ui/kbd.tsx",
+    "components/ui/marker.tsx",
+    "components/ui/menubar.tsx",
+    "components/ui/message-scroller.tsx",
+    "components/ui/message.tsx",
+    "components/ui/native-select.tsx",
+    "components/ui/navigation-menu.tsx",
+    "components/ui/pagination.tsx",
+    "components/ui/popover.tsx",
+    "components/ui/progress.tsx",
+    "components/ui/radio-group.tsx",
+    "components/ui/resizable.tsx",
+    "components/ui/scroll-area.tsx",
+    "components/ui/select.tsx",
+    "components/ui/sidebar.tsx",
+    "components/ui/slider.tsx",
+    "components/ui/sonner.tsx",
+    "components/ui/spinner.tsx",
+    "components/ui/switch.tsx",
+    "components/ui/table.tsx",
+    "components/ui/tabs.tsx",
+    "components/ui/toggle-group.tsx"
+  ],
+  "unusedAssets": [
+    "public/file.svg",
+    "public/globe.svg",
+    "public/window.svg"
+  ],
+  "unusedDirs": [
+    "examples",
+    "drizzle"
+  ],
+  "projectNames": {
+    "package.json:name": "yattoru-sekisui-reform",
+    "package.json:displayName": "やっとる建設｜積水ハウスリフォーム参考版",
+    "app/layout.tsx:title": "やっとる建設｜積水ハウスリフォーム参考版",
+    "README.md:先頭見出し": "# vinext-starter",
+    ".openai/hosting.json:project_id": "appgprj_6a95150b32888191985f3ed7880cc9ad"
+  },
+  "cardStructures": [
+    "service-card",
+    "work-card",
+    "voices",
+    "voice-grid",
+    "company-card",
+    "faq-card"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "checkedAt": "2026-08-31T07:57:01.566Z",
+  "base": "http://127.0.0.1:4173",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "やっとる建設｜積水ハウスリフォーム参考版",
+      "description": "福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。",
+      "robots": null,
+      "canonical": null,
+      "h1Count": 1,
+      "headings": [
+        {
+          "level": 1,
+          "text": "ご予算も、仕上がりも。納得できるリフォームを。"
+        },
+        {
+          "level": 2,
+          "text": "相談しやすく、仕事はきっちり。"
+        },
+        {
+          "level": 2,
+          "text": "はじめてのリフォーム"
+        },
+        {
+          "level": 2,
+          "text": "おすすめのリフォーム"
+        },
+        {
+          "level": 2,
+          "text": "リフォーム施工事例"
+        },
+        {
+          "level": 3,
+          "text": "明るさと動線を見直した、家族が集まるLDK"
+        },
+        {
+          "level": 3,
+          "text": "外壁と屋根を整え、これからも安心して暮らせる住まいへ"
+        },
+        {
+          "level": 3,
+          "text": "毎日の家事がしやすい、すっきりとしたキッチン"
+        },
+        {
+          "level": 2,
+          "text": "お客様の声"
+        },
+        {
+          "level": 2,
+          "text": "リフォームのご相談・お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "会社情報"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 3,
+          "text": "相談したら、すぐ契約しなければいけませんか？"
+        },
+        {
+          "level": 3,
+          "text": "予算が決まっていても相談できますか？"
+        },
+        {
+          "level": 3,
+          "text": "工事中も住み続けられますか？"
+        },
+        {
+          "level": 3,
+          "text": "工事後の相談にも対応してもらえますか？"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        }
+      ],
+      "headingJumps": [],
+      "og": {
+        "title": null,
+        "description": null,
+        "url": null,
+        "type": null,
+        "siteName": null,
+        "image": null,
+        "imageWidth": null,
+        "imageHeight": null,
+        "twitterCard": null
+      },
+      "jsonLd": []
+    }
+  ],
+  "duplicates": {
+    "title": [],
+    "description": []
+  },
+  "robotsTxt": {
+    "status": 404,
+    "body": null
+  },
+  "sitemapXml": {
+    "status": 404,
+    "urls": []
+  },
+  "noindexPaths": [],
+  "noindexInSitemap": []
+}

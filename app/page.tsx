@@ -276,7 +276,7 @@ export default function Home() {
         <section className="info-area section-wrap">
           <div id="company" className="company-card">
             <h2>会社情報</h2>
-            <p><WrapText text={"福岡で、\n住まいの安心を支える地域のリフォーム会社です。"} /></p>
+            <p>福岡で、住まいの安心を支える地域のリフォーム会社です。</p>
             <dl>
               <div><dt>会社名</dt><dd>やっとる建設株式会社</dd></div>
               <div><dt>代表者</dt><dd>山田 太郎</dd></div>
@@ -289,6 +289,7 @@ export default function Home() {
           {faqs.length > 0 && (
           <div id="faq" className="faq-card">
             <h2>よくある質問</h2>
+            <p>ご相談前に多くいただく質問をまとめています。</p>
             <Accordion type="single" collapsible className="faq-list">
               {faqs.map((faq, index) => (
                 <AccordionItem value={`faq-${index}`} key={faq.question}>

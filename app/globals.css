@@ -897,7 +897,10 @@ summary:focus-visible {
   grid-template-columns: minmax(0, 1fr);
 }
 
-.company-card > p:not(.section-index) {
+/* 会社情報と よくある質問 の説明文。
+   2 枚のカードで見出しの下の間隔と体裁を揃える。 */
+.company-card > p:not(.section-index),
+.faq-card > p {
   margin: 17px 0 29px;
   color: var(--ink-soft);
   font-size: var(--fs-ui-sm);

@@ -4,7 +4,7 @@ import { SiteFrame } from "@/components/site-chrome";
 import { Breadcrumb, ConsultationBand, PageHero, PageLead, SectionTitle } from "@/components/page-elements";
 
 export const metadata: Metadata = {
-  title: "私たちの特長｜やっとる建設",
+  title: "大切にしていること｜やっとる建設",
   description: "相談しやすく、仕事はきっちり。住まいに長く向き合います。福岡市のやっとる建設株式会社。",
 };
 
@@ -18,8 +18,8 @@ export default function FeaturesPage() {
   return (
     <SiteFrame>
       <main>
-        <PageHero title="私たちが大切にしている⁠こと" lead="相談しやすく、仕事はきっちり。住まいに長く向き合います。" image="/hero-02-exterior.webp" alt="外壁と屋根を整えた戸建て住宅の外観" position="center 62%" />
-        <Breadcrumb items={[["私たちの特長"]]} />
+        <PageHero title="大切にしていること" lead="相談しやすく、仕事はきっちり。住まいに長く向き合います。" image="/hero-02-exterior.webp" alt="外壁と屋根を整えた戸建て住宅の外観" position="center 62%" />
+        <Breadcrumb items={[["大切にしていること"]]} />
         <PageLead title={<>工事の前も、工事のあとも、<br />安心して話せる会社でありたい。</>}>
           <p>リフォームは、完成するまで仕上がりが見えにくい工事です。だからこそ、私たちはご希望とご予算を最初に確認し、必要なことを分かりやすくお伝えします。</p>
           <p>納得できないことを残したまま進めず、工事が終わったあとも相談できる関係を大切にしています。</p>

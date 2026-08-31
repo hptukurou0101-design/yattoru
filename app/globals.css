@@ -555,13 +555,11 @@ summary:focus-visible {
   padding: 58px clamp(38px, 5vw, 78px);
 }
 
-.section-index {
-  margin: 0 0 14px;
-  color: var(--blue);
-  font-size: var(--fs-caption);
-  font-weight: 700;
-  letter-spacing: 0.16em;
-}
+/* .section-index（トップページの 01〜07 の連番）は削除した。
+   飛び先も総数の表示も無く、読む順を示す役目を果たしていなかったため。
+   なお他のルールに残っている `:not(.section-index)` は、そのまま残している。
+   外すとセレクタの詳細度が下がり、どのルールが勝つかが変わるおそれがあるため。
+   .section-index を持つ要素はもう存在しないので、挙動は変わらない。 */
 
 .first-copy h2,
 .section-heading h2,
@@ -1187,12 +1185,12 @@ summary:focus-visible {
 .page-hero-copy {
   position: absolute;
   left: max(6vw, calc((100% - 1120px) / 2));
-  /* 見出しの 1 行目を全ページで同じ高さに揃える。
-     bottom だけで固定していたため、見出しが 1 行のページと 2 行のページで
-     開始位置が上下にずれていた（/features は 1 行、/first-time は 2 行）。
-     上端だけを固定し、説明文は見出しの直下に流す
-     （下端に固定すると見出しと離れて間延びして見えるため）。 */
-  top: 132px;
+  /* 文字のまとまりを下端から一定の距離に置く。
+     以前は見出しが 1 行のページと 2 行のページが混在していたため上端を固定していたが、
+     ページの呼び名を統一して見出しがすべて 1 行になったので、下端揃えに戻せる。
+     （360〜1440px の全幅で h1 が 1 行であることを実測で確認済み）
+     上端固定のままだと文字群が画像の中ほどに浮いて見えるため。 */
+  bottom: 64px;
   width: min(680px, calc(100% - 48px));
   color: var(--paper);
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.36);

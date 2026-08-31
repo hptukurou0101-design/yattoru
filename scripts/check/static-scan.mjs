@@ -96,9 +96,18 @@ if (existsSync(path.join(ROOT, "app/globals.css"))) {
     }
   });
 }
+// クラスの使用箇所は app/ だけでなく components/ も見る。
+// ヘッダー・フッター・共通部品が components/ へ移ったため、
+// app/ だけを見ていると使用中のクラスを「未使用」と誤判定する。
+const MARKUP_SRC = SITE_SRC.filter((f) => /^(app|components)\//.test(f));
+
 const classUsage = [];
 for (const [name, defLines] of cssClasses) {
-  const uses = grepAll(PAGE_SRC, new RegExp(`className="[^"]*\\b${name}\\b[^"]*"`));
+  // className="..." だけでなく className={`...`} のテンプレートリテラルも拾う
+  const uses = grepAll(
+    MARKUP_SRC,
+    new RegExp(`className=(?:"[^"]*|\\{\`[^\`]*)\\b${name}\\b`)
+  );
   classUsage.push({
     class: name,
     definedAtLines: defLines.length,

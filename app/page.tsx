@@ -144,7 +144,7 @@ export default function Home() {
             <h2>相談しやすく、仕事はきっちり。</h2>
             <p><WrapText text={"ご希望とご予算を最初に整理し、\n必要な工事と選べる方法を丁寧にご説明します。\n工事が終わったあとも、\n住まいのことを気軽に相談できる関係を大切にしています。"} /></p>
             <a className="white-button" href="/features">
-              私たちの考え方を知る
+              大切にしていることを見る
               <SectionArrow />
             </a>
           </div>
@@ -160,7 +160,6 @@ export default function Home() {
             />
           </div>
           <div className="first-copy">
-            <p className="section-index">01</p>
             <h2>はじめてのリフォーム</h2>
             <p><WrapText text={"リフォームは、\n内容によって費用や工事期間、\n工事中の暮らし方が異なります。\nまずは気になる場所と、\nどんな暮らしにしたいかをお聞かせください。"} /></p>
             <ol className="flow-list">
@@ -179,7 +178,6 @@ export default function Home() {
         {services.length > 0 && (
         <section id="service" className="services section-wrap">
           <div className="section-heading">
-            <p className="section-index">02</p>
             <h2>おすすめのリフォーム</h2>
             <p><WrapText text={"住まいのお悩みが多い3つの工事を中心に、\n戸建てリフォーム全般に対応しています。"} /></p>
           </div>
@@ -207,7 +205,6 @@ export default function Home() {
         {works.length > 0 && (
         <section id="works" className="works section-wrap">
           <div className="section-heading centered">
-            <p className="section-index">03</p>
             <h2>リフォーム施工事例</h2>
             <p><WrapText text={"ご要望とご予算に向き合い、\n一つひとつ丁寧に形にした事例をご紹介します。"} /></p>
           </div>
@@ -239,7 +236,6 @@ export default function Home() {
         <section id="voice" className="voices">
           <div className="section-wrap">
             <div className="section-heading centered light">
-              <p className="section-index">04</p>
               <h2>お客様の声</h2>
               <p><WrapText text={"工事を終えたお客様からいただいた声をご紹介します。"} /></p>
             </div>
@@ -279,7 +275,6 @@ export default function Home() {
 
         <section className="info-area section-wrap">
           <div id="company" className="company-card">
-            <p className="section-index">05</p>
             <h2>会社情報</h2>
             <p><WrapText text={"福岡で、\n住まいの安心を支える地域のリフォーム会社です。"} /></p>
             <dl>
@@ -293,7 +288,6 @@ export default function Home() {
 
           {faqs.length > 0 && (
           <div id="faq" className="faq-card">
-            <p className="section-index">06</p>
             <h2>よくある質問</h2>
             <Accordion type="single" collapsible className="faq-list">
               {faqs.map((faq, index) => (
@@ -309,7 +303,6 @@ export default function Home() {
 
         <section className="news section-wrap">
           <div className="news-heading">
-            <p className="section-index">07</p>
             <h2>お知らせ</h2>
           </div>
           <div className="news-list">

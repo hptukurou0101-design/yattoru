@@ -11,7 +11,7 @@ export function BrandMark() {
 }
 
 const navigation = [
-  ["私たちの特長", "/features"],
+  ["大切にしていること", "/features"],
   ["初めての方へ", "/first-time"],
   ["リフォーム", "/reform"],
   ["施工事例", "/works"],
@@ -77,7 +77,7 @@ export function SiteFooter() {
           <p><Clock3 aria-hidden="true" />9:00〜18:00（日曜・祝日定休）</p>
         </div>
         <nav aria-label="フッターナビゲーション">
-          <a href="/features">私たちの特長</a>
+          <a href="/features">大切にしていること</a>
           <a href="/first-time">初めての方へ</a>
           <a href="/reform">リフォーム</a>
           <a href="/works">施工事例</a>

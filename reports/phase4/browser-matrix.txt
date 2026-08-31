@@ -1,0 +1,99 @@
+
+########## chromium 151.0.7922.34 ##########
+  No.89-94 画面幅ごとの実測
+      360px  scrollW=  360  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+      375px  scrollW=  375  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+      390px  scrollW=  390  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+      414px  scrollW=  414  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+      768px  scrollW=  768  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+      900px  scrollW=  900  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+     1024px  scrollW= 1024  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+     1440px  scrollW= 1440  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+  No.86 新しい CSS 機能の対応
+    word-break: auto-phrase  対応
+    :has()                   対応
+    minmax()                 対応
+    backdrop-filter          対応
+    clamp()                  対応
+    custom properties        対応
+    .info-area: display=grid columns=488.797px 551.188px 表示中の子=2
+  No.98-100 モバイルメニュー
+    ハンバーガー表示=true  クリックで開く=true  リンク数=8
+    Escで閉じる=true  背面スクロール固定=true (スクロール要素=html overflow-y=hidden / html=hidden / body=hidden)
+    メニュー内リンクの移動結果={"scrollY":3558,"targetTopFromViewport":87}
+  No.101-102 アンカー着地  scroll-behavior=smooth  scroll-padding-top=76px  ヘッダー高=65px
+    #strength  着地時の要素上端=  76px (scrollY=970)
+    #first     着地時の要素上端=  76px (scrollY=1539)
+    #service   着地時の要素上端=  76px (scrollY=2356)
+    #works     着地時の要素上端=  76px (scrollY=2943)
+    #voice     着地時の要素上端=  76px (scrollY=3763)
+    #company   着地時の要素上端=  76px (scrollY=5233)
+    #faq       着地時の要素上端=  76px (scrollY=5233)
+    #contact   着地時の要素上端=  76px (scrollY=4569)
+  No.104 prefers-reduced-motion: matches=true transition=1e-05s animation=1e-05s scroll-behavior=auto
+
+########## webkit 26.5 ##########
+  No.89-94 画面幅ごとの実測
+      360px  scrollW=  360  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+      375px  scrollW=  375  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+      390px  scrollW=  390  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+      414px  scrollW=  414  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+      768px  scrollW=  768  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+      900px  scrollW=  900  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+     1024px  scrollW= 1024  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+     1440px  scrollW= 1440  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+  No.86 新しい CSS 機能の対応
+    word-break: auto-phrase  非対応
+    :has()                   対応
+    minmax()                 対応
+    backdrop-filter          対応
+    clamp()                  対応
+    custom properties        対応
+    .info-area: display=grid columns=488.796875px 551.203125px 表示中の子=2
+  No.98-100 モバイルメニュー
+    ハンバーガー表示=true  クリックで開く=true  リンク数=8
+    Escで閉じる=true  背面スクロール固定=true (スクロール要素=html overflow-y=hidden / html=hidden / body=hidden)
+    メニュー内リンクの移動結果={"scrollY":3569,"targetTopFromViewport":76}
+  No.101-102 アンカー着地  scroll-behavior=smooth  scroll-padding-top=76px  ヘッダー高=65px
+    #strength  着地時の要素上端=  76px (scrollY=970)
+    #first     着地時の要素上端=  76px (scrollY=1539)
+    #service   着地時の要素上端=  76px (scrollY=2356)
+    #works     着地時の要素上端=  76px (scrollY=2943)
+    #voice     着地時の要素上端=  76px (scrollY=3763)
+    #company   着地時の要素上端=  76px (scrollY=5233)
+    #faq       着地時の要素上端=  76px (scrollY=5233)
+    #contact   着地時の要素上端=  76px (scrollY=4569)
+  No.104 prefers-reduced-motion: matches=true transition=0.00001s animation=0.00001s scroll-behavior=auto
+
+########## firefox 153.0 ##########
+  No.89-94 画面幅ごとの実測
+      360px  scrollW=  360  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+      375px  scrollW=  375  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+      390px  scrollW=  390  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+      414px  scrollW=  414  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+      768px  scrollW=  768  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+      900px  scrollW=  900  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+     1024px  scrollW= 1024  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+     1440px  scrollW= 1440  横スクロール=なし  はみ出し=0  h1=1  console error=0  pageerror=0
+  No.86 新しい CSS 機能の対応
+    word-break: auto-phrase  非対応
+    :has()                   対応
+    minmax()                 対応
+    backdrop-filter          対応
+    clamp()                  対応
+    custom properties        対応
+    .info-area: display=grid columns=488.8px 551.2px 表示中の子=2
+  No.98-100 モバイルメニュー
+    ハンバーガー表示=true  クリックで開く=true  リンク数=8
+    Escで閉じる=true  背面スクロール固定=true (スクロール要素=html overflow-y=hidden / html=hidden / body=hidden)
+    メニュー内リンクの移動結果={"scrollY":3569,"targetTopFromViewport":76}
+  No.101-102 アンカー着地  scroll-behavior=smooth  scroll-padding-top=76px  ヘッダー高=65px
+    #strength  着地時の要素上端=  76px (scrollY=970)
+    #first     着地時の要素上端=  76px (scrollY=1539)
+    #service   着地時の要素上端=  76px (scrollY=2356)
+    #works     着地時の要素上端=  76px (scrollY=2943)
+    #voice     着地時の要素上端=  76px (scrollY=3764)
+    #company   着地時の要素上端=  76px (scrollY=5233)
+    #faq       着地時の要素上端=  76px (scrollY=5233)
+    #contact   着地時の要素上端=  76px (scrollY=4569)
+  No.104 prefers-reduced-motion: matches=true transition=0.00001s animation=0.00001s scroll-behavior=auto

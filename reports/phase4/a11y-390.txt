@@ -1,0 +1,149 @@
+[a11y] http://127.0.0.1:4173/  幅 390px
+
+=== No.116 コントラスト比（実測 48 箇所 / 基準未満 0 箇所）===
+  比率   基準  判定  文字色 / 背景色                             サイズ  抜粋
+    3.29    3  OK   rgb(255, 255, 255)     / rgb(129, 144, 154)    25px  ご予算も、仕上がりも。納得できるリフォームを。
+    4.51  4.5  OK   rgb(115, 119, 123)     / rgb(255, 255, 255)     7px  YATTORU CONSTRUCTION
+    4.53  4.5  OK   rgb(114, 119, 123)     / rgb(255, 255, 255)    12px  2026.08.31
+    4.62  4.5  OK   rgb(104, 109, 112)     / rgb(238, 241, 243)    10px  プライバシーポリシー
+    4.62  4.5  OK   rgb(104, 109, 112)     / rgb(238, 241, 243)    10px  © YATTORU CONSTRUCTION C
+    4.65  4.5  OK   rgb(112, 117, 122)     / rgb(255, 255, 255)    13px  会社名
+    4.74  4.5  OK   rgb(106, 111, 115)     / rgb(246, 247, 248)    12px  受付時間 9:00〜18:00／日曜・祝日定休
+    4.94  4.5  OK   rgb(23, 109, 163)      / rgb(234, 242, 247)    13px  01
+    5.39  4.5  OK   rgb(102, 107, 111)     / rgb(255, 255, 255)    11px  戸建て
+     5.6  4.5  OK   rgb(255, 255, 255)     / rgb(23, 109, 163)     11px  1
+     5.6  4.5  OK   rgb(255, 255, 255)     / rgb(23, 109, 163)     15px  メールで相談する
+     5.6  4.5  OK   rgb(255, 255, 255)     / rgb(23, 109, 163)     12px  ご相談・お問い合わせ
+     5.8  4.5  OK   rgb(255, 255, 255)     / rgb(106, 101, 92)     13px  住まいの安心を、まじめに、丁寧に。  ※描画ピクセルから実測
+    6.13  4.5  OK   rgb(95, 98, 102)       / rgb(255, 255, 255)    14px  住まいのお悩みが多い3つの工事を中心に、戸建てリ
+    6.27    3  OK   rgb(255, 255, 255)     / rgb(93, 97, 96)       20px  外壁塗装  ※描画ピクセルから実測
+    6.81  4.5  OK   rgb(205, 219, 228)     / rgb(50, 71, 89)       12px  福岡市・K様
+    7.02  4.5  OK   rgb(80, 85, 90)        / rgb(246, 247, 248)    15px  費用や工事内容で気になることがあれば、まずはご相
+    7.66  4.5  OK   rgb(79, 84, 88)        / rgb(255, 255, 255)    14px  住まいの印象を整えるだけでなく、雨や紫外線から建
+    7.67  4.5  OK   rgb(71, 76, 80)        / rgb(234, 242, 247)    15px  リフォームは、内容によって費用や工事期間、工事中
+    7.96  4.5  OK   rgb(255, 255, 255)     / rgb(66, 83, 97)       16px  やっとる建設のリフォーム  ※描画ピクセルから実測
+    8.67    3  OK   rgb(255, 255, 255)     / rgb(68, 77, 82)       24px  相談しやすく、仕事はきっちり。  ※描画ピクセルから実測
+    9.63  4.5  OK   rgb(255, 255, 255)     / rgb(50, 71, 89)       13px  04
+    9.63    3  OK   rgb(255, 255, 255)     / rgb(50, 71, 89)       26px  お客様の声
+    9.63  4.5  OK   rgb(255, 255, 255)     / rgb(50, 71, 89)       15px  「最初は費用がどこまで増えるのか不安でしたが、工
+    9.71  4.5  OK   rgb(255, 255, 255)     / rgb(62, 69, 72)       14px  ご希望とご予算を最初に整理し、必要な工事と選べる  ※描画ピクセルから実測
+   13.68  4.5  OK   rgb(36, 36, 36)        / rgb(238, 241, 243)    14px  住まいの安心を、まじめに、丁寧に。
+   13.68  4.5  OK   rgb(36, 36, 36)        / rgb(238, 241, 243)    13px  福岡県福岡市博多区博多駅前○丁目○-○
+   13.68  4.5  OK   rgb(36, 36, 36)        / rgb(238, 241, 243)    12px  私たちの特長
+   13.71    3  OK   rgb(36, 36, 36)        / rgb(234, 242, 247)    26px  はじめてのリフォーム
+   13.71  4.5  OK   rgb(36, 36, 36)        / rgb(234, 242, 247)    14px  1ご相談・現地調査
+   14.47    3  OK   rgb(36, 36, 36)        / rgb(246, 247, 248)    27px  リフォームのご相談・お問い合わせ
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    15px  やっとる建設YATTORU CONSTRUCTI
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    13px  私たちの特長
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    13px  リフォームの施工事例を見る
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    17px  きれいにするだけでなく、これからも安心して暮らせ
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    16px  私たちの考え方を知る
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    16px  まずは住まいのことを相談する
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    16px  明るさと動線を見直した、家族が集まる⁠LDK
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    16px  施工事例をもっと見る
+   15.52    3  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    19px  092-123-4567
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    13px  やっとる建設株式会社
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    14px  相談したら、すぐ契約しなければ⁠いけませんか？
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    14px  予算が決まっていても相談できますか？
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    14px  工事中も住み続けられますか？
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    14px  工事後の相談にも対応してもらえますか？
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    13px  2026.08.31ホームページを公開しました。
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    13px  ホームページを公開しました。
+   15.52  4.5  OK   rgb(36, 36, 36)        / rgb(255, 255, 255)    12px  電話で相談する
+
+=== No.117 タップ領域 44×44px（31 箇所 / 未満 0 箇所）===
+  すべて 44×44px 以上
+
+=== No.118 Tab 順（32 ストップ / フォーカス可視 32）===
+   1. <a> やっとる建設 YATTORU CONSTRUCTIO   フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+   2. <summary>                              フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+   3. <a> リフォームの施工事例を見る                フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+   4. <a> 私たちの考え方を知る                   フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+   5. <a> まずは住まいのことを相談する               フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+   6. <a> 外壁塗装                         フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+   7. <a> 屋根塗装                         フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+   8. <a> 水まわりリフォーム                    フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+   9. <a> #contact                     フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  10. <a> #contact                     フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  11. <a> #contact                     フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  12. <a> 施工事例をもっと見る                   フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  13. <a> メールで相談する                     フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  14. <a> 092-123-4567                 フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  15. <button> 相談したら、すぐ契約しなければ⁠いけませんか？      フォーカス表示: outline 3px rgb(36, 36, 36)
+  16. <button> 予算が決まっていても相談できますか？           フォーカス表示: outline 3px rgb(36, 36, 36)
+  17. <button> 工事中も住み続けられますか？               フォーカス表示: outline 3px rgb(36, 36, 36)
+  18. <button> 工事後の相談にも対応してもらえますか？          フォーカス表示: outline 3px rgb(36, 36, 36)
+  19. <a> 2026.08.31 ホームページを公開しました。    フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  20. <a> 2026.08.20 住まいのリフォーム相談を受け付   フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  21. <a> やっとる建設 YATTORU CONSTRUCTIO   フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  22. <a> 092-123-4567                 フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  23. <a> 私たちの特長                       フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  24. <a> リフォーム                        フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  25. <a> 施工事例                         フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  26. <a> お客様の声                        フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  27. <a> 会社情報                         フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  28. <a> よくある質問                       フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  29. <a> プライバシーポリシー                   フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  30. <a> 利用規約                         フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  31. <a> ご相談・お問い合わせ                   フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+  32. <a> 電話で相談する                      フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
+
+=== No.119 画像の alt（10 枚 / alt 属性なし 0 枚）===
+  image          alt="丁寧にリフォームされた明るい住まい"
+  image          alt="丁寧に外壁と屋根を整えた住宅"
+  image          alt="暮らしに合わせて整えた住まい"
+  image          alt="外壁塗装後の戸建て住宅"
+  image          alt="塗装後の屋根と外壁"
+  image          alt="使いやすくリフォームしたキッチン"
+  image          alt="明るくリフォームしたリビングダイニング"
+  image          alt="外壁と屋根をリフォームした住宅"
+  image          alt="収納と動線を整えたキッチン"
+  image          alt="リフォーム後の明るいキッチン"
+
+=== No.120 アイコンだけのリンク・ボタン（3 箇所 / aria-label なし 0 箇所）===
+  OK  a.work-image             aria-label="施工事例「明るさと動線を見直した、家族が集まる⁠LDK」の詳細"  href=#contact
+  OK  a.work-image             aria-label="施工事例「外壁と屋根を整え、これからも安心して暮らせる住まいへ」の詳細"  href=#contact
+  OK  a.work-image             aria-label="施工事例「毎日の家事がしやすい、すっきりとしたキッチン」の詳細"  href=#contact
+
+=== No.121 配信形式 ===
+  webp: 10 枚
+
+=== No.122 width/height または aspect-ratio（欠落 10 枚）===
+  NG  image          width=- height=- aspect-ratio=auto
+  NG  image          width=- height=- aspect-ratio=auto
+  NG  image          width=- height=- aspect-ratio=auto
+  NG  image          width=- height=- aspect-ratio=auto
+  NG  image          width=- height=- aspect-ratio=auto
+  NG  image          width=- height=- aspect-ratio=auto
+  NG  image          width=- height=- aspect-ratio=auto
+  NG  image          width=- height=- aspect-ratio=auto
+  NG  image          width=- height=- aspect-ratio=auto
+  NG  image          width=- height=- aspect-ratio=auto
+
+=== No.123 loading 属性 ===
+  image          loading=eager    fetchpriority=high   FV内=true
+  image          loading=lazy     fetchpriority=(なし)   FV内=false
+  image          loading=lazy     fetchpriority=(なし)   FV内=false
+  image          loading=lazy     fetchpriority=(なし)   FV内=false
+  image          loading=lazy     fetchpriority=(なし)   FV内=false
+  image          loading=lazy     fetchpriority=(なし)   FV内=false
+  image          loading=lazy     fetchpriority=(なし)   FV内=false
+  image          loading=lazy     fetchpriority=(なし)   FV内=false
+  image          loading=lazy     fetchpriority=(なし)   FV内=false
+  image          loading=lazy     fetchpriority=(なし)   FV内=false
+
+=== No.124 解像度（元画像幅 ÷ 表示幅）===
+  OK   4.29倍  image          元 1672px / 表示 390px
+  OK   4.72倍  image          元 1672px / 表示 354px
+  OK   4.29倍  image          元 1672px / 表示 390px
+  OK   4.72倍  image          元 1672px / 表示 354px
+  OK   4.72倍  image          元 1672px / 表示 354px
+  OK   4.72倍  image          元 1672px / 表示 354px
+  OK   4.72倍  image          元 1672px / 表示 354px
+  OK   4.72倍  image          元 1672px / 表示 354px
+  OK   4.72倍  image          元 1672px / 表示 354px
+  OK   4.29倍  image          元 1672px / 表示 390px
+
+=== No.127 CLS（読み込み時のレイアウト移動）===
+  CLS = 0  （Google の good 基準は 0.1 以下）
+  移動した要素: なし

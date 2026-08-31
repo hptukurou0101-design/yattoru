@@ -60,9 +60,10 @@ const grepAll = (files, re) => {
 };
 
 // ---------- No.20 / No.25 仮文言 ----------
+// 「後で」単独だと「前後で」「直後で」に誤反応するため、作業メモらしい形に限定する
 const placeholderText = grepAll(
   SITE_SRC,
-  /(準備中|coming\s*soon|lorem\s+ipsum|ダミー|dummy\s+text|サンプルテキスト|TODO|FIXME|後で|あとで直す)/i
+  /(準備中|coming\s*soon|lorem\s+ipsum|ダミー|dummy\s+text|サンプルテキスト|TODO|FIXME|(?:後|あとで)(?:で)?(?:直す|対応|修正|やる))/i
 );
 
 // ---------- 伏字・仮の事実値 ----------

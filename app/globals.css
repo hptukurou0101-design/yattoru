@@ -707,9 +707,19 @@ summary:focus-visible {
 }
 
 .voice-grid article {
+  /* 縦積みにして、余った高さは本文と署名のあいだに置く。
+     block のままだと min-height の余りが下側にだけ落ち、
+     上 42px / 下 76px と上下が非対称になっていた。 */
+  display: flex;
+  flex-direction: column;
   min-height: 255px;
   padding: 42px 36px;
   background: var(--navy);
+}
+
+/* 署名は下端に寄せる。これで上下の余白が padding どおり 42px ずつになる。 */
+.voice-grid article > span {
+  margin-top: auto;
 }
 
 .voice-grid p {
@@ -862,6 +872,9 @@ summary:focus-visible {
 }
 
 .faq-list [data-slot="accordion-trigger"] {
+  /* shadcn 既定の items-start だと min-height の余りが下に落ち、上 17px / 下 30px になる。
+     中央揃えにして上下を対称にする。 */
+  align-items: center;
   min-height: 63px;
   border-radius: 0;
   padding: 15px 4px;

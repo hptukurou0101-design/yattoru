@@ -16,7 +16,7 @@
  *   node scripts/check/static-scan.mjs
  *   node scripts/check/static-scan.mjs --json
  */
-import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
+import { readFileSync, readdirSync, existsSync } from "node:fs";
 import path from "node:path";
 
 const ROOT = process.cwd();

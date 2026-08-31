@@ -1156,12 +1156,10 @@ summary:focus-visible {
   /* 見出しの 1 行目を全ページで同じ高さに揃える。
      bottom だけで固定していたため、見出しが 1 行のページと 2 行のページで
      開始位置が上下にずれていた（/features は 1 行、/first-time は 2 行）。
-     上端を固定し、説明文だけを下端に置く。 */
+     上端だけを固定し、説明文は見出しの直下に流す
+     （下端に固定すると見出しと離れて間延びして見えるため）。 */
   top: 132px;
-  bottom: 48px;
   width: min(680px, calc(100% - 48px));
-  display: flex;
-  flex-direction: column;
   color: var(--paper);
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.36);
 }
@@ -1175,9 +1173,8 @@ summary:focus-visible {
 }
 
 .page-hero-copy p {
-  /* 説明文は下端に寄せる（見出しが 1 行でも 2 行でも位置が変わらない） */
+  /* 説明文は見出しの直下に置く */
   margin: 13px 0 0;
-  margin-top: auto;
   font-size: var(--fs-body-sm);
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -1455,7 +1452,11 @@ summary:focus-visible {
   color: var(--paper);
 }
 
-.sub-consult-actions a svg:last-child {
+/* 末尾の矢印だけを右端へ寄せる。
+   svg:last-child だと、アイコンが 1 つしかない電話リンクの
+   受話器アイコンにも当たってしまい、番号ごと右に寄っていた。
+   :not(:first-of-type) で「2 つ目以降の svg」に限定する。 */
+.sub-consult-actions a svg:last-of-type:not(:first-of-type) {
   width: 17px;
   margin-left: auto;
 }

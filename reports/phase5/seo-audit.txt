@@ -1,0 +1,224 @@
+[seo] base: http://127.0.0.1:4173   対象ページ数: 18
+
+--- / (HTTP 200) ---
+  title       : やっとる建設｜積水ハウスリフォーム参考版
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /company (HTTP 200) ---
+  title       : 会社情報｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /contact (HTTP 200) ---
+  title       : ご相談・お問い合わせ｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /faq (HTTP 200) ---
+  title       : よくある質問｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /features (HTTP 200) ---
+  title       : 私たちの特長｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /first-time (HTTP 200) ---
+  title       : 初めてのリフォーム｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /news (HTTP 200) ---
+  title       : お知らせ｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /privacy (HTTP 200) ---
+  title       : プライバシーポリシー｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /reform (HTTP 200) ---
+  title       : リフォームメニュー｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /reform/exterior (HTTP 200) ---
+  title       : 外壁塗装｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /reform/roof (HTTP 200) ---
+  title       : 屋根塗装｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /reform/water (HTTP 200) ---
+  title       : 水まわりリフォーム｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /terms (HTTP 200) ---
+  title       : サイト利用規約｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /voices (HTTP 200) ---
+  title       : お客様の声｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /works (HTTP 200) ---
+  title       : 施工事例｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /works/bright-ldk (HTTP 200) ---
+  title       : 明るさと動線を見直したLDK｜施工事例｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /works/exterior-roof (HTTP 200) ---
+  title       : 外壁と屋根を整えた住まい｜施工事例｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+--- /works/kitchen-flow (HTTP 200) ---
+  title       : 家事がしやすいキッチン｜施工事例｜やっとる建設
+  description : 福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。
+  canonical   : (なし)
+  robots      : (なし)
+  h1 の数     : 1
+  見出しの飛び: なし
+  og:image    : (なし)
+  og:title/type/url : - / - / -
+  twitter:card: (なし)
+  JSON-LD     : 0 件
+
+[seo] title 重複    : なし
+[seo] description重複: [["福岡市のやっとる建設株式会社。外壁塗装、屋根塗装、水まわりリフォームを、ご予算に合わせて丁寧にご提案します。",18]]
+[seo] robots.txt    : HTTP 404
+[seo] sitemap.xml   : HTTP 404  URL数 0
+[seo] noindex ページ: なし
+[seo] noindex かつ sitemap 掲載: 0 件

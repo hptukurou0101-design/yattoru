@@ -5,7 +5,10 @@ import { SiteFrame } from "@/components/site-chrome";
 import { Breadcrumb, ConsultationBand, PageHero, PageLead, SectionTitle } from "@/components/page-elements";
 import { reformServices } from "@/lib/site-data";
 
-export const metadata: Metadata = { title: "リフォームメニュー｜やっとる建設" };
+export const metadata: Metadata = {
+  title: "リフォームメニュー｜やっとる建設",
+  description: "外壁・屋根・水まわりを中心に、戸建てリフォームに対応します。福岡市のやっとる建設株式会社。",
+};
 
 export default function ReformPage() {
   return (
@@ -14,7 +17,7 @@ export default function ReformPage() {
         <PageHero title="住まいのお悩みに合わせたリフォーム" lead="外壁・屋根・水まわりを中心に、戸建てリフォームに対応します。" image="/hero-03-water.webp" alt="入れ替えた浴室と洗面室" position="center 55%" />
         <Breadcrumb items={[["リフォーム"]]} />
         <PageLead title={<>必要な工事を見極め、<br />暮らしに合う方法をご提案します。</>}>
-          <p>建物の状態、ご希望、ご予算によって、選ぶべき工事は変わります。まずは現状を確認し、今行うことと将来考えることを整理します。</p>
+          <p>建物の状態、ご希望、ご予算によって、選ぶべき工事は変わります。まずは現状を確認し、今行うことと将来考える⁠ことを整理します。</p>
         </PageLead>
         <section className="sub-section section-wrap">
           <SectionTitle title="主なリフォーム" text="各ページで、工事内容とご相談の目安をご案内しています。" centered />

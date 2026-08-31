@@ -3,7 +3,10 @@ import Image from "next/image";
 import { SiteFrame } from "@/components/site-chrome";
 import { Breadcrumb, ConsultationBand, PageHero, PageLead, SectionTitle } from "@/components/page-elements";
 
-export const metadata: Metadata = { title: "会社情報｜やっとる建設" };
+export const metadata: Metadata = {
+  title: "会社情報｜やっとる建設",
+  description: "福岡で、住まいの安心を支える地域のリフォーム会社です。福岡市のやっとる建設株式会社。",
+};
 
 export default function CompanyPage() {
   return (

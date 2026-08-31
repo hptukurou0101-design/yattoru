@@ -25,12 +25,12 @@ export const reformServices = [
 export const workExamples = [
   {
     slug: "bright-ldk",
-    title: "明るさと動線を見直した、家族が集まるLDK",
+    title: "明るさと動線を見直した、家族が集まる⁠LDK",
     image: "/hero-living.webp",
     alt: "明るくリフォームしたリビングダイニング",
     tags: ["戸建て", "LDK", "水まわり"],
     request: "家族が自然と集まり、キッチンからも室内を見渡せる空間にしたい。",
-    proposal: "壁で分かれていた空間を整理し、光が奥まで届くようにLDKの配置と家事動線を見直しました。",
+    proposal: "壁で分かれていた空間を整理し、光が奥まで届くように⁠LDKの配置と家事動線を見直しました。",
   },
   {
     slug: "exterior-roof",

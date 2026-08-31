@@ -5,7 +5,10 @@ import { SiteFrame } from "@/components/site-chrome";
 import { Breadcrumb, ConsultationBand, PageHero, PageLead, SectionTitle } from "@/components/page-elements";
 import { workExamples } from "@/lib/site-data";
 
-export const metadata: Metadata = { title: "施工事例｜やっとる建設" };
+export const metadata: Metadata = {
+  title: "施工事例｜やっとる建設",
+  description: "ご要望とご予算に向き合い、一つずつ形にした事例をご紹介します。福岡市のやっとる建設株式会社。",
+};
 
 export default function WorksPage() {
   return (

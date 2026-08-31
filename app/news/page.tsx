@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { SiteFrame } from "@/components/site-chrome";
 import { Breadcrumb, ConsultationBand, PageHero, PageLead } from "@/components/page-elements";
 
-export const metadata: Metadata = { title: "お知らせ｜やっとる建設" };
+export const metadata: Metadata = {
+  title: "お知らせ｜やっとる建設",
+  description: "やっとる建設からのお知らせと、住まいに役立つ情報を掲載します。福岡市のやっとる建設株式会社。",
+};
 
 const news = [
   ["2026.08.31", "お知らせ", "ホームページを公開しました。", "やっとる建設のホームページをご覧いただき、ありがとうございます。施工事例や住まいの情報を順次掲載します。"],

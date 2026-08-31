@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { SiteFrame } from "@/components/site-chrome";
 import { Breadcrumb } from "@/components/page-elements";
 
-export const metadata: Metadata = { title: "サイト利用規約｜やっとる建設" };
+export const metadata: Metadata = {
+  title: "サイト利用規約｜やっとる建設",
+  description: "当サイトをご利用いただく際のご案内。福岡市のやっとる建設株式会社。",
+};
 
 export default function TermsPage() {
   return (

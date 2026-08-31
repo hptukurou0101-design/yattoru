@@ -3,7 +3,10 @@ import { Mail, Phone } from "lucide-react";
 import { SiteFrame } from "@/components/site-chrome";
 import { Breadcrumb, PageHero, PageLead, SectionTitle } from "@/components/page-elements";
 
-export const metadata: Metadata = { title: "ご相談・お問い合わせ｜やっとる建設" };
+export const metadata: Metadata = {
+  title: "ご相談・お問い合わせ｜やっとる建設",
+  description: "工事内容や費用が決まっていない段階でもご相談いただけます。福岡市のやっとる建設株式会社。",
+};
 
 export default function ContactPage() {
   return (

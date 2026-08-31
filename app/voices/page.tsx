@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { SiteFrame } from "@/components/site-chrome";
 import { Breadcrumb, ConsultationBand, PageHero, PageLead, SectionTitle } from "@/components/page-elements";
 
-export const metadata: Metadata = { title: "お客様の声｜やっとる建設" };
+export const metadata: Metadata = {
+  title: "お客様の声｜やっとる建設",
+  description: "工事を終えたお客様からいただいた声をご紹介します。福岡市のやっとる建設株式会社。",
+};
 
 const voices = [
   { name: "福岡市・K様", title: "工事前に一つずつ説明してもらえました。", body: "最初は費用がどこまで増えるのか不安でしたが、工事前に一つずつ説明してもらえたので、納得してお願いできました。" },
@@ -16,7 +19,7 @@ export default function VoicesPage() {
       <main>
         <PageHero title="お客様の声" lead="工事を終えたお客様からいただいた声をご紹介します。" image="/hero-living.webp" alt="家族が過ごしやすい明るい住まい" position="center 54%" />
         <Breadcrumb items={[["お客様の声"]]} />
-        <PageLead title={<>安心して任せられたという言葉を、<br />これからの仕事につなげます。</>}><p>ご相談時に感じていた不安、説明や施工について感じたこと、完成後の暮らしの変化を掲載しています。</p></PageLead>
+        <PageLead title={<>安心して任せられたという言葉を、<br />これからの仕事につなげます。</>}><p>ご相談時に感じていた不安、説明や施工について感じた⁠こと、完成後の暮らしの変化を掲載しています。</p></PageLead>
         <section className="sub-section section-wrap">
           <SectionTitle title="お客様からいただいた声" centered />
           <div className="voice-list">

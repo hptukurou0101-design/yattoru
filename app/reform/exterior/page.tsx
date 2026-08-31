@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { ReformDetail } from "@/components/reform-detail";
 
-export const metadata: Metadata = { title: "外壁塗装｜やっとる建設" };
+export const metadata: Metadata = {
+  title: "外壁塗装｜やっとる建設",
+  description: "見た目を整えるだけでなく、雨や紫外線から住まいを守ります。福岡市のやっとる建設株式会社。",
+};
 
 export default function ExteriorPage() {
   return <ReformDetail data={{

@@ -1,6 +1,6 @@
 {
   "base": "http://127.0.0.1:4173",
-  "checkedAt": "2026-08-31T15:08:10.336Z",
+  "checkedAt": "2026-08-31T15:19:43.479Z",
   "rows": [
     {
       "route": "/",
@@ -14,8 +14,8 @@
       "altNG": 0,
       "ariaNG": 0,
       "cls": 0,
-      "tabStops": 39,
-      "tabFocus": 39
+      "tabStops": 40,
+      "tabFocus": 40
     },
     {
       "route": "/company",

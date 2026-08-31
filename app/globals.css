@@ -300,7 +300,14 @@ summary:focus-visible {
 
 .hero {
   position: relative;
+  /* 文字群を「CTA より上の領域」の天地中央に置く。
+     絶対配置で top を決め打ちしていたときは、文字群が上に寄って
+     CTA との間が 214px 空き、画像の中で浮いて見えていた。
+     padding-bottom で CTA の占める高さを除いた領域を作り、その中で中央に揃える。 */
+  display: grid;
+  align-content: center;
   height: 570px;
+  padding-bottom: 116px;
   overflow: hidden;
   background: var(--hero-fallback);
 }
@@ -349,9 +356,10 @@ summary:focus-visible {
 }
 
 .hero-copy {
-  position: absolute;
-  top: 74px;
-  left: 7.2%;
+  /* 位置は親（.hero）の grid が決める。重なり順のためだけに relative にする */
+  position: relative;
+  z-index: 1;
+  padding-left: 7.2%;
   color: var(--paper);
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.42);
 }
@@ -2168,7 +2176,7 @@ summary:focus-visible {
   }
 
   .hero-copy {
-    left: 6%;
+    padding-left: 6%;
   }
 
   .first-guide,
@@ -2292,9 +2300,8 @@ summary:focus-visible {
   }
 
   .hero-copy {
-    top: 73px;
-    left: 24px;
-    right: 20px;
+    padding-left: 24px;
+    padding-right: 20px;
   }
 
   .hero-copy p {

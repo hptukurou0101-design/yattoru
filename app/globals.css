@@ -2,19 +2,103 @@
 @import "tw-animate-css";
 @import "../vendor/shadcn-tailwind-4.13.0.css";
 
+/* =========================================================================
+   デザイントークン
+   このブロックが色・書体・余白・階層の唯一の定義箇所。
+   以降の CSS では色リテラル（#rrggbb）を直接書かず、必ず var() で参照する。
+   ========================================================================= */
 :root {
-  --ink: #242424;
-  --ink-soft: #5f6266;
-  --blue: #176da3;
-  --blue-deep: #104e78;
-  --blue-pale: #eaf2f7;
-  --line: #d8dadd;
-  --paper: #ffffff;
-  --off-white: #f6f7f8;
-  --dark: #414146;
+  /* ---- プライマリ（青系）：信頼感・清潔感の主色 ---- */
+  --blue: #176da3;            /* 主要アクション・強調 */
+  --blue-deep: #104e78;       /* ホバー時の濃色 */
+  --blue-pale: #eaf2f7;       /* 淡い面（はじめてのリフォーム背景） */
+  --blue-light: #79a9c6;      /* ロゴマークの副色 */
+  --blue-tint: #f7fafc;       /* ナビゲーション hover の薄い面 */
+  --blue-on-dark: #cddbe4;    /* 濃色面の上に置く淡い青文字 */
+  --blue-ring: rgba(23, 109, 163, 0.35);   /* フォーカスリング */
+  --blue-shadow: rgba(23, 109, 163, 0.24); /* 青ボタンの影 */
 
-  /* セクション間の縦余白（全セクション共通トークン） */
-  --section-gap: 145px;
+  /* ---- セカンダリ（無彩色の面）---- */
+  --paper: #ffffff;           /* 基本の地色 */
+  --off-white: #f6f7f8;       /* わずかに落とした地色 */
+  --surface-footer: #eef1f3;  /* フッターの地色 */
+  --surface-fill: #dde1e4;    /* 画像枠のプレースホルダ */
+  --hero-fallback: #81909a;   /* ヒーロー画像読み込み前の地色 */
+
+  /* ---- アクセント（反転面）---- */
+  --navy: #324759;            /* お客様の声セクションの地色 */
+  --dark: #414146;            /* 追従CTA など暗い面 */
+
+  /* ---- テキスト（濃い順）---- */
+  --ink: #242424;             /* 本文・見出しの基本色 */
+  --ink-2: #474c50;           /* リード文 */
+  --ink-3: #4f5458;           /* カード本文 */
+  --ink-4: #50555a;           /* 相談セクション本文 */
+  --ink-5: #5d6266;           /* FAQ 本文 */
+  --ink-soft: #5f6266;        /* 補助テキスト */
+  --ink-6: #666b6f;           /* タグ文字 */
+  --ink-7: #6a6f73;           /* 受付時間 */
+  --ink-8: #70757a;           /* 定義リストの見出し */
+  --ink-9: #71767a;           /* コピーライト */
+  --ink-10: #767a7e;          /* ロゴ英字 */
+  --ink-11: #7a7f83;          /* 日付 */
+
+  /* ---- 罫線 ---- */
+  --line: #d8dadd;            /* 主要な区切り線 */
+  --line-strong: #babec1;     /* 枠線のあるボタン */
+  --line-card: #cfd2d4;       /* カード内のタグ枠 */
+  --line-footer: #d2d6d9;     /* フッターの区切り */
+  --line-soft: #e2e4e6;       /* モバイルメニューの上端 */
+  --line-softer: #e3e5e7;     /* モバイルメニューの項目間 */
+
+  /* ---- 書体 ---- */
+  --font-body: "Helvetica Neue", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, Arial, sans-serif;
+  --font-heading: var(--font-body); /* 見出しは本文と同一書体（意匠上の決定） */
+
+  /* ---- 文字サイズ階層 ---- */
+  --fs-hero: clamp(32px, 3.05vw, 44px);     /* h1 */
+  --fs-h2-lg: clamp(28px, 2.45vw, 38px);    /* 大きい h2 */
+  --fs-h2: clamp(27px, 2.25vw, 34px);       /* 標準の h2 */
+  --fs-h2-sm: clamp(25px, 2.25vw, 34px);    /* 小さい h2 */
+  --fs-h2-mobile: clamp(26px, 8vw, 34px);   /* モバイルの h2 */
+  --fs-lead: clamp(19px, 1.65vw, 24px);     /* リード文 */
+  --fs-xl: 27px;
+  --fs-lg: 26px;
+  --fs-md: 25px;
+  --fs-base-lg: 24px;
+  --fs-base: 20px;
+  --fs-sm: 19px;
+  --fs-body: 17px;   /* 本文（大） */
+  --fs-body-sm: 16px;
+  --fs-ui: 15px;
+  --fs-ui-sm: 14px;
+  --fs-caption: 13px;
+  --fs-caption-sm: 12px;
+  --fs-note: 11px;
+  --fs-micro: 10px;
+  --fs-nano: 8px;
+  --fs-nano-sm: 7px;
+
+  /* ---- 行間 ---- */
+  --lh-flat: 1;      /* ロゴなど詰めて重ねる箇所 */
+  --lh-tight: 1.6;   /* 見出し */
+  --lh-base: 1.8;    /* UI・補助テキスト */
+  --lh-loose: 2;     /* 本文 */
+
+  /* ---- 余白 ---- */
+  --section-gap: 145px;   /* セクション間の縦余白 */
+
+  /* ---- ブレークポイント（メディアクエリでは var() が使えないため定義値の記録）----
+     --bp-desktop-lg : 1180px  … 大きめPC → 標準PC
+     --bp-tablet     :  980px  … タブレット横
+     --bp-mobile     :  760px  … モバイル（1カラム化の境界）
+     --bp-mobile-sm  :  390px  … 小型モバイルの微調整
+     実際の @media もこの4値のみを使うこと。 */
+  --bp-desktop-lg: 1180px;
+  --bp-tablet: 980px;
+  --bp-mobile: 760px;
+  --bp-mobile-sm: 390px;
 }
 
 * {
@@ -30,11 +114,10 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Helvetica Neue", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans", Meiryo, Arial, sans-serif;
-  font-size: 16px;
+  font-family: var(--font-body);
+  font-size: var(--fs-body-sm);
   font-weight: 500;
-  line-height: 1.9;
+  line-height: var(--lh-base);
   overflow-x: hidden;
 }
 
@@ -61,7 +144,7 @@ a {
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible {
-  outline: 3px solid rgba(23, 109, 163, 0.35);
+  outline: 3px solid var(--blue-ring);
   outline-offset: 3px;
 }
 
@@ -120,26 +203,26 @@ summary:focus-visible {
   width: 14px;
   height: 24px;
   border-radius: 3px 16px 3px 16px;
-  background: #79a9c6;
+  background: var(--blue-light);
   transform: rotate(29deg);
 }
 
 .brand-text {
   display: flex;
   flex-direction: column;
-  line-height: 1;
+  line-height: var(--lh-flat);
 }
 
 .brand-text strong {
-  font-size: 17px;
+  font-size: var(--fs-body);
   font-weight: 700;
   letter-spacing: 0.02em;
 }
 
 .brand-text small {
   margin-top: 7px;
-  color: #767a7e;
-  font-size: 8px;
+  color: var(--ink-10);
+  font-size: var(--fs-nano);
   font-weight: 700;
   letter-spacing: 0.17em;
 }
@@ -156,7 +239,7 @@ summary:focus-visible {
   display: grid;
   place-items: center;
   padding: 0 clamp(10px, 1.25vw, 22px);
-  font-size: 13px;
+  font-size: var(--fs-caption);
   font-weight: 700;
   letter-spacing: 0.02em;
   white-space: nowrap;
@@ -165,7 +248,7 @@ summary:focus-visible {
 
 .desktop-nav a:hover {
   color: var(--blue);
-  background: #f7fafc;
+  background: var(--blue-tint);
 }
 
 .header-contact {
@@ -175,8 +258,8 @@ summary:focus-visible {
   margin-left: 8px;
   padding: 0 22px;
   background: var(--blue);
-  color: #fff;
-  font-size: 13px;
+  color: var(--paper);
+  font-size: var(--fs-caption);
   font-weight: 700;
   white-space: nowrap;
   transition: background 180ms ease;
@@ -194,7 +277,7 @@ summary:focus-visible {
   position: relative;
   height: 570px;
   overflow: hidden;
-  background: #81909a;
+  background: var(--hero-fallback);
 }
 
 .hero-image {
@@ -214,23 +297,23 @@ summary:focus-visible {
   position: absolute;
   top: 74px;
   left: 7.2%;
-  color: #fff;
+  color: var(--paper);
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.42);
 }
 
 .hero-copy p {
   margin: 0 0 10px;
-  font-size: 17px;
+  font-size: var(--fs-body);
   font-weight: 700;
   letter-spacing: 0.08em;
 }
 
 .hero-copy h1 {
   margin: 0;
-  font-size: clamp(32px, 3.05vw, 44px);
+  font-size: var(--fs-hero);
   font-weight: 700;
   letter-spacing: 0.05em;
-  line-height: 1.64;
+  line-height: var(--lh-tight);
 }
 
 .hero-button,
@@ -243,9 +326,9 @@ summary:focus-visible {
   gap: 20px;
   min-height: 60px;
   border: 1px solid rgba(36, 36, 36, 0.32);
-  background: #fff;
+  background: var(--paper);
   color: var(--ink);
-  font-size: 16px;
+  font-size: var(--fs-body-sm);
   font-weight: 700;
   letter-spacing: 0.04em;
   transition: color 180ms ease, background 180ms ease, border-color 180ms ease;
@@ -269,7 +352,7 @@ summary:focus-visible {
 .wide-button:hover {
   border-color: var(--blue);
   background: var(--blue);
-  color: #fff;
+  color: var(--paper);
 }
 
 .scroll-guide {
@@ -279,11 +362,11 @@ summary:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff;
+  color: var(--paper);
 }
 
 .scroll-guide span {
-  font-size: 12px;
+  font-size: var(--fs-caption-sm);
   letter-spacing: 0.12em;
   writing-mode: vertical-rl;
 }
@@ -303,10 +386,10 @@ summary:focus-visible {
 
 .intro p {
   margin: 0;
-  font-size: clamp(19px, 1.65vw, 24px);
+  font-size: var(--fs-lead);
   font-weight: 700;
   letter-spacing: 0.06em;
-  line-height: 2.05;
+  line-height: var(--lh-loose);
 }
 
 .intro p + p {
@@ -319,7 +402,7 @@ summary:focus-visible {
   min-height: 410px;
   margin: 0 auto var(--section-gap);
   overflow: hidden;
-  color: #fff;
+  color: var(--paper);
 }
 
 .feature-panel > img {
@@ -347,23 +430,23 @@ summary:focus-visible {
 
 .feature-lead {
   margin: 0 0 10px;
-  font-size: 16px;
+  font-size: var(--fs-body-sm);
   font-weight: 700;
   letter-spacing: 0.12em;
 }
 
 .feature-content h2 {
   margin: 0;
-  font-size: clamp(25px, 2.25vw, 34px);
+  font-size: var(--fs-h2-sm);
   letter-spacing: 0.05em;
-  line-height: 1.6;
+  line-height: var(--lh-tight);
 }
 
 .feature-content > p:not(.feature-lead) {
   max-width: 620px;
   margin: 18px 0 26px;
-  font-size: 15px;
-  line-height: 2;
+  font-size: var(--fs-ui);
+  line-height: var(--lh-loose);
 }
 
 .white-button {
@@ -400,7 +483,7 @@ summary:focus-visible {
 .section-index {
   margin: 0 0 14px;
   color: var(--blue);
-  font-size: 13px;
+  font-size: var(--fs-caption);
   font-weight: 700;
   letter-spacing: 0.16em;
 }
@@ -411,17 +494,17 @@ summary:focus-visible {
 .faq-card h2,
 .news h2 {
   margin: 0;
-  font-size: clamp(27px, 2.25vw, 34px);
+  font-size: var(--fs-h2);
   font-weight: 700;
   letter-spacing: 0.04em;
-  line-height: 1.55;
+  line-height: var(--lh-tight);
 }
 
 .first-copy > p:not(.section-index) {
   margin: 23px 0 25px;
-  color: #474c50;
-  font-size: 15px;
-  line-height: 2;
+  color: var(--ink-2);
+  font-size: var(--fs-ui);
+  line-height: var(--lh-loose);
 }
 
 .flow-list {
@@ -430,7 +513,7 @@ summary:focus-visible {
   margin: 0 0 28px;
   padding: 0;
   list-style: none;
-  border-top: 1px solid rgba(23, 109, 163, 0.24);
+  border-top: 1px solid var(--blue-shadow);
 }
 
 .flow-list li {
@@ -438,8 +521,8 @@ summary:focus-visible {
   align-items: center;
   gap: 14px;
   min-height: 47px;
-  border-bottom: 1px solid rgba(23, 109, 163, 0.24);
-  font-size: 14px;
+  border-bottom: 1px solid var(--blue-shadow);
+  font-size: var(--fs-ui-sm);
   font-weight: 700;
 }
 
@@ -450,8 +533,8 @@ summary:focus-visible {
   height: 23px;
   border-radius: 50%;
   background: var(--blue);
-  color: #fff;
-  font-size: 11px;
+  color: var(--paper);
+  font-size: var(--fs-note);
 }
 
 .line-button {
@@ -471,7 +554,7 @@ summary:focus-visible {
 .section-heading > p:not(.section-index) {
   margin: 18px 0 0;
   color: var(--ink-soft);
-  font-size: 15px;
+  font-size: var(--fs-ui);
 }
 
 .section-heading.centered {
@@ -490,7 +573,7 @@ summary:focus-visible {
   align-items: center;
   min-height: 138px;
   overflow: hidden;
-  color: #fff;
+  color: var(--paper);
 }
 
 .service-image img {
@@ -510,7 +593,7 @@ summary:focus-visible {
   position: relative;
   z-index: 1;
   padding: 0 28px;
-  font-size: 20px;
+  font-size: var(--fs-base);
   font-weight: 700;
   letter-spacing: 0.03em;
 }
@@ -531,9 +614,9 @@ summary:focus-visible {
 
 .service-card > p {
   margin: 17px 0 0;
-  color: #4f5458;
-  font-size: 14px;
-  line-height: 1.95;
+  color: var(--ink-3);
+  font-size: var(--fs-ui-sm);
+  line-height: var(--lh-loose);
 }
 
 .works {
@@ -551,7 +634,7 @@ summary:focus-visible {
   display: block;
   aspect-ratio: 1.44 / 1;
   overflow: hidden;
-  background: #dde1e4;
+  background: var(--surface-fill);
 }
 
 .work-image img {
@@ -566,10 +649,10 @@ summary:focus-visible {
 .work-card h3 {
   min-height: 67px;
   margin: 17px 0 13px;
-  font-size: 16px;
+  font-size: var(--fs-body-sm);
   font-weight: 700;
   letter-spacing: 0.02em;
-  line-height: 1.75;
+  line-height: var(--lh-base);
 }
 
 .work-card ul {
@@ -583,11 +666,11 @@ summary:focus-visible {
 
 .work-card li {
   padding: 3px 12px;
-  border: 1px solid #cfd2d4;
+  border: 1px solid var(--line-card);
   border-radius: 18px;
-  color: #666b6f;
-  font-size: 11px;
-  line-height: 1.5;
+  color: var(--ink-6);
+  font-size: var(--fs-note);
+  line-height: var(--lh-tight);
 }
 
 .wide-button {
@@ -597,13 +680,13 @@ summary:focus-visible {
 
 .voices {
   padding: 108px 0 122px;
-  background: #324759;
-  color: #fff;
+  background: var(--navy);
+  color: var(--paper);
 }
 
 .section-heading.light .section-index,
 .section-heading.light > p:not(.section-index) {
-  color: #fff;
+  color: var(--paper);
 }
 
 .voice-grid {
@@ -616,20 +699,20 @@ summary:focus-visible {
 .voice-grid article {
   min-height: 255px;
   padding: 42px 36px;
-  background: #324759;
+  background: var(--navy);
 }
 
 .voice-grid p {
   margin: 0;
-  font-size: 15px;
-  line-height: 2;
+  font-size: var(--fs-ui);
+  line-height: var(--lh-loose);
 }
 
 .voice-grid span {
   display: block;
   margin-top: 25px;
-  color: #cddbe4;
-  font-size: 12px;
+  color: var(--blue-on-dark);
+  font-size: var(--fs-caption-sm);
   text-align: right;
 }
 
@@ -659,16 +742,16 @@ summary:focus-visible {
 
 .consult-copy h2 {
   margin: 0;
-  font-size: clamp(28px, 2.45vw, 38px);
+  font-size: var(--fs-h2-lg);
   letter-spacing: 0.04em;
-  line-height: 1.55;
+  line-height: var(--lh-tight);
 }
 
 .consult-copy > p:not(.hours) {
   margin: 23px 0 27px;
-  color: #50555a;
-  font-size: 15px;
-  line-height: 2;
+  color: var(--ink-4);
+  font-size: var(--fs-ui);
+  line-height: var(--lh-loose);
 }
 
 .consult-actions {
@@ -682,14 +765,14 @@ summary:focus-visible {
   align-items: center;
   min-height: 60px;
   padding: 0 22px;
-  font-size: 15px;
+  font-size: var(--fs-ui);
   font-weight: 700;
 }
 
 .primary-action {
   gap: 13px;
   background: var(--blue);
-  color: #fff;
+  color: var(--paper);
 }
 
 .primary-action .section-arrow {
@@ -702,9 +785,9 @@ summary:focus-visible {
 
 .secondary-action {
   gap: 13px;
-  border: 1px solid #babec1;
-  background: #fff;
-  font-size: 19px;
+  border: 1px solid var(--line-strong);
+  background: var(--paper);
+  font-size: var(--fs-sm);
   letter-spacing: 0.03em;
 }
 
@@ -715,8 +798,8 @@ summary:focus-visible {
 
 .hours {
   margin: 11px 0 0;
-  color: #6a6f73;
-  font-size: 12px;
+  color: var(--ink-7);
+  font-size: var(--fs-caption-sm);
 }
 
 .info-area {
@@ -734,7 +817,7 @@ summary:focus-visible {
 .company-card > p:not(.section-index) {
   margin: 17px 0 29px;
   color: var(--ink-soft);
-  font-size: 14px;
+  font-size: var(--fs-ui-sm);
 }
 
 .company-card dl {
@@ -748,11 +831,11 @@ summary:focus-visible {
   gap: 18px;
   padding: 15px 0;
   border-bottom: 1px solid var(--line);
-  font-size: 13px;
+  font-size: var(--fs-caption);
 }
 
 .company-card dt {
-  color: #70757a;
+  color: var(--ink-8);
 }
 
 .company-card dd {
@@ -772,9 +855,9 @@ summary:focus-visible {
   min-height: 63px;
   border-radius: 0;
   padding: 15px 4px;
-  font-size: 14px;
+  font-size: var(--fs-ui-sm);
   font-weight: 700;
-  line-height: 1.7;
+  line-height: var(--lh-base);
 }
 
 .faq-list [data-slot="accordion-trigger"]:hover {
@@ -782,11 +865,16 @@ summary:focus-visible {
   text-decoration: none;
 }
 
+/* shadcn の text-sm が持ち込む行間 1.43 を、サイトのトークンに揃える */
+.faq-list [data-slot="accordion-content"] {
+  line-height: var(--lh-base);
+}
+
 .faq-list [data-slot="accordion-content"] > div {
   padding: 0 4px 19px;
-  color: #5d6266;
-  font-size: 13px;
-  line-height: 1.9;
+  color: var(--ink-5);
+  font-size: var(--fs-caption);
+  line-height: var(--lh-base);
 }
 
 .news {
@@ -807,7 +895,7 @@ summary:focus-visible {
   gap: 20px;
   min-height: 75px;
   border-bottom: 1px solid var(--line);
-  font-size: 14px;
+  font-size: var(--fs-ui-sm);
   transition: color 180ms ease;
 }
 
@@ -816,13 +904,13 @@ summary:focus-visible {
 }
 
 .news-list time {
-  color: #7a7f83;
-  font-size: 12px;
+  color: var(--ink-11);
+  font-size: var(--fs-caption-sm);
 }
 
 .site-footer {
   padding: 67px 0 33px;
-  background: #eef1f3;
+  background: var(--surface-footer);
 }
 
 .footer-main {
@@ -838,7 +926,7 @@ summary:focus-visible {
 
 .footer-message {
   margin: 25px 0 0;
-  font-size: 14px;
+  font-size: var(--fs-ui-sm);
   font-weight: 700;
 }
 
@@ -851,7 +939,7 @@ summary:focus-visible {
   align-items: flex-start;
   gap: 11px;
   margin: 0 0 9px;
-  font-size: 13px;
+  font-size: var(--fs-caption);
 }
 
 .footer-contact svg {
@@ -869,7 +957,7 @@ summary:focus-visible {
 }
 
 .footer-main nav a {
-  font-size: 12px;
+  font-size: var(--fs-caption-sm);
   transition: color 180ms ease;
 }
 
@@ -883,7 +971,7 @@ summary:focus-visible {
   align-items: center;
   justify-content: space-between;
   padding-top: 25px;
-  border-top: 1px solid #d2d6d9;
+  border-top: 1px solid var(--line-footer);
 }
 
 .footer-bottom div {
@@ -893,8 +981,8 @@ summary:focus-visible {
 
 .footer-bottom a,
 .footer-bottom small {
-  color: #71767a;
-  font-size: 10px;
+  color: var(--ink-9);
+  font-size: var(--fs-micro);
 }
 
 .fixed-consult {
@@ -910,16 +998,16 @@ summary:focus-visible {
   border-radius: 48px;
   background: rgba(60, 60, 65, 0.96);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
-  color: #fff;
+  color: var(--paper);
   transform: translateX(-50%);
 }
 
 .fixed-consult > p {
   margin: 0;
   padding: 0 18px;
-  font-size: 12px;
+  font-size: var(--fs-caption-sm);
   font-weight: 700;
-  line-height: 1.55;
+  line-height: var(--lh-tight);
   text-align: center;
 }
 
@@ -928,7 +1016,7 @@ summary:focus-visible {
   align-items: center;
   justify-content: center;
   min-height: 56px;
-  font-size: 14px;
+  font-size: var(--fs-ui-sm);
   font-weight: 700;
 }
 
@@ -948,7 +1036,7 @@ summary:focus-visible {
 .fixed-sub {
   gap: 5px;
   margin-left: 9px;
-  background: #fff;
+  background: var(--paper);
   color: var(--ink);
 }
 
@@ -959,12 +1047,12 @@ summary:focus-visible {
 @media (max-width: 1180px) {
   .desktop-nav a {
     padding-inline: 9px;
-    font-size: 12px;
+    font-size: var(--fs-caption-sm);
   }
 
   .header-contact {
     padding-inline: 14px;
-    font-size: 12px;
+    font-size: var(--fs-caption-sm);
   }
 
   .brand {
@@ -977,6 +1065,14 @@ summary:focus-visible {
 }
 
 @media (max-width: 980px) {
+  /* 3列のままだと 768px でカード1枚が 219px（760px では 724px）まで落ち込み、
+     和文が 1行 13 字前後で刻まれる。この帯は 2 列にして 1 枚の幅を確保する。 */
+  .service-grid,
+  .works-grid,
+  .voice-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .site-header {
     padding: 0 24px;
   }
@@ -1024,15 +1120,15 @@ summary:focus-visible {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 0;
     padding: 18px 24px 24px;
-    border-top: 1px solid #e2e4e6;
-    background: #fff;
+    border-top: 1px solid var(--line-soft);
+    background: var(--paper);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
   }
 
   .mobile-menu nav a {
     padding: 13px 8px;
-    border-bottom: 1px solid #e3e5e7;
-    font-size: 13px;
+    border-bottom: 1px solid var(--line-softer);
+    font-size: var(--fs-caption);
     font-weight: 700;
   }
 
@@ -1076,8 +1172,8 @@ summary:focus-visible {
   }
 
   body {
-    font-size: 15px;
-    line-height: 1.85;
+    font-size: var(--fs-ui);
+    line-height: var(--lh-base);
   }
 
   .section-wrap,
@@ -1103,12 +1199,12 @@ summary:focus-visible {
   }
 
   .brand-text strong {
-    font-size: 15px;
+    font-size: var(--fs-ui);
   }
 
   .brand-text small {
     margin-top: 5px;
-    font-size: 7px;
+    font-size: var(--fs-nano-sm);
   }
 
   .mobile-menu nav {
@@ -1140,19 +1236,19 @@ summary:focus-visible {
 
   .hero-copy p {
     margin-bottom: 16px;
-    font-size: 13px;
+    font-size: var(--fs-caption);
   }
 
   .hero-copy h1 {
-    font-size: clamp(26px, 8vw, 34px);
+    font-size: var(--fs-h2-mobile);
     letter-spacing: 0.035em;
-    line-height: 1.7;
+    line-height: var(--lh-base);
   }
 
   .hero-button {
     bottom: 26px;
     min-height: 58px;
-    font-size: 14px;
+    font-size: var(--fs-ui-sm);
   }
 
   .scroll-guide {
@@ -1164,9 +1260,9 @@ summary:focus-visible {
   }
 
   .intro p {
-    font-size: 17px;
+    font-size: var(--fs-body);
     letter-spacing: 0.025em;
-    line-height: 2.05;
+    line-height: var(--lh-loose);
   }
 
   .intro p + p {
@@ -1182,11 +1278,11 @@ summary:focus-visible {
   }
 
   .feature-content h2 {
-    font-size: 24px;
+    font-size: var(--fs-base-lg);
   }
 
   .feature-content > p:not(.feature-lead) {
-    font-size: 14px;
+    font-size: var(--fs-ui-sm);
     text-align: left;
   }
 
@@ -1207,7 +1303,7 @@ summary:focus-visible {
   .company-card h2,
   .faq-card h2,
   .news h2 {
-    font-size: 26px;
+    font-size: var(--fs-lg);
   }
 
   .section-heading {
@@ -1215,7 +1311,7 @@ summary:focus-visible {
   }
 
   .section-heading > p:not(.section-index) {
-    font-size: 14px;
+    font-size: var(--fs-ui-sm);
   }
 
   .service-grid,
@@ -1267,7 +1363,7 @@ summary:focus-visible {
   }
 
   .consult-copy h2 {
-    font-size: 27px;
+    font-size: var(--fs-xl);
   }
 
   .info-area {
@@ -1283,7 +1379,7 @@ summary:focus-visible {
     grid-template-columns: 92px minmax(0, 1fr) 18px;
     gap: 10px;
     min-height: 70px;
-    font-size: 13px;
+    font-size: var(--fs-caption);
   }
 
   .site-footer {
@@ -1298,7 +1394,7 @@ summary:focus-visible {
 
   .footer-main nav {
     padding-top: 25px;
-    border-top: 1px solid #d2d6d9;
+    border-top: 1px solid var(--line-footer);
   }
 
   .footer-bottom {
@@ -1318,7 +1414,7 @@ summary:focus-visible {
 
   .fixed-consult a {
     min-height: 48px;
-    font-size: 12px;
+    font-size: var(--fs-caption-sm);
   }
 
   .fixed-sub {
@@ -1328,11 +1424,11 @@ summary:focus-visible {
 
 @media (max-width: 390px) {
   .hero-copy h1 {
-    font-size: 25px;
+    font-size: var(--fs-md);
   }
 
   .hero-button {
-    font-size: 13px;
+    font-size: var(--fs-caption);
   }
 
   .fixed-consult {

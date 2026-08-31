@@ -1,0 +1,44 @@
+
+> yattoru-sekisui-reform@0.1.0 build
+> bash scripts/build-verified.sh
+
+/usr/bin/timeout
+Running bounded vinext build...
+
+  vinext build  (Vite 8.0.13)
+
+[34m[1/5] analyze client references...[39m
+[2Ktransforming...✓ 145 modules transformed.
+rendering chunks...
+[32m✓ built in 1.87s[39m
+[34m[2/5] analyze server references...[39m
+[2Ktransforming...✓ 126 modules transformed.
+rendering chunks...
+[32m✓ built in 334ms[39m
+[34m[3/5] build rsc environment...[39m
+[2Ktransforming...✓ 151 modules transformed.
+rendering chunks...
+computing gzip size...
+[32m✓ built in 1.02s[39m
+[34m[4/5] build client environment...[39m
+[2Ktransforming...✓ 2018 modules transformed.
+rendering chunks...
+computing gzip size...
+[32m✓ built in 2.81s[39m
+[34m[5/5] build ssr environment...[39m
+[2Ktransforming...✓ 132 modules transformed.
+rendering chunks...
+computing gzip size...
+[32m✓ built in 601ms[39m
+[0m
+  Route (app)
+  ─ ? /
+
+  ? Unknown
+
+  ? Some routes could not be classified. vinext currently uses static analysis
+    and cannot detect dynamic API usage (headers(), cookies(), etc.) at build time.
+    Automatic classification will be improved in a future release.
+
+  Build complete. Run `vinext start` to start the production server.
+

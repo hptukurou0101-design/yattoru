@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Image from "next/image";
 import {
   Accordion,
@@ -18,21 +19,21 @@ const services = [
   {
     title: "外壁塗装",
     description:
-      "住まいの印象を整えるだけでなく、雨や紫外線から建物を守ります。状態を確かめ、必要な工事をご説明します。",
+      "住まいの印象を整えるだけでなく、\n雨や紫外線から建物を守ります。\n状態を確かめ、必要な工事をご説明します。",
     image: "/service-exterior.png",
     alt: "外壁塗装後の戸建て住宅",
   },
   {
     title: "屋根塗装",
     description:
-      "見えにくい屋根の状態も丁寧に確認します。劣化の程度とご予算を踏まえ、無理のない工事方法をご提案します。",
+      "見えにくい屋根の状態も丁寧に確認します。\n劣化の程度とご予算を踏まえ、\n無理のない工事方法をご提案します。",
     image: "/service-exterior.png",
     alt: "塗装後の屋根と外壁",
   },
   {
     title: "水まわりリフォーム",
     description:
-      "キッチン・浴室・洗面・トイレを、毎日の使いやすさから見直します。ご希望と必要性を整理して形にします。",
+      "キッチン・浴室・洗面・トイレを、\n毎日の使いやすさから見直します。\nご希望と必要性を整理して形にします。",
     image: "/service-kitchen.png",
     alt: "使いやすくリフォームしたキッチン",
   },
@@ -40,7 +41,7 @@ const services = [
 
 const works = [
   {
-    title: "明るさと動線を見直した、家族が集まるLDK",
+    title: "明るさと動線を見直した、家族が集まる⁠LDK",
     meta: ["戸建て", "LDK", "水まわり"],
     image: "/hero-living.png",
     alt: "明るくリフォームしたリビングダイニング",
@@ -62,40 +63,65 @@ const works = [
 const voices = [
   {
     name: "福岡市・K様",
-    body: "最初は費用がどこまで増えるのか不安でしたが、工事前に一つずつ説明してもらえたので、納得してお願いできました。",
+    body: "最初は費用がどこまで増えるのか不安でしたが、\n工事前に一つずつ説明してもらえたので、\n納得してお願いできました。",
   },
   {
     name: "福岡市・M様",
-    body: "こちらの希望を急いで決めつけず、予算の中で優先した方がよいところを一緒に考えてくれました。",
+    body: "こちらの希望を急いで決めつけず、\n予算の中で優先した方がよいところを一緒に考えてくれました。",
   },
   {
     name: "福岡市・S様",
-    body: "工事が終わったあとも小さな相談に応えてもらえました。近くに頼れる方がいると思うと安心です。",
+    body: "工事が終わったあとも小さな相談に応えてもらえました。\n近くに頼れる方がいると思うと安心です。",
   },
 ];
 
 const faqs = [
   {
-    question: "相談したら、すぐ契約しなければいけませんか？",
+    question: "相談したら、すぐ契約しなければ⁠いけませんか？",
     answer:
-      "いいえ。まずは住まいのお悩みやご希望をお聞かせください。工事内容とお見積もりをご確認いただき、十分にご検討いただけます。",
+      "いいえ。まずは住まいのお悩みやご希望をお聞かせください。\n工事内容とお見積もりをご確認いただき、\n十分にご検討いただけます。",
   },
   {
     question: "予算が決まっていても相談できますか？",
     answer:
-      "はい。ご予算と優先したいことを伺い、その範囲でできる方法を整理してご提案します。追加が必要な場合も、工事前に理由と金額をご説明します。",
+      "はい。ご予算と優先したいことを伺い、\nその範囲でできる方法を整理してご提案します。\n追加が必要な場合も、工事前に理由と金額をご説明します。",
   },
   {
     question: "工事中も住み続けられますか？",
     answer:
-      "工事箇所や内容によって異なります。現地調査の際に、工事期間と暮らしへの影響を具体的にご案内します。",
+      "工事箇所や内容によって異なります。\n現地調査の際に、\n工事期間と暮らしへの影響を具体的にご案内します。",
   },
   {
     question: "工事後の相談にも対応してもらえますか？",
     answer:
-      "はい。施工後も気になる点や住まいの小さなお困りごとをご相談いただけます。長く安心して暮らせるようお付き合いを続けます。",
+      "はい。施工後も気になる点や\n住まいの小さなお困りごとをご相談いただけます。\n長く安心して暮らせるようお付き合いを続けます。",
   },
 ];
+
+/**
+ * 和文の改行位置を明示するための表示コンポーネント。
+ *
+ * データ側は素のテキストのまま保ち、改行したい位置にだけ "\n" を置く。
+ * 表示時にここで <br /> へ変換する。
+ * こうすることで、同じ文字列を構造化データ・alt・meta で再利用してもタグが混ざらない。
+ *
+ * 日本語は単語間に空白が無くどこでも改行できるため、自然折り返しに任せると
+ * 「必要な工事と」/「選べる方法を…」のように文節の途中で割れる。
+ * 文の切れ目（。）と、1 文が 1 行に収まらない場合は読点（、）に改行位置を置く。
+ */
+function WrapText({ text }: { text: string }) {
+  const parts = text.split("\n");
+  return (
+    <>
+      {parts.map((part, i) => (
+        <Fragment key={i}>
+          {part}
+          {i < parts.length - 1 && <br />}
+        </Fragment>
+      ))}
+    </>
+  );
+}
 
 function BrandMark() {
   return (
@@ -195,7 +221,7 @@ export default function Home() {
           <div className="feature-content">
             <p className="feature-lead">やっとる建設のリフォーム</p>
             <h2>相談しやすく、仕事はきっちり。</h2>
-            <p>ご希望とご予算を最初に整理し、必要な工事と選べる方法を丁寧にご説明します。工事が終わったあとも、住まいのことを気軽に相談できる関係を大切にしています。</p>
+            <p><WrapText text={"ご希望とご予算を最初に整理し、\n必要な工事と選べる方法を丁寧にご説明します。\n工事が終わったあとも、\n住まいのことを気軽に相談できる関係を大切にしています。"} /></p>
             <a className="white-button" href="#first">
               私たちの考え方を知る
               <SectionArrow />
@@ -215,7 +241,7 @@ export default function Home() {
           <div className="first-copy">
             <p className="section-index">01</p>
             <h2>はじめてのリフォーム</h2>
-            <p>リフォームは、内容によって費用や工事期間、工事中の暮らし方が異なります。まずは気になる場所と、どんな暮らしにしたいかをお聞かせください。</p>
+            <p><WrapText text={"リフォームは、\n内容によって費用や工事期間、\n工事中の暮らし方が異なります。\nまずは気になる場所と、\nどんな暮らしにしたいかをお聞かせください。"} /></p>
             <ol className="flow-list">
               <li><span>1</span>ご相談・現地調査</li>
               <li><span>2</span>工事内容とお見積もりのご説明</li>
@@ -234,7 +260,7 @@ export default function Home() {
           <div className="section-heading">
             <p className="section-index">02</p>
             <h2>おすすめのリフォーム</h2>
-            <p>住まいのお悩みが多い3つの工事を中心に、戸建てリフォーム全般に対応しています。</p>
+            <p><WrapText text={"住まいのお悩みが多い3つの工事を中心に、\n戸建てリフォーム全般に対応しています。"} /></p>
           </div>
           <div className="service-grid">
             {services.map((service, index) => (
@@ -250,7 +276,7 @@ export default function Home() {
                   <span>{service.title}</span>
                   <SectionArrow />
                 </a>
-                <p>{service.description}</p>
+                <p><WrapText text={service.description} /></p>
               </article>
             ))}
           </div>
@@ -262,7 +288,7 @@ export default function Home() {
           <div className="section-heading centered">
             <p className="section-index">03</p>
             <h2>リフォーム施工事例</h2>
-            <p>ご要望とご予算に向き合い、一つひとつ丁寧に形にした事例をご紹介します。</p>
+            <p><WrapText text={"ご要望とご予算に向き合い、\n一つひとつ丁寧に形にした事例をご紹介します。"} /></p>
           </div>
           <div className="works-grid">
             {works.map((work) => (
@@ -290,12 +316,12 @@ export default function Home() {
             <div className="section-heading centered light">
               <p className="section-index">04</p>
               <h2>お客様の声</h2>
-              <p>工事を終えたお客様からいただいた声をご紹介します。</p>
+              <p><WrapText text={"工事を終えたお客様からいただいた声をご紹介します。"} /></p>
             </div>
             <div className="voice-grid">
               {voices.map((voice) => (
                 <article key={voice.name}>
-                  <p>「{voice.body}」</p>
+                  <p>「<WrapText text={voice.body} />」</p>
                   <span>{voice.name}</span>
                 </article>
               ))}
@@ -310,7 +336,7 @@ export default function Home() {
           </div>
           <div className="consult-copy">
             <h2>リフォームの<br />ご相談・お問い合わせ</h2>
-            <p>費用や工事内容で気になることがあれば、まずはご相談ください。まだ希望がまとまっていない段階でも大丈夫です。</p>
+            <p><WrapText text={"費用や工事内容で気になることがあれば、\nまずはご相談ください。\nまだ希望がまとまっていない段階でも大丈夫です。"} /></p>
             <div className="consult-actions">
               <a className="primary-action" href="mailto:info@yattoru-kensetsu.jp">
                 <Mail aria-hidden="true" />
@@ -330,7 +356,7 @@ export default function Home() {
           <div id="company" className="company-card">
             <p className="section-index">05</p>
             <h2>会社情報</h2>
-            <p>福岡で、住まいの安心を支える地域のリフォーム会社です。</p>
+            <p><WrapText text={"福岡で、\n住まいの安心を支える地域のリフォーム会社です。"} /></p>
             <dl>
               <div><dt>会社名</dt><dd>やっとる建設株式会社</dd></div>
               <div><dt>代表者</dt><dd>山田 太郎</dd></div>
@@ -348,7 +374,7 @@ export default function Home() {
               {faqs.map((faq, index) => (
                 <AccordionItem value={`faq-${index}`} key={faq.question}>
                   <AccordionTrigger>{faq.question}</AccordionTrigger>
-                  <AccordionContent>{faq.answer}</AccordionContent>
+                  <AccordionContent><WrapText text={faq.answer} /></AccordionContent>
                 </AccordionItem>
               ))}
             </Accordion>
@@ -405,6 +431,48 @@ export default function Home() {
         <a className="fixed-main" href="mailto:info@yattoru-kensetsu.jp">ご相談・お問い合わせ<Mail aria-hidden="true" /></a>
         <a className="fixed-sub" href="tel:0921234567">電話で相談する<ChevronRight aria-hidden="true" /></a>
       </aside>
+
+      {/*
+        モバイルメニュー（<details>）の補助動作。
+        <details> は標準では Esc で閉じず、開いている間も背面がスクロールできてしまうため、
+        最小限の素の JavaScript で補う。フレームワークもハイドレーションも不要。
+      */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+(function () {
+  var menu = document.querySelector('.mobile-menu');
+  if (!menu) return;
+  var summary = menu.querySelector('summary');
+
+  function lock(on) {
+    // スクロールしているのは <html> なので、body だけを hidden にしても背面は止まらない
+    document.documentElement.style.overflow = on ? 'hidden' : '';
+    document.body.style.overflow = on ? 'hidden' : '';
+  }
+
+  menu.addEventListener('toggle', function () {
+    lock(menu.open);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape' || !menu.open) return;
+    menu.open = false;
+    lock(false);
+    if (summary) summary.focus();
+  });
+
+  // メニュー内のリンクを押したら閉じる（同一ページ内アンカーのため）
+  menu.querySelectorAll('nav a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      menu.open = false;
+      lock(false);
+    });
+  });
+})();
+`,
+        }}
+      />
     </div>
   );
 }

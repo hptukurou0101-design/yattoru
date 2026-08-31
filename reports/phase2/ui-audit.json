@@ -1,0 +1,1896 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "checkedAt": "2026-08-31T08:57:58.408Z",
+  "desktop": {
+    "width": 1280,
+    "buttons": [
+      {
+        "selector": ".hero-button",
+        "height": 60,
+        "radius": "0px",
+        "fontSize": "16px",
+        "padding": "0 0 0 0",
+        "border": "1px rgba(36, 36, 36, 0.32)",
+        "text": "リフォームの施工事例を見る"
+      },
+      {
+        "selector": ".white-button",
+        "height": 60,
+        "radius": "0px",
+        "fontSize": "16px",
+        "padding": "0 0 0 0",
+        "border": "1px rgba(36, 36, 36, 0.32)",
+        "text": "私たちの考え方を知る"
+      },
+      {
+        "selector": ".line-button",
+        "height": 58,
+        "radius": "0px",
+        "fontSize": "16px",
+        "padding": "0 0 0 0",
+        "border": "1px rgb(23, 109, 163)",
+        "text": "まずは住まいのことを相談する"
+      },
+      {
+        "selector": ".wide-button",
+        "height": 60,
+        "radius": "0px",
+        "fontSize": "16px",
+        "padding": "0 0 0 0",
+        "border": "1px rgba(36, 36, 36, 0.32)",
+        "text": "施工事例をもっと見る"
+      },
+      {
+        "selector": ".header-contact",
+        "height": 64,
+        "radius": "0px",
+        "fontSize": "13px",
+        "padding": "0 22 0 22",
+        "border": "なし",
+        "text": "ご相談・お問い合わせ"
+      },
+      {
+        "selector": ".primary-action",
+        "height": 60,
+        "radius": "0px",
+        "fontSize": "15px",
+        "padding": "0 22 0 22",
+        "border": "なし",
+        "text": "メールで相談する"
+      },
+      {
+        "selector": ".secondary-action",
+        "height": 60,
+        "radius": "0px",
+        "fontSize": "19px",
+        "padding": "0 22 0 22",
+        "border": "1px rgb(186, 190, 193)",
+        "text": "092-123-4567"
+      },
+      {
+        "selector": ".fixed-main",
+        "height": 56,
+        "radius": "0px",
+        "fontSize": "14px",
+        "padding": "0 0 0 0",
+        "border": "なし",
+        "text": "ご相談・お問い合わせ"
+      },
+      {
+        "selector": ".fixed-sub",
+        "height": 56,
+        "radius": "0px",
+        "fontSize": "14px",
+        "padding": "0 0 0 0",
+        "border": "なし",
+        "text": "電話で相談する"
+      }
+    ],
+    "cards": [
+      {
+        "selector": ".service-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": ".service-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": ".service-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": ".work-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": ".work-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": ".work-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": ".voice-grid article",
+        "padding": "42 36 42 36",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgb(50, 71, 89)"
+      },
+      {
+        "selector": ".voice-grid article",
+        "padding": "42 36 42 36",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgb(50, 71, 89)"
+      },
+      {
+        "selector": ".voice-grid article",
+        "padding": "42 36 42 36",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgb(50, 71, 89)"
+      },
+      {
+        "selector": ".company-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": ".faq-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "inputs": [],
+    "cardGrids": [
+      {
+        "grid": "div.service-grid",
+        "section": "section#service.services.section-wrap",
+        "children": 3
+      },
+      {
+        "grid": "div.works-grid",
+        "section": "section#works.works.section-wrap",
+        "children": 3
+      },
+      {
+        "grid": "div.voice-grid",
+        "section": "section#voice.voices",
+        "children": 3
+      }
+    ],
+    "fvTexts": [
+      {
+        "tag": "a",
+        "top": 0,
+        "text": "私たちの特長"
+      },
+      {
+        "tag": "a",
+        "top": 0,
+        "text": "初めての方へ"
+      },
+      {
+        "tag": "a",
+        "top": 0,
+        "text": "リフォーム"
+      },
+      {
+        "tag": "a",
+        "top": 0,
+        "text": "施工事例"
+      },
+      {
+        "tag": "a",
+        "top": 0,
+        "text": "会社情報"
+      },
+      {
+        "tag": "a",
+        "top": 0,
+        "text": "よくある質問"
+      },
+      {
+        "tag": "a",
+        "top": 0,
+        "text": "ご相談・お問い合わせ"
+      },
+      {
+        "tag": "p",
+        "top": 139,
+        "text": "住まいの安心を、まじめに、丁寧に。"
+      },
+      {
+        "tag": "span",
+        "top": 481,
+        "text": "scroll"
+      }
+    ],
+    "links": [
+      {
+        "href": "#top",
+        "text": "やっとる建設 YATTORU CONSTRUCTION",
+        "target": null,
+        "rel": null,
+        "top": 16,
+        "external": false
+      },
+      {
+        "href": "#strength",
+        "text": "私たちの特長",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#first",
+        "text": "初めての方へ",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#service",
+        "text": "リフォーム",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#works",
+        "text": "施工事例",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#company",
+        "text": "会社情報",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#faq",
+        "text": "よくある質問",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "ご相談・お問い合わせ",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#strength",
+        "text": "私たちの特長",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#first",
+        "text": "初めての方へ",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#service",
+        "text": "リフォーム",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#works",
+        "text": "施工事例",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#voice",
+        "text": "お客様の声",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#company",
+        "text": "会社情報",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#faq",
+        "text": "よくある質問",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "ご相談・お問い合わせ",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#works",
+        "text": "リフォームの施工事例を見る",
+        "target": null,
+        "rel": null,
+        "top": 547,
+        "external": false
+      },
+      {
+        "href": "#first",
+        "text": "私たちの考え方を知る",
+        "target": null,
+        "rel": null,
+        "top": 1356,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "まずは住まいのことを相談する",
+        "target": null,
+        "rel": null,
+        "top": 2171,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "外壁塗装",
+        "target": null,
+        "rel": null,
+        "top": 2635,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "屋根塗装",
+        "target": null,
+        "rel": null,
+        "top": 2635,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "水まわりリフォーム",
+        "target": null,
+        "rel": null,
+        "top": 2635,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "",
+        "target": null,
+        "rel": null,
+        "top": 3221,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "",
+        "target": null,
+        "rel": null,
+        "top": 3221,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "",
+        "target": null,
+        "rel": null,
+        "top": 3221,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "施工事例をもっと見る",
+        "target": null,
+        "rel": null,
+        "top": 3634,
+        "external": false
+      },
+      {
+        "href": "mailto:info@yattoru-kensetsu.jp",
+        "text": "メールで相談する",
+        "target": null,
+        "rel": null,
+        "top": 4943,
+        "external": false
+      },
+      {
+        "href": "tel:0921234567",
+        "text": "092-123-4567",
+        "target": null,
+        "rel": null,
+        "top": 5013,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "2026.08.31 ホームページを公開しました。",
+        "target": null,
+        "rel": null,
+        "top": 5908,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "2026.08.20 住まいのリフォーム相談を受け付けていま",
+        "target": null,
+        "rel": null,
+        "top": 5983,
+        "external": false
+      },
+      {
+        "href": "#top",
+        "text": "やっとる建設 YATTORU CONSTRUCTION",
+        "target": null,
+        "rel": null,
+        "top": 6270,
+        "external": false
+      },
+      {
+        "href": "tel:0921234567",
+        "text": "092-123-4567",
+        "target": null,
+        "rel": null,
+        "top": 6312,
+        "external": false
+      },
+      {
+        "href": "#strength",
+        "text": "私たちの特長",
+        "target": null,
+        "rel": null,
+        "top": 6270,
+        "external": false
+      },
+      {
+        "href": "#service",
+        "text": "リフォーム",
+        "target": null,
+        "rel": null,
+        "top": 6270,
+        "external": false
+      },
+      {
+        "href": "#works",
+        "text": "施工事例",
+        "target": null,
+        "rel": null,
+        "top": 6300,
+        "external": false
+      },
+      {
+        "href": "#voice",
+        "text": "お客様の声",
+        "target": null,
+        "rel": null,
+        "top": 6300,
+        "external": false
+      },
+      {
+        "href": "#company",
+        "text": "会社情報",
+        "target": null,
+        "rel": null,
+        "top": 6331,
+        "external": false
+      },
+      {
+        "href": "#faq",
+        "text": "よくある質問",
+        "target": null,
+        "rel": null,
+        "top": 6331,
+        "external": false
+      },
+      {
+        "href": "#top",
+        "text": "プライバシーポリシー",
+        "target": null,
+        "rel": null,
+        "top": 6462,
+        "external": false
+      },
+      {
+        "href": "#top",
+        "text": "利用規約",
+        "target": null,
+        "rel": null,
+        "top": 6462,
+        "external": false
+      },
+      {
+        "href": "mailto:info@yattoru-kensetsu.jp",
+        "text": "ご相談・お問い合わせ",
+        "target": null,
+        "rel": null,
+        "top": 814,
+        "external": false
+      },
+      {
+        "href": "tel:0921234567",
+        "text": "電話で相談する",
+        "target": null,
+        "rel": null,
+        "top": 814,
+        "external": false
+      }
+    ],
+    "fixedEls": [
+      {
+        "selector": "aside.fixed-consult",
+        "display": "grid",
+        "top": 802,
+        "bottom": 882,
+        "width": 704,
+        "visible": true
+      }
+    ],
+    "animated": [
+      {
+        "selector": "a",
+        "transition": "color, background 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color, background 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color, background 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color, background 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color, background 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color, background 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a.header-contact",
+        "transition": "background 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a.hero-button",
+        "transition": "color, background, border-color 0.18s, 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a.white-button",
+        "transition": "color, background, border-color 0.18s, 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a.line-button",
+        "transition": "color, background, border-color 0.18s, 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "img",
+        "transition": "transform 0.5s",
+        "animation": "none"
+      },
+      {
+        "selector": "img",
+        "transition": "transform 0.5s",
+        "animation": "none"
+      },
+      {
+        "selector": "img",
+        "transition": "transform 0.5s",
+        "animation": "none"
+      },
+      {
+        "selector": "img",
+        "transition": "transform 0.5s",
+        "animation": "none"
+      },
+      {
+        "selector": "img",
+        "transition": "transform 0.5s",
+        "animation": "none"
+      },
+      {
+        "selector": "img",
+        "transition": "transform 0.5s",
+        "animation": "none"
+      },
+      {
+        "selector": "a.wide-button",
+        "transition": "color, background, border-color 0.18s, 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "button#radix-_R_7kl6_.flex.flex-1.items-start",
+        "transition": "all 0.15s",
+        "animation": "none"
+      },
+      {
+        "selector": "svg",
+        "transition": "transform, translate, scale, rotate 0.2s",
+        "animation": "none"
+      },
+      {
+        "selector": "div#radix-_R_17kl6_.overflow-hidden.text-sm.data-[state=closed]:animate-accordion-up",
+        "transition": "all 0s",
+        "animation": "accordion-up"
+      },
+      {
+        "selector": "button#radix-_R_bkl6_.flex.flex-1.items-start",
+        "transition": "all 0.15s",
+        "animation": "none"
+      },
+      {
+        "selector": "svg",
+        "transition": "transform, translate, scale, rotate 0.2s",
+        "animation": "none"
+      },
+      {
+        "selector": "div#radix-_R_1bkl6_.overflow-hidden.text-sm.data-[state=closed]:animate-accordion-up",
+        "transition": "all 0s",
+        "animation": "accordion-up"
+      },
+      {
+        "selector": "button#radix-_R_fkl6_.flex.flex-1.items-start",
+        "transition": "all 0.15s",
+        "animation": "none"
+      },
+      {
+        "selector": "svg",
+        "transition": "transform, translate, scale, rotate 0.2s",
+        "animation": "none"
+      },
+      {
+        "selector": "div#radix-_R_1fkl6_.overflow-hidden.text-sm.data-[state=closed]:animate-accordion-up",
+        "transition": "all 0s",
+        "animation": "accordion-up"
+      },
+      {
+        "selector": "button#radix-_R_jkl6_.flex.flex-1.items-start",
+        "transition": "all 0.15s",
+        "animation": "none"
+      },
+      {
+        "selector": "svg",
+        "transition": "transform, translate, scale, rotate 0.2s",
+        "animation": "none"
+      },
+      {
+        "selector": "div#radix-_R_1jkl6_.overflow-hidden.text-sm.data-[state=closed]:animate-accordion-up",
+        "transition": "all 0s",
+        "animation": "accordion-up"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      }
+    ],
+    "generic": [],
+    "phoneOccurrences": [
+      {
+        "number": "092-123-4567",
+        "inTelLink": true,
+        "container": "a.secondary-action"
+      },
+      {
+        "number": "092-123-4567",
+        "inTelLink": true,
+        "container": "a"
+      }
+    ],
+    "sections": [
+      {
+        "order": 1,
+        "selector": "section.hero",
+        "heading": "ご予算も、仕上がりも。 納得できるリフォームを。"
+      },
+      {
+        "order": 2,
+        "selector": "section.intro",
+        "heading": ""
+      },
+      {
+        "order": 3,
+        "selector": "section#strength.feature-panel",
+        "heading": "相談しやすく、仕事はきっちり。"
+      },
+      {
+        "order": 4,
+        "selector": "section#first.first-guide.section-wrap",
+        "heading": "はじめてのリフォーム"
+      },
+      {
+        "order": 5,
+        "selector": "section#service.services.section-wrap",
+        "heading": "おすすめのリフォーム"
+      },
+      {
+        "order": 6,
+        "selector": "section#works.works.section-wrap",
+        "heading": "リフォーム施工事例"
+      },
+      {
+        "order": 7,
+        "selector": "section#voice.voices",
+        "heading": "お客様の声"
+      },
+      {
+        "order": 8,
+        "selector": "section#contact.consultation.section-wrap",
+        "heading": "リフォームの ご相談・お問い合わせ"
+      },
+      {
+        "order": 9,
+        "selector": "section.info-area.section-wrap",
+        "heading": "会社情報"
+      },
+      {
+        "order": 10,
+        "selector": "section.news.section-wrap",
+        "heading": "お知らせ"
+      }
+    ],
+    "gapTally": [
+      {
+        "value": "20px",
+        "count": 6
+      },
+      {
+        "value": "18px",
+        "count": 5
+      },
+      {
+        "value": "14px",
+        "count": 4
+      },
+      {
+        "value": "16px",
+        "count": 4
+      },
+      {
+        "value": "7px",
+        "count": 3
+      },
+      {
+        "value": "11px",
+        "count": 3
+      },
+      {
+        "value": "12px",
+        "count": 2
+      },
+      {
+        "value": "38px",
+        "count": 2
+      },
+      {
+        "value": "10px",
+        "count": 2
+      },
+      {
+        "value": "13px",
+        "count": 2
+      },
+      {
+        "value": "1px",
+        "count": 1
+      },
+      {
+        "value": "80px",
+        "count": 1
+      },
+      {
+        "value": "70px",
+        "count": 1
+      },
+      {
+        "value": "65px",
+        "count": 1
+      },
+      {
+        "value": "9px 22px",
+        "count": 1
+      },
+      {
+        "value": "25px",
+        "count": 1
+      },
+      {
+        "value": "5px",
+        "count": 1
+      }
+    ],
+    "marginTally": [
+      {
+        "value": "145px",
+        "count": 7
+      },
+      {
+        "value": "14px",
+        "count": 7
+      },
+      {
+        "value": "47px",
+        "count": 3
+      },
+      {
+        "value": "13px",
+        "count": 3
+      },
+      {
+        "value": "9px",
+        "count": 3
+      },
+      {
+        "value": "10px",
+        "count": 2
+      },
+      {
+        "value": "26px",
+        "count": 1
+      },
+      {
+        "value": "25px",
+        "count": 1
+      },
+      {
+        "value": "28px",
+        "count": 1
+      },
+      {
+        "value": "27px",
+        "count": 1
+      },
+      {
+        "value": "29px",
+        "count": 1
+      }
+    ],
+    "documentHeight": 6513
+  },
+  "mobile": {
+    "width": 390,
+    "buttons": [
+      {
+        "selector": ".hero-button",
+        "height": 58,
+        "radius": "0px",
+        "fontSize": "13px",
+        "padding": "0 0 0 0",
+        "border": "1px rgba(36, 36, 36, 0.32)",
+        "text": "リフォームの施工事例を見る"
+      },
+      {
+        "selector": ".white-button",
+        "height": 60,
+        "radius": "0px",
+        "fontSize": "16px",
+        "padding": "0 0 0 0",
+        "border": "1px rgba(36, 36, 36, 0.32)",
+        "text": "私たちの考え方を知る"
+      },
+      {
+        "selector": ".line-button",
+        "height": 58,
+        "radius": "0px",
+        "fontSize": "16px",
+        "padding": "0 0 0 0",
+        "border": "1px rgb(23, 109, 163)",
+        "text": "まずは住まいのことを相談する"
+      },
+      {
+        "selector": ".wide-button",
+        "height": 60,
+        "radius": "0px",
+        "fontSize": "16px",
+        "padding": "0 0 0 0",
+        "border": "1px rgba(36, 36, 36, 0.32)",
+        "text": "施工事例をもっと見る"
+      },
+      {
+        "selector": ".header-contact",
+        "height": 0,
+        "radius": "0px",
+        "fontSize": "12px",
+        "padding": "0 14 0 14",
+        "border": "なし",
+        "text": "ご相談・お問い合わせ"
+      },
+      {
+        "selector": ".primary-action",
+        "height": 60,
+        "radius": "0px",
+        "fontSize": "15px",
+        "padding": "0 22 0 22",
+        "border": "なし",
+        "text": "メールで相談する"
+      },
+      {
+        "selector": ".secondary-action",
+        "height": 60,
+        "radius": "0px",
+        "fontSize": "19px",
+        "padding": "0 22 0 22",
+        "border": "1px rgb(186, 190, 193)",
+        "text": "092-123-4567"
+      },
+      {
+        "selector": ".fixed-main",
+        "height": 48,
+        "radius": "0px",
+        "fontSize": "12px",
+        "padding": "0 0 0 0",
+        "border": "なし",
+        "text": "ご相談・お問い合わせ"
+      },
+      {
+        "selector": ".fixed-sub",
+        "height": 48,
+        "radius": "0px",
+        "fontSize": "12px",
+        "padding": "0 0 0 0",
+        "border": "なし",
+        "text": "電話で相談する"
+      }
+    ],
+    "cards": [
+      {
+        "selector": ".service-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": ".service-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": ".service-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": ".work-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": ".work-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": ".work-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": ".voice-grid article",
+        "padding": "32 24 32 24",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgb(50, 71, 89)"
+      },
+      {
+        "selector": ".voice-grid article",
+        "padding": "32 24 32 24",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgb(50, 71, 89)"
+      },
+      {
+        "selector": ".voice-grid article",
+        "padding": "32 24 32 24",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgb(50, 71, 89)"
+      },
+      {
+        "selector": ".company-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "selector": ".faq-card",
+        "padding": "0 0 0 0",
+        "radius": "0px",
+        "border": "なし",
+        "shadow": "なし",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    ],
+    "inputs": [],
+    "cardGrids": [
+      {
+        "grid": "div.service-grid",
+        "section": "section#service.services.section-wrap",
+        "children": 3
+      },
+      {
+        "grid": "div.works-grid",
+        "section": "section#works.works.section-wrap",
+        "children": 3
+      },
+      {
+        "grid": "div.voice-grid",
+        "section": "section#voice.voices",
+        "children": 3
+      }
+    ],
+    "fvTexts": [
+      {
+        "tag": "p",
+        "top": 133,
+        "text": "住まいの安心を、まじめに、丁寧に。"
+      }
+    ],
+    "links": [
+      {
+        "href": "#top",
+        "text": "やっとる建設 YATTORU CONSTRUCTION",
+        "target": null,
+        "rel": null,
+        "top": 16,
+        "external": false
+      },
+      {
+        "href": "#strength",
+        "text": "私たちの特長",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#first",
+        "text": "初めての方へ",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#service",
+        "text": "リフォーム",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#works",
+        "text": "施工事例",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#company",
+        "text": "会社情報",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#faq",
+        "text": "よくある質問",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "ご相談・お問い合わせ",
+        "target": null,
+        "rel": null,
+        "top": 0,
+        "external": false
+      },
+      {
+        "href": "#strength",
+        "text": "",
+        "target": null,
+        "rel": null,
+        "top": 131,
+        "external": false
+      },
+      {
+        "href": "#first",
+        "text": "",
+        "target": null,
+        "rel": null,
+        "top": 298,
+        "external": false
+      },
+      {
+        "href": "#service",
+        "text": "",
+        "target": null,
+        "rel": null,
+        "top": 465,
+        "external": false
+      },
+      {
+        "href": "#works",
+        "text": "",
+        "target": null,
+        "rel": null,
+        "top": 609,
+        "external": false
+      },
+      {
+        "href": "#voice",
+        "text": "",
+        "target": null,
+        "rel": null,
+        "top": 730,
+        "external": false
+      },
+      {
+        "href": "#company",
+        "text": "",
+        "target": null,
+        "rel": null,
+        "top": 874,
+        "external": false
+      },
+      {
+        "href": "#faq",
+        "text": "",
+        "target": null,
+        "rel": null,
+        "top": 994,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "",
+        "target": null,
+        "rel": null,
+        "top": 1162,
+        "external": false
+      },
+      {
+        "href": "#works",
+        "text": "リフォームの施工事例を見る",
+        "target": null,
+        "rel": null,
+        "top": 536,
+        "external": false
+      },
+      {
+        "href": "#first",
+        "text": "私たちの考え方を知る",
+        "target": null,
+        "rel": null,
+        "top": 1295,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "まずは住まいのことを相談する",
+        "target": null,
+        "rel": null,
+        "top": 2366,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "外壁塗装",
+        "target": null,
+        "rel": null,
+        "top": 2750,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "屋根塗装",
+        "target": null,
+        "rel": null,
+        "top": 3029,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "水まわりリフォーム",
+        "target": null,
+        "rel": null,
+        "top": 3308,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "",
+        "target": null,
+        "rel": null,
+        "top": 3825,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "",
+        "target": null,
+        "rel": null,
+        "top": 4201,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "",
+        "target": null,
+        "rel": null,
+        "top": 4606,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "施工事例をもっと見る",
+        "target": null,
+        "rel": null,
+        "top": 5014,
+        "external": false
+      },
+      {
+        "href": "mailto:info@yattoru-kensetsu.jp",
+        "text": "メールで相談する",
+        "target": null,
+        "rel": null,
+        "top": 6828,
+        "external": false
+      },
+      {
+        "href": "tel:0921234567",
+        "text": "092-123-4567",
+        "target": null,
+        "rel": null,
+        "top": 6898,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "2026.08.31 ホームページを公開しました。",
+        "target": null,
+        "rel": null,
+        "top": 8252,
+        "external": false
+      },
+      {
+        "href": "#contact",
+        "text": "2026.08.20 住まいのリフォーム相談を受け付けていま",
+        "target": null,
+        "rel": null,
+        "top": 8322,
+        "external": false
+      },
+      {
+        "href": "#top",
+        "text": "やっとる建設 YATTORU CONSTRUCTION",
+        "target": null,
+        "rel": null,
+        "top": 8538,
+        "external": false
+      },
+      {
+        "href": "tel:0921234567",
+        "text": "092-123-4567",
+        "target": null,
+        "rel": null,
+        "top": 8698,
+        "external": false
+      },
+      {
+        "href": "#strength",
+        "text": "私たちの特長",
+        "target": null,
+        "rel": null,
+        "top": 8834,
+        "external": false
+      },
+      {
+        "href": "#service",
+        "text": "リフォーム",
+        "target": null,
+        "rel": null,
+        "top": 8834,
+        "external": false
+      },
+      {
+        "href": "#works",
+        "text": "施工事例",
+        "target": null,
+        "rel": null,
+        "top": 8865,
+        "external": false
+      },
+      {
+        "href": "#voice",
+        "text": "お客様の声",
+        "target": null,
+        "rel": null,
+        "top": 8865,
+        "external": false
+      },
+      {
+        "href": "#company",
+        "text": "会社情報",
+        "target": null,
+        "rel": null,
+        "top": 8895,
+        "external": false
+      },
+      {
+        "href": "#faq",
+        "text": "よくある質問",
+        "target": null,
+        "rel": null,
+        "top": 8895,
+        "external": false
+      },
+      {
+        "href": "#top",
+        "text": "プライバシーポリシー",
+        "target": null,
+        "rel": null,
+        "top": 8978,
+        "external": false
+      },
+      {
+        "href": "#top",
+        "text": "利用規約",
+        "target": null,
+        "rel": null,
+        "top": 8978,
+        "external": false
+      },
+      {
+        "href": "mailto:info@yattoru-kensetsu.jp",
+        "text": "ご相談・お問い合わせ",
+        "target": null,
+        "rel": null,
+        "top": 835,
+        "external": false
+      },
+      {
+        "href": "tel:0921234567",
+        "text": "電話で相談する",
+        "target": null,
+        "rel": null,
+        "top": 835,
+        "external": false
+      }
+    ],
+    "fixedEls": [
+      {
+        "selector": "nav",
+        "display": "grid",
+        "top": 112,
+        "bottom": 952,
+        "width": 48,
+        "visible": true
+      },
+      {
+        "selector": "aside.fixed-consult",
+        "display": "grid",
+        "top": 828,
+        "bottom": 890,
+        "width": 370,
+        "visible": true
+      }
+    ],
+    "animated": [
+      {
+        "selector": "a",
+        "transition": "color, background 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color, background 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color, background 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color, background 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color, background 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color, background 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a.header-contact",
+        "transition": "background 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a.hero-button",
+        "transition": "color, background, border-color 0.18s, 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a.white-button",
+        "transition": "color, background, border-color 0.18s, 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a.line-button",
+        "transition": "color, background, border-color 0.18s, 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "img",
+        "transition": "transform 0.5s",
+        "animation": "none"
+      },
+      {
+        "selector": "img",
+        "transition": "transform 0.5s",
+        "animation": "none"
+      },
+      {
+        "selector": "img",
+        "transition": "transform 0.5s",
+        "animation": "none"
+      },
+      {
+        "selector": "img",
+        "transition": "transform 0.5s",
+        "animation": "none"
+      },
+      {
+        "selector": "img",
+        "transition": "transform 0.5s",
+        "animation": "none"
+      },
+      {
+        "selector": "img",
+        "transition": "transform 0.5s",
+        "animation": "none"
+      },
+      {
+        "selector": "a.wide-button",
+        "transition": "color, background, border-color 0.18s, 0.18s, 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "button#radix-_R_7kl6_.flex.flex-1.items-start",
+        "transition": "all 0.15s",
+        "animation": "none"
+      },
+      {
+        "selector": "svg",
+        "transition": "transform, translate, scale, rotate 0.2s",
+        "animation": "none"
+      },
+      {
+        "selector": "div#radix-_R_17kl6_.overflow-hidden.text-sm.data-[state=closed]:animate-accordion-up",
+        "transition": "all 0s",
+        "animation": "accordion-up"
+      },
+      {
+        "selector": "button#radix-_R_bkl6_.flex.flex-1.items-start",
+        "transition": "all 0.15s",
+        "animation": "none"
+      },
+      {
+        "selector": "svg",
+        "transition": "transform, translate, scale, rotate 0.2s",
+        "animation": "none"
+      },
+      {
+        "selector": "div#radix-_R_1bkl6_.overflow-hidden.text-sm.data-[state=closed]:animate-accordion-up",
+        "transition": "all 0s",
+        "animation": "accordion-up"
+      },
+      {
+        "selector": "button#radix-_R_fkl6_.flex.flex-1.items-start",
+        "transition": "all 0.15s",
+        "animation": "none"
+      },
+      {
+        "selector": "svg",
+        "transition": "transform, translate, scale, rotate 0.2s",
+        "animation": "none"
+      },
+      {
+        "selector": "div#radix-_R_1fkl6_.overflow-hidden.text-sm.data-[state=closed]:animate-accordion-up",
+        "transition": "all 0s",
+        "animation": "accordion-up"
+      },
+      {
+        "selector": "button#radix-_R_jkl6_.flex.flex-1.items-start",
+        "transition": "all 0.15s",
+        "animation": "none"
+      },
+      {
+        "selector": "svg",
+        "transition": "transform, translate, scale, rotate 0.2s",
+        "animation": "none"
+      },
+      {
+        "selector": "div#radix-_R_1jkl6_.overflow-hidden.text-sm.data-[state=closed]:animate-accordion-up",
+        "transition": "all 0s",
+        "animation": "accordion-up"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      },
+      {
+        "selector": "a",
+        "transition": "color 0.18s",
+        "animation": "none"
+      }
+    ],
+    "generic": [],
+    "phoneOccurrences": [
+      {
+        "number": "092-123-4567",
+        "inTelLink": true,
+        "container": "a.secondary-action"
+      },
+      {
+        "number": "092-123-4567",
+        "inTelLink": true,
+        "container": "a"
+      }
+    ],
+    "sections": [
+      {
+        "order": 1,
+        "selector": "section.hero",
+        "heading": "ご予算も、仕上がりも。 納得できるリフォームを。"
+      },
+      {
+        "order": 2,
+        "selector": "section.intro",
+        "heading": ""
+      },
+      {
+        "order": 3,
+        "selector": "section#strength.feature-panel",
+        "heading": "相談しやすく、仕事はきっちり。"
+      },
+      {
+        "order": 4,
+        "selector": "section#first.first-guide.section-wrap",
+        "heading": "はじめてのリフォーム"
+      },
+      {
+        "order": 5,
+        "selector": "section#service.services.section-wrap",
+        "heading": "おすすめのリフォーム"
+      },
+      {
+        "order": 6,
+        "selector": "section#works.works.section-wrap",
+        "heading": "リフォーム施工事例"
+      },
+      {
+        "order": 7,
+        "selector": "section#voice.voices",
+        "heading": "お客様の声"
+      },
+      {
+        "order": 8,
+        "selector": "section#contact.consultation.section-wrap",
+        "heading": "リフォームの ご相談・お問い合わせ"
+      },
+      {
+        "order": 9,
+        "selector": "section.info-area.section-wrap",
+        "heading": "会社情報"
+      },
+      {
+        "order": 10,
+        "selector": "section.news.section-wrap",
+        "heading": "お知らせ"
+      }
+    ],
+    "gapTally": [
+      {
+        "value": "14px",
+        "count": 5
+      },
+      {
+        "value": "18px",
+        "count": 5
+      },
+      {
+        "value": "20px",
+        "count": 4
+      },
+      {
+        "value": "16px",
+        "count": 4
+      },
+      {
+        "value": "7px",
+        "count": 3
+      },
+      {
+        "value": "10px",
+        "count": 3
+      },
+      {
+        "value": "11px",
+        "count": 3
+      },
+      {
+        "value": "9px",
+        "count": 2
+      },
+      {
+        "value": "13px",
+        "count": 2
+      },
+      {
+        "value": "25px",
+        "count": 2
+      },
+      {
+        "value": "5px",
+        "count": 2
+      },
+      {
+        "value": "6px",
+        "count": 1
+      },
+      {
+        "value": "38px",
+        "count": 1
+      },
+      {
+        "value": "46px",
+        "count": 1
+      },
+      {
+        "value": "1px",
+        "count": 1
+      },
+      {
+        "value": "83px",
+        "count": 1
+      },
+      {
+        "value": "34px",
+        "count": 1
+      },
+      {
+        "value": "9px 22px",
+        "count": 1
+      }
+    ],
+    "marginTally": [
+      {
+        "value": "96px",
+        "count": 7
+      },
+      {
+        "value": "14px",
+        "count": 7
+      },
+      {
+        "value": "32px",
+        "count": 3
+      },
+      {
+        "value": "13px",
+        "count": 3
+      },
+      {
+        "value": "9px",
+        "count": 3
+      },
+      {
+        "value": "16px",
+        "count": 1
+      },
+      {
+        "value": "10px",
+        "count": 1
+      },
+      {
+        "value": "26px",
+        "count": 1
+      },
+      {
+        "value": "25px",
+        "count": 1
+      },
+      {
+        "value": "28px",
+        "count": 1
+      },
+      {
+        "value": "27px",
+        "count": 1
+      },
+      {
+        "value": "29px",
+        "count": 1
+      }
+    ],
+    "documentHeight": 9130
+  }
+}

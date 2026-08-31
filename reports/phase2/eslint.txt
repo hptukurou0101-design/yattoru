@@ -1,0 +1,11 @@
+
+> yattoru-sekisui-reform@0.1.0 lint
+> bash scripts/sites-env.sh -- eslint . --ignore-pattern dist --ignore-pattern .next
+
+
+C:\Users\81908\Desktop\HP製作\yattoru-sekisui-reform-site\scripts\check\static-scan.mjs
+  19:37  warning  'statSync' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 1 problem (0 errors, 1 warning)
+
+exit=0

@@ -1,0 +1,97 @@
+[ui] http://127.0.0.1:4173/  デスクトップ 1280px / モバイル 390px
+
+=== No.54 ボタン (9 個) ===
+  高さ    : 60 (5件) / 56 (2件) / 58 (1件) / 64 (1件)
+  角丸    : 0px (9件)
+  文字   : 16px (4件) / 14px (2件) / 13px (1件) / 15px (1件) / 19px (1件)
+  内側余白: 0 0 0 0 (6件) / 0 22 0 22 (3件)
+  枠線    : なし (4件) / 1px rgba(36, 36, 36, 0.32) (3件) / 1px rgb(23, 109, 163) (1件) / 1px rgb(186, 190, 193) (1件)
+    .hero-button         h= 60 r=0px fs=16px p=[0 0 0 0]  "リフォームの施工事例を見る"
+    .white-button        h= 60 r=0px fs=16px p=[0 0 0 0]  "私たちの考え方を知る"
+    .line-button         h= 58 r=0px fs=16px p=[0 0 0 0]  "まずは住まいのことを相談する"
+    .wide-button         h= 60 r=0px fs=16px p=[0 0 0 0]  "施工事例をもっと見る"
+    .header-contact      h= 64 r=0px fs=13px p=[0 22 0 22]  "ご相談・お問い合わせ"
+    .primary-action      h= 60 r=0px fs=15px p=[0 22 0 22]  "メールで相談する"
+    .secondary-action    h= 60 r=0px fs=19px p=[0 22 0 22]  "092-123-4567"
+    .fixed-main          h= 56 r=0px fs=14px p=[0 0 0 0]  "ご相談・お問い合わせ"
+    .fixed-sub           h= 56 r=0px fs=14px p=[0 0 0 0]  "電話で相談する"
+
+=== No.55 カード (11 個) ===
+  内側余白: 0 0 0 0 (8件) / 42 36 42 36 (3件)
+  角丸    : 0px (11件)
+  枠線    : なし (11件)
+  影      : なし (11件)
+
+=== No.56 入力欄 (0 個) ===
+  該当なし（フォーム未実装）
+
+=== No.53 要素間の余白 ===
+  gap        : 20px (6) / 18px (5) / 14px (4) / 16px (4) / 7px (3) / 11px (3) / 12px (2) / 38px (2) / 10px (2) / 13px (2) / 1px (1) / 80px (1) / 70px (1) / 65px (1) / 9px 22px (1) / 25px (1) / 5px (1)
+  margin-bottom の種類: 11 種  145px(7) 14px(7) 47px(3) 13px(3) 9px(3) 10px(2) 26px(1) 25px(1) 28px(1) 27px(1) 29px(1)
+
+=== No.60 カードグリッドの出現 (3 箇所) ===
+  section#service.services.section-wrap  →  div.service-grid  子要素 3
+  section#works.works.section-wrap  →  div.works-grid  子要素 3
+  section#voice.voices  →  div.voice-grid  子要素 3
+
+=== No.61 セクション構成 ===
+   1. section.hero                                 ご予算も、仕上がりも。 納得できるリフォームを。
+   2. section.intro                                
+   3. section#strength.feature-panel               相談しやすく、仕事はきっちり。
+   4. section#first.first-guide.section-wrap       はじめてのリフォーム
+   5. section#service.services.section-wrap        おすすめのリフォーム
+   6. section#works.works.section-wrap             リフォーム施工事例
+   7. section#voice.voices                         お客様の声
+   8. section#contact.consultation.section-wrap    リフォームの ご相談・お問い合わせ
+   9. section.info-area.section-wrap               会社情報
+  10. section.news.section-wrap                    お知らせ
+
+=== No.63 汎用語の出現 ===
+  0 件
+
+=== No.64-66 ファーストビューのテキスト（1280px, 上から） ===
+  [   0px] <a> 私たちの特長
+  [   0px] <a> 初めての方へ
+  [   0px] <a> リフォーム
+  [   0px] <a> 施工事例
+  [   0px] <a> 会社情報
+  [   0px] <a> よくある質問
+  [   0px] <a> ご相談・お問い合わせ
+  [ 139px] <p> 住まいの安心を、まじめに、丁寧に。
+  [ 481px] <span> scroll
+
+=== No.74/75 CTA の位置 ===
+  [    0px / 全長 6513px] "ご相談・お問い合わせ" -> #contact
+  [    0px / 全長 6513px] "ご相談・お問い合わせ" -> #contact
+  [  547px / 全長 6513px] "リフォームの施工事例を見る" -> #works
+  [ 2171px / 全長 6513px] "まずは住まいのことを相談する" -> #contact
+  [ 3634px / 全長 6513px] "施工事例をもっと見る" -> #contact
+  [ 4943px / 全長 6513px] "メールで相談する" -> mailto:info@yattoru-kensetsu.jp
+  [ 5983px / 全長 6513px] "2026.08.20 住まいのリフォーム相談を受け付けていま" -> #contact
+  [  814px / 全長 6513px] "ご相談・お問い合わせ" -> mailto:info@yattoru-kensetsu.jp
+  [  814px / 全長 6513px] "電話で相談する" -> tel:0921234567
+
+=== No.76 追従要素（fixed）===
+  デスクトップ: aside.fixed-consult(grid)
+  モバイル    : nav(grid), aside.fixed-consult(grid)
+
+=== No.77 電話番号の出現と tel: リンク ===
+  092-123-4567  tel:リンク=あり  a.secondary-action
+  092-123-4567  tel:リンク=あり  a
+
+=== No.95-97 リンク一覧 (42 本) ===
+  外部リンク: 0 本
+  内訳: ページ内アンカー 37本 / mailto 2本 / tel 3本
+
+=== No.82 SNS リンク ===
+  0 本（SNS への導線なし）
+
+=== No.103 動きのある要素 (37 個) ===
+  color, background 0.18s, 0.18s  (6 要素)
+  background 0.18s  (1 要素)
+  color, background, border-color 0.18s, 0.18s, 0.18s  (4 要素)
+  transform 0.5s  (6 要素)
+  all 0.15s  (4 要素)
+  transform, translate, scale, rotate 0.2s  (4 要素)
+  all 0s  (4 要素)
+  color 0.18s  (8 要素)

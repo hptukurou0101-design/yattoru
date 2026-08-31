@@ -1,0 +1,39 @@
+{
+  "collectedAt": "2026-08-31T06:52:48.466Z",
+  "project": {
+    "name": "yattoru-sekisui-reform",
+    "version": "0.1.0",
+    "displayName": "やっとる建設｜積水ハウスリフォーム参考版"
+  },
+  "runtime": {
+    "node": "v24.19.0",
+    "platform": "win32-x64",
+    "npm": "11.17.0",
+    "git": "git version 2.53.0.windows.2"
+  },
+  "git": {
+    "head": "0d2b2e473a764ddd940c06f79e3056051cc96c96",
+    "headShort": "0d2b2e4",
+    "branch": "main",
+    "dirtyFiles": 7
+  },
+  "keyDeps": {
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "vinext": "0.0.50",
+    "vite": "8.0.13",
+    "tailwindcss": "4.2.1",
+    "wrangler": "4.92.0",
+    "typescript": "5.9.3"
+  },
+  "dist": {
+    "exists": true,
+    "mtime": "2026-08-31T06:49:54.893Z"
+  },
+  "nodeModules": true,
+  "hostingJson": {
+    "d1": null,
+    "project_id": "appgprj_6a95150b32888191985f3ed7880cc9ad",
+    "r2": null
+  }
+}

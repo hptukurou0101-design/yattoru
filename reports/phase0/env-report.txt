@@ -1,0 +1,9 @@
+[env] 収集時刻   : 2026-08-31T06:52:47.807Z
+[env] プロジェクト: yattoru-sekisui-reform@0.1.0
+[env] Node/OS    : v24.19.0 / win32-x64
+[env] npm / git  : 11.17.0 / git version 2.53.0.windows.2
+[env] git HEAD   : 0d2b2e4 (main)  未コミット変更 7 件
+[env] 主要依存   : next@16.2.6, react@19.2.6, vinext@0.0.50, vite@8.0.13, tailwindcss@4.2.1, wrangler@4.92.0, typescript@5.9.3
+[env] dist       : 2026-08-31T06:49:54.893Z
+[env] hosting    : {"d1":null,"project_id":"appgprj_6a95150b32888191985f3ed7880cc9ad","r2":null}
+exit=0

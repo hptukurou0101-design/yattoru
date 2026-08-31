@@ -1,0 +1,40 @@
+[render] URL: http://127.0.0.1:4173/
+  w= 360  scrollW=368  横スクロール=あり  はみ出し要素=35  console error=0  pageerror=0
+      ! div#company.company-card  left=18 right=368
+      ! p.section-index  left=18 right=368
+      ! h2  left=18 right=368
+      ! p  left=18 right=368
+      ! dl  left=18 right=368
+      ! div  left=18 right=368
+      ! dd  left=141 right=368
+      ! div  left=18 right=368
+      ! dd  left=141 right=368
+      ! div  left=18 right=368
+      ! dd  left=141 right=368
+      ! div  left=18 right=368
+      ! dd  left=141 right=368
+      ! div  left=18 right=368
+      ! dd  left=141 right=368
+      ! div#faq.faq-card  left=18 right=368
+      ! p.section-index  left=18 right=368
+      ! h2  left=18 right=368
+      ! div.faq-list  left=18 right=368
+      ! div.border-b.last:border-b-0  left=18 right=368
+      ! h3.flex  left=18 right=368
+      ! button#radix-_R_7kl6_.flex.flex-1  left=18 right=368
+      ! svg  left=348 right=364
+      ! div.border-b.last:border-b-0  left=18 right=368
+      ! h3.flex  left=18 right=368
+      ! button#radix-_R_bkl6_.flex.flex-1  left=18 right=368
+      ! svg  left=348 right=364
+      ! div.border-b.last:border-b-0  left=18 right=368
+      ! h3.flex  left=18 right=368
+      ! button#radix-_R_fkl6_.flex.flex-1  left=18 right=368
+  w= 390  scrollW=390  横スクロール=なし  はみ出し要素=0  console error=0  pageerror=0
+  w= 414  scrollW=414  横スクロール=なし  はみ出し要素=0  console error=0  pageerror=0
+  w= 768  scrollW=768  横スクロール=なし  はみ出し要素=0  console error=0  pageerror=0
+  w=1024  scrollW=1024  横スクロール=なし  はみ出し要素=0  console error=0  pageerror=0
+  w=1280  scrollW=1280  横スクロール=なし  はみ出し要素=0  console error=0  pageerror=0
+[render] h1 の数: 1
+[render] 判定: NG (1 幅で問題)
+exit=1

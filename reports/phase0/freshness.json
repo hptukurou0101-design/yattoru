@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-08-31T06:52:49.293Z",
+  "source": {
+    "mtime": 1788158545025.8396,
+    "file": "package.json"
+  },
+  "dist": {
+    "mtime": 1788158994909.079,
+    "file": "dist\\server\\__vite_rsc_assets_manifest.js"
+  },
+  "distIsFresh": true,
+  "url": "http://127.0.0.1:4173/",
+  "markers": [
+    "いいえ。まずは住まいのお悩みやご希望をお聞かせください。工事内容とお見積もりをご確認いただき、十分にご検討いただけます。",
+    "こちらの希望を急いで決めつけず、予算の中で優先した方がよいところを一緒に考えてくれました。",
+    "はい。ご予算と優先したいことを伺い、その範囲でできる方法を整理してご提案します。追加が必要な場合も、工事前に理由と金額をご説明します。",
+    "はい。施工後も気になる点や住まいの小さなお困りごとをご相談いただけます。長く安心して暮らせるようお付き合いを続けます。",
+    "キッチン・浴室・洗面・トイレを、毎日の使いやすさから見直します。ご希望と必要性を整理して形にします。"
+  ],
+  "markersFound": 5,
+  "missingMarkers": [],
+  "referencedAssets": [
+    "Icon-BIno660b.js",
+    "accordion-CypH6xSQ.js",
+    "framework-DjPHiq1u.js",
+    "image-CHhOb_lp.js",
+    "index-BCEBRbN2.css",
+    "index-PHsCLwxw.js",
+    "layout-segment-context-DCsdAQGo.js",
+    "rolldown-runtime-S-ySWqyJ.js"
+  ],
+  "missingAssets": [],
+  "ok": true,
+  "httpStatus": 200,
+  "htmlBytes": 46678
+}

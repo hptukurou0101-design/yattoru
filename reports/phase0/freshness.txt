@@ -1,0 +1,8 @@
+[freshness] ソース最終更新 : 2026-08-31T06:42:25.025Z  (package.json)
+[freshness] dist 最終生成   : 2026-08-31T06:49:54.909Z  (dist\server\__vite_rsc_assets_manifest.js)
+[freshness] dist は最新か   : YES
+[freshness] URL             : http://127.0.0.1:4173/  (HTTP 200)
+[freshness] マーカー一致    : 5 / 5
+[freshness] 参照アセット    : 8 件
+[freshness] 判定            : OK
+exit=0

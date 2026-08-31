@@ -342,7 +342,10 @@ summary:focus-visible {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(10, 20, 27, 0.62) 0%, rgba(10, 20, 27, 0.3) 42%, rgba(10, 20, 27, 0.02) 76%),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.12), transparent 42%);
+    /* 下端の覆い。CTA の添え書き（白文字）が明るい写真に重なると
+       コントラストが 3.85 まで落ちるため、下から 26% を濃くする。
+       切り替わる 3 枚のうち最も明るい 3 枚目でも 4.5:1 を満たす濃さにしている。 */
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.28) 14%, transparent 26%);
 }
 
 .hero-copy {
@@ -386,12 +389,28 @@ summary:focus-visible {
   transition: color 180ms ease, background 180ms ease, border-color 180ms ease;
 }
 
-.hero-button {
+/* ボタンと添え書きをひとまとまりにして、ヒーロー下部の中央に置く */
+.hero-cta {
   position: absolute;
   left: 50%;
-  bottom: 28px;
+  bottom: 24px;
   width: min(456px, calc(100% - 48px));
   transform: translateX(-50%);
+}
+
+.hero-button {
+  width: 100%;
+}
+
+/* 添え書き。ボタンの中には入れず、すぐ下に置く */
+.hero-cta-note {
+  margin: 9px 0 0;
+  color: var(--paper);
+  font-size: var(--fs-caption);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-button svg {
@@ -1077,6 +1096,13 @@ summary:focus-visible {
   z-index: 70;
   left: 50%;
   bottom: 18px;
+  /* 「はじめてのリフォーム」の見出しまで進んでから現れる。
+     表示・非表示は JavaScript が data-visible を付け外しして切り替える。
+     JavaScript が動かない環境では常に表示されたままにするため、
+     既定を表示状態にして、隠すときだけ属性で上書きする。 */
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 260ms ease, transform 260ms ease;
   display: grid;
   grid-template-columns: 280px 235px 165px;
   align-items: center;
@@ -1087,6 +1113,14 @@ summary:focus-visible {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
   color: var(--paper);
   transform: translateX(-50%);
+}
+
+/* 追従CTAを隠している状態。下へ少し逃がしてから消す。 */
+.fixed-consult[data-visible="false"] {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(12px);
+  pointer-events: none;
 }
 
 .fixed-consult > p {
@@ -2273,8 +2307,11 @@ summary:focus-visible {
     line-height: var(--lh-base);
   }
 
+  .hero-cta {
+    bottom: 22px;
+  }
+
   .hero-button {
-    bottom: 26px;
     min-height: 58px;
     font-size: var(--fs-ui-sm);
   }

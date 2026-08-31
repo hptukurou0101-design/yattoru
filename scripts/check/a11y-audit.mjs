@@ -196,7 +196,9 @@ const data = await page.evaluate(() => {
 
   const iconOnlyLinks = [];
   for (const el of document.querySelectorAll("a[href], button")) {
-    const text = (el.innerText ?? "").replace(/\s+/g, "").trim();
+    // innerText は visibility:hidden の要素で空になるため textContent を使う。
+    // （読み進めてから現れる追従CTAが、文字の無いアイコンリンクと誤判定されていた）
+    const text = (el.textContent ?? "").replace(/\s+/g, "").trim();
     const hasSvg = el.querySelector("svg, img");
     if (text.length === 0 && hasSvg) {
       iconOnlyLinks.push({

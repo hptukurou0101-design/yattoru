@@ -113,10 +113,13 @@ export default function Home() {
             <p>住まいの安心を、まじめに、丁寧に。</p>
             <h1 id="hero-title">ご予算も、仕上がりも。<br />納得できるリフォームを。</h1>
           </div>
-          <a className="hero-button" href="/works">
-            リフォームの施工事例を見る
-            <ArrowRight aria-hidden="true" />
-          </a>
+          <div className="hero-cta">
+            <a className="hero-button" href="/contact">
+              まずはご相談
+              <ArrowRight aria-hidden="true" />
+            </a>
+            <p className="hero-cta-note">ご相談・お見積もりは無料です</p>
+          </div>
           <div className="scroll-guide" aria-hidden="true">
             <span>scroll</span>
             <i />

@@ -147,6 +147,50 @@ function MobileMenuBehavior() {
     });
   });
 })();
+
+/* 追従CTAの表示制御。
+   ページ上部では出さず、読み進めてから現れるようにする。
+   トップページは「はじめてのリフォーム」の見出し、
+   下層ページはヒーローを通過した時点を目印にする。
+   既定は表示状態なので、JavaScript が動かない環境では常に出たままになる。 */
+(function () {
+  var cta = document.querySelector('.fixed-consult');
+  if (!cta) return;
+
+  var heading = document.querySelector('#first h2');
+  var hero =
+    document.querySelector('.page-hero') ||
+    document.querySelector('.hero') ||
+    document.querySelector('.text-page-header');
+  var trigger = heading || hero;
+  if (!trigger) return;
+
+  cta.setAttribute('data-visible', 'false');
+
+  var ticking = false;
+
+  function update() {
+    ticking = false;
+    var rect = trigger.getBoundingClientRect();
+    var reached = heading
+      // トップページ: 「はじめてのリフォーム」の見出しが画面に入ったら
+      ? rect.top < window.innerHeight
+      // 下層ページ: 目印になる見出しが無いので、ヒーローを通過したら
+      : rect.bottom < 0;
+    cta.setAttribute('data-visible', reached ? 'true' : 'false');
+  }
+
+  function onScroll() {
+    // 1 フレームに 1 回だけ計算する
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(update);
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  update();
+})();
 `,
       }}
     />

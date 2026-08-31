@@ -1,6 +1,6 @@
 {
   "base": "http://127.0.0.1:4173",
-  "checkedAt": "2026-08-31T11:21:35.553Z",
+  "checkedAt": "2026-08-31T11:52:47.257Z",
   "rows": [
     {
       "route": "/",
@@ -8,7 +8,14 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 1,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 39,
+      "tabFocus": 39
     },
     {
       "route": "/company",
@@ -16,7 +23,14 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 25,
+      "tabFocus": 25
     },
     {
       "route": "/contact",
@@ -24,7 +38,14 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 32,
+      "tabFocus": 32
     },
     {
       "route": "/faq",
@@ -32,15 +53,29 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 34,
+      "tabFocus": 34
     },
     {
       "route": "/features",
       "widthsNG": 0,
       "overflow": 0,
-      "consoleErr": 0,
-      "pageErr": 0,
-      "h1": 1
+      "consoleErr": 1,
+      "pageErr": 1,
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 24,
+      "tabFocus": 24
     },
     {
       "route": "/first-time",
@@ -48,7 +83,14 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 24,
+      "tabFocus": 24
     },
     {
       "route": "/news",
@@ -56,7 +98,14 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 24,
+      "tabFocus": 24
     },
     {
       "route": "/privacy",
@@ -64,7 +113,14 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 22,
+      "tabFocus": 22
     },
     {
       "route": "/reform",
@@ -72,7 +128,14 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 30,
+      "tabFocus": 30
     },
     {
       "route": "/reform/exterior",
@@ -80,7 +143,14 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 25,
+      "tabFocus": 25
     },
     {
       "route": "/reform/roof",
@@ -88,7 +158,14 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 25,
+      "tabFocus": 25
     },
     {
       "route": "/reform/water",
@@ -96,7 +173,14 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 25,
+      "tabFocus": 25
     },
     {
       "route": "/terms",
@@ -104,15 +188,29 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 22,
+      "tabFocus": 22
     },
     {
       "route": "/voices",
       "widthsNG": 0,
       "overflow": 0,
-      "consoleErr": 0,
+      "consoleErr": 3,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 24,
+      "tabFocus": 24
     },
     {
       "route": "/works",
@@ -120,7 +218,14 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 30,
+      "tabFocus": 30
     },
     {
       "route": "/works/bright-ldk",
@@ -128,7 +233,14 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 25,
+      "tabFocus": 25
     },
     {
       "route": "/works/exterior-roof",
@@ -136,7 +248,14 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 25,
+      "tabFocus": 25
     },
     {
       "route": "/works/kitchen-flow",
@@ -144,7 +263,14 @@
       "overflow": 0,
       "consoleErr": 0,
       "pageErr": 0,
-      "h1": 1
+      "h1": 1,
+      "contrastNG": 0,
+      "tapNG": 0,
+      "altNG": 0,
+      "ariaNG": 0,
+      "cls": 0,
+      "tabStops": 25,
+      "tabFocus": 25
     }
   ]
 }

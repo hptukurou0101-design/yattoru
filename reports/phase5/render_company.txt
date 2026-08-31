@@ -1,0 +1,9 @@
+[render] URL: http://127.0.0.1:4173/company
+  w= 360  scrollW=360  横スクロール=なし  はみ出し要素=0  console error=0  pageerror=0
+  w= 390  scrollW=390  横スクロール=なし  はみ出し要素=0  console error=0  pageerror=0
+  w= 414  scrollW=414  横スクロール=なし  はみ出し要素=0  console error=0  pageerror=0
+  w= 768  scrollW=768  横スクロール=なし  はみ出し要素=0  console error=0  pageerror=0
+  w=1024  scrollW=1024  横スクロール=なし  はみ出し要素=0  console error=0  pageerror=0
+  w=1280  scrollW=1280  横スクロール=なし  はみ出し要素=0  console error=0  pageerror=0
+[render] h1 の数: 1
+[render] 判定: OK

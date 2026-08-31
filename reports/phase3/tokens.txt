@@ -1,0 +1,4 @@
+[tokenize] トークン定義ブロック外の色リテラル残存: 0 件
+[tokenize-type] 定義箇所以外の font-family : 0 件 
+[tokenize-type] トークン化されていない font-size : 0 件 
+[tokenize-type] トークン化されていない line-height: 0 件 

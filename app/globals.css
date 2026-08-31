@@ -39,9 +39,11 @@
   --ink-6: #666b6f;           /* タグ文字 */
   --ink-7: #6a6f73;           /* 受付時間 */
   --ink-8: #70757a;           /* 定義リストの見出し */
-  --ink-9: #71767a;           /* コピーライト */
-  --ink-10: #767a7e;          /* ロゴ英字 */
-  --ink-11: #7a7f83;          /* 日付 */
+  /* --ink-9 / 10 / 11 は小さい文字に使うため、コントラスト 4.5:1 を満たす値に調整済み
+     （調整前 #71767a / #767a7e / #7a7f83 はいずれも 4.05〜4.33 で基準未満だった） */
+  --ink-9: #686d70;           /* コピーライト・フッターリンク 10px（対 #eef1f3 で 4.62:1） */
+  --ink-10: #73777b;          /* ロゴ英字 8px（対 白 で 4.50:1） */
+  --ink-11: #72777b;          /* 日付 12px（対 白 で 4.52:1） */
 
   /* ---- 罫線 ---- */
   --line: #d8dadd;            /* 主要な区切り線 */
@@ -175,6 +177,8 @@ summary:focus-visible {
   align-items: center;
   flex: 0 0 auto;
   gap: 12px;
+  /* タップ領域を 44px 以上にする（見た目の位置は align-items: center で変わらない） */
+  min-height: 44px;
   min-width: 234px;
 }
 
@@ -238,6 +242,8 @@ summary:focus-visible {
 .desktop-nav a {
   display: grid;
   place-items: center;
+  /* ヘッダーの高さいっぱいをタップ領域にする（44px 以上） */
+  min-height: 44px;
   padding: 0 clamp(10px, 1.25vw, 22px);
   font-size: var(--fs-caption);
   font-weight: 700;
@@ -363,6 +369,10 @@ summary:focus-visible {
   flex-direction: column;
   align-items: center;
   color: var(--paper);
+}
+
+.scroll-guide {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55);
 }
 
 .scroll-guide span {
@@ -942,6 +952,12 @@ summary:focus-visible {
   font-size: var(--fs-caption);
 }
 
+.footer-contact a[href^="tel:"] {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
 .footer-contact svg {
   width: 17px;
   flex: 0 0 auto;
@@ -957,6 +973,9 @@ summary:focus-visible {
 }
 
 .footer-main nav a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
   font-size: var(--fs-caption-sm);
   transition: color 180ms ease;
 }
@@ -983,6 +1002,15 @@ summary:focus-visible {
 .footer-bottom small {
   color: var(--ink-9);
   font-size: var(--fs-micro);
+}
+
+.footer-bottom a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* 「利用規約」は文字幅 40px しかないため、最小のタップ領域 44×44px を確保する */
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .fixed-consult {

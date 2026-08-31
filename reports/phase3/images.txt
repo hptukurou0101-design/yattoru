@@ -1,0 +1,6 @@
+ファイル                    寸法          PNG       WebP      AVIF      WebP 削減率
+hero-living.png         1672x941    1994KB    91KB      52KB      95%
+service-exterior.png    1672x941    2484KB    228KB     148KB     91%
+service-kitchen.png     1672x941    1983KB    100KB     56KB      95%
+------------------------------------------------------------------------------
+合計                                  6461KB    419KB     257KB     94%

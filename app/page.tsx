@@ -20,21 +20,21 @@ const services = [
     title: "外壁塗装",
     description:
       "住まいの印象を整えるだけでなく、\n雨や紫外線から建物を守ります。\n状態を確かめ、必要な工事をご説明します。",
-    image: "/service-exterior.png",
+    image: "/service-exterior.webp",
     alt: "外壁塗装後の戸建て住宅",
   },
   {
     title: "屋根塗装",
     description:
       "見えにくい屋根の状態も丁寧に確認します。\n劣化の程度とご予算を踏まえ、\n無理のない工事方法をご提案します。",
-    image: "/service-exterior.png",
+    image: "/service-exterior.webp",
     alt: "塗装後の屋根と外壁",
   },
   {
     title: "水まわりリフォーム",
     description:
       "キッチン・浴室・洗面・トイレを、\n毎日の使いやすさから見直します。\nご希望と必要性を整理して形にします。",
-    image: "/service-kitchen.png",
+    image: "/service-kitchen.webp",
     alt: "使いやすくリフォームしたキッチン",
   },
 ];
@@ -43,19 +43,19 @@ const works = [
   {
     title: "明るさと動線を見直した、家族が集まる⁠LDK",
     meta: ["戸建て", "LDK", "水まわり"],
-    image: "/hero-living.png",
+    image: "/hero-living.webp",
     alt: "明るくリフォームしたリビングダイニング",
   },
   {
     title: "外壁と屋根を整え、これからも安心して暮らせる住まいへ",
     meta: ["戸建て", "外壁", "屋根"],
-    image: "/service-exterior.png",
+    image: "/service-exterior.webp",
     alt: "外壁と屋根をリフォームした住宅",
   },
   {
     title: "毎日の家事がしやすい、すっきりとしたキッチン",
     meta: ["戸建て", "キッチン", "収納"],
-    image: "/service-kitchen.png",
+    image: "/service-kitchen.webp",
     alt: "収納と動線を整えたキッチン",
   },
 ];
@@ -184,7 +184,7 @@ export default function Home() {
         <section className="hero" aria-labelledby="hero-title">
           <Image
             className="hero-image"
-            src="/hero-living.png"
+            src="/hero-living.webp"
             alt="丁寧にリフォームされた明るい住まい"
             fill
             priority
@@ -212,7 +212,7 @@ export default function Home() {
 
         <section id="strength" className="feature-panel">
           <Image
-            src="/service-exterior.png"
+            src="/service-exterior.webp"
             alt="丁寧に外壁と屋根を整えた住宅"
             fill
             sizes="(max-width: 768px) 100vw, 86vw"
@@ -232,7 +232,7 @@ export default function Home() {
         <section id="first" className="first-guide section-wrap">
           <div className="first-visual">
             <Image
-              src="/hero-living.png"
+              src="/hero-living.webp"
               alt="暮らしに合わせて整えた住まい"
               fill
               sizes="(max-width: 800px) 100vw, 48vw"
@@ -293,7 +293,7 @@ export default function Home() {
           <div className="works-grid">
             {works.map((work) => (
               <article className="work-card" key={work.title}>
-                <a href="#contact" className="work-image">
+                <a href="#contact" className="work-image" aria-label={`施工事例「${work.title}」の詳細`}>
                   <Image src={work.image} alt={work.alt} fill sizes="(max-width: 760px) 100vw, 33vw" />
                 </a>
                 <h3>{work.title}</h3>
@@ -332,7 +332,7 @@ export default function Home() {
 
         <section id="contact" className="consultation section-wrap">
           <div className="consult-image">
-            <Image src="/service-kitchen.png" alt="リフォーム後の明るいキッチン" fill sizes="(max-width: 800px) 100vw, 46vw" />
+            <Image src="/service-kitchen.webp" alt="リフォーム後の明るいキッチン" fill sizes="(max-width: 800px) 100vw, 46vw" />
           </div>
           <div className="consult-copy">
             <h2>リフォームの<br />ご相談・お問い合わせ</h2>

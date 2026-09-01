@@ -43,20 +43,24 @@ const works = [
   {
     title: "明るさと動線を見直した、家族が集まる⁠LDK",
     meta: ["戸建て", "LDK", "水まわり"],
-    image: "/hero-living.webp",
-    alt: "明るくリフォームしたリビングダイニング",
+    image: "/hero-01-ldk.webp",
+    alt: "窓から光が入る明るいリビングダイニング",
+    // 中央だと建具側の暗い部分を拾うため、窓のある右側を見せる（明るさ 122→150）
+    position: "100% center",
   },
   {
     title: "外壁と屋根を整え、これからも安心して暮らせる住まいへ",
     meta: ["戸建て", "外壁", "屋根"],
     image: "/service-exterior.webp",
     alt: "外壁と屋根をリフォームした住宅",
+    position: "center",
   },
   {
     title: "毎日の家事がしやすい、すっきりとしたキッチン",
     meta: ["戸建て", "キッチン", "収納"],
-    image: "/hero-01-ldk.webp",
-    alt: "対面キッチンのあるリビングダイニング",
+    image: "/service-kitchen.webp",
+    alt: "収納と動線を整えた対面キッチン",
+    position: "center",
   },
 ];
 
@@ -221,7 +225,13 @@ export default function Home() {
                   className="work-image"
                   aria-label={`施工事例「${work.title}」の詳細`}
                 >
-                  <Image src={work.image} alt={work.alt} fill sizes="(max-width: 760px) 100vw, 33vw" />
+                  <Image
+                    src={work.image}
+                    alt={work.alt}
+                    fill
+                    sizes="(max-width: 760px) 100vw, 33vw"
+                    style={{ objectPosition: work.position }}
+                  />
                 </a>
                 <h3>{work.title}</h3>
                 <ul aria-label="施工事例の分類">

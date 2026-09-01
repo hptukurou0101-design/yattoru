@@ -26,8 +26,8 @@ export const workExamples = [
   {
     slug: "bright-ldk",
     title: "明るさと動線を見直した、家族が集まる⁠LDK",
-    image: "/hero-living.webp",
-    alt: "明るくリフォームしたリビングダイニング",
+    image: "/hero-01-ldk.webp",
+    alt: "窓から光が入る明るいリビングダイニング",
     tags: ["戸建て", "LDK", "水まわり"],
     request: "家族が自然と集まり、キッチンからも室内を見渡せる空間にしたい。",
     proposal: "壁で分かれていた空間を整理し、光が奥まで届くように⁠LDKの配置と家事動線を見直しました。",
@@ -44,8 +44,8 @@ export const workExamples = [
   {
     slug: "kitchen-flow",
     title: "毎日の家事がしやすい、すっきりとしたキッチン",
-    image: "/hero-01-ldk.webp",
-    alt: "対面キッチンのあるリビングダイニング",
+    image: "/service-kitchen.webp",
+    alt: "収納と動線を整えた対面キッチン",
     tags: ["戸建て", "キッチン", "収納"],
     request: "物が出たままになりやすいキッチンを、片付けやすく使いやすい空間にしたい。",
     proposal: "よく使う物の置き場所と調理中の動きを確認し、収納量と作業スペースのバランスを整えました。",

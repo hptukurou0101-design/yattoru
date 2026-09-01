@@ -21,7 +21,8 @@ const services = [
     description:
       "住まいの印象を整えるだけでなく、\n雨や紫外線から建物を守ります。\n状態を確かめ、必要な工事をご説明します。",
     image: "/service-exterior.webp",
-    alt: "外壁塗装後の戸建て住宅",
+    alt: "ローラーで外壁を塗装する職人",
+    position: "center 30%",
   },
   {
     title: "屋根塗装",
@@ -29,13 +30,16 @@ const services = [
       "見えにくい屋根の状態も丁寧に確認します。\n劣化の程度とご予算を踏まえ、\n無理のない工事方法をご提案します。",
     image: "/service-roof.webp",
     alt: "屋根の上でローラーを使って塗装する職人",
+    position: "70% 18%",
   },
   {
     title: "水まわりリフォーム",
     description:
       "キッチン・浴室・洗面・トイレを、\n毎日の使いやすさから見直します。\nご希望と必要性を整理して形にします。",
     image: "/service-water.webp",
-    alt: "入れ替えた洗面台と浴室",
+    alt: "キッチンの給排水を交換する職人",
+    // カードは最大 2.94:1 まで横に伸びる。中央だと職人の頭が上で切れるため上寄せにする
+    position: "center 28%",
   },
 ];
 
@@ -51,7 +55,7 @@ const works = [
   {
     title: "外壁と屋根を整え、これからも安心して暮らせる住まいへ",
     meta: ["戸建て", "外壁", "屋根"],
-    image: "/service-exterior.webp",
+    image: "/house-exterior.webp",
     alt: "外壁と屋根をリフォームした住宅",
     position: "center",
   },
@@ -142,7 +146,7 @@ export default function Home() {
 
         <section id="strength" className="feature-panel">
           <Image
-            src="/service-exterior.webp"
+            src="/house-exterior.webp"
             alt="丁寧に外壁と屋根を整えた住宅"
             fill
             sizes="(max-width: 768px) 100vw, 86vw"
@@ -199,7 +203,7 @@ export default function Home() {
                     alt={service.alt}
                     fill
                     sizes="(max-width: 800px) 100vw, 33vw"
-                    style={{ objectPosition: index === 1 ? "70% 18%" : "center" }}
+                    style={{ objectPosition: service.position }}
                   />
                   <span>{service.title}</span>
                   <SectionArrow />
@@ -268,7 +272,7 @@ export default function Home() {
 
         <section id="contact" className="consultation section-wrap">
           <div className="consult-image">
-            <Image src="/service-water.webp" alt="入れ替えた洗面台と浴室" fill sizes="(max-width: 800px) 100vw, 46vw" />
+            <Image src="/service-washroom.webp" alt="入れ替えた洗面台と浴室" fill sizes="(max-width: 800px) 100vw, 46vw" />
           </div>
           <div className="consult-copy">
             <h2>リフォームの<br />ご相談・お問い合わせ</h2>

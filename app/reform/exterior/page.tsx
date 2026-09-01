@@ -10,9 +10,10 @@ export default function ExteriorPage() {
   return <ReformDetail data={{
     title: "外壁塗装",
     lead: "見た目を整えるだけでなく、雨や紫外線から住まいを守ります。",
-    image: "/service-exterior.webp",
-    alt: "外壁塗装後の戸建て住宅",
-    position: "center 58%",
+    image: "/service-exterior-hero.webp",
+    alt: "ローラーで外壁を塗装する職人",
+    // ヒーローは 3.7:1 まで横に伸びる。ローラーを壁に当てている手元が中心に来る位置
+    position: "center 45%",
     introTitle: <>今の状態を確かめて、<br />必要な補修と塗装を考えます。</>,
     intro: "外壁の色あせやひび割れは、住まいからのサインです。劣化の程度や下地の状態を確認し、塗装だけでよい箇所と補修が必要な箇所をご説明します。",
     signsTitle: "このような変化が気になったらご相談ください",

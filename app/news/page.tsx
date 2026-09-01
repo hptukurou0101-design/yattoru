@@ -16,7 +16,7 @@ export default function NewsPage() {
   return (
     <SiteFrame>
       <main>
-        <PageHero title="お知らせ" lead="やっとる建設からのお知らせと、住まいに役立つ情報を掲載します。" image="/service-exterior.webp" alt="リフォームした戸建て住宅" position="center 58%" />
+        <PageHero title="お知らせ" lead="やっとる建設からのお知らせと、住まいに役立つ情報を掲載します。" image="/house-exterior.webp" alt="リフォームした戸建て住宅" position="center 58%" />
         <Breadcrumb items={[["お知らせ"]]} />
         <PageLead title={<>住まいを考えるときの、<br />判断材料になる情報を。</>}><p>会社からのお知らせに加え、外壁・屋根のメンテナンスや水まわりリフォームについて分かりやすくお伝えします。</p></PageLead>
         <section className="sub-section section-wrap news-archive">{news.map(([date, category, title, text]) => <article key={date}><header><time>{date}</time><span>{category}</span></header><h2>{title}</h2><p>{text}</p></article>)}</section>

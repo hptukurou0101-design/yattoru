@@ -3,7 +3,7 @@ export const reformServices = [
     title: "外壁塗装",
     href: "/reform/exterior",
     image: "/service-exterior.webp",
-    alt: "外壁塗装後の戸建て住宅",
+    alt: "ローラーで外壁を塗装する職人",
     text: "色あせやひび割れを整え、雨や紫外線から住まいを守ります。建物の状態を確認し、必要な工事をご説明します。",
   },
   {
@@ -17,7 +17,7 @@ export const reformServices = [
     title: "水まわりリフォーム",
     href: "/reform/water",
     image: "/service-water.webp",
-    alt: "入れ替えた洗面台と浴室",
+    alt: "キッチンの給排水を交換する職人",
     text: "キッチン・浴室・洗面・トイレを、毎日の動きや使い方に合わせて整えます。",
   },
 ] as const;
@@ -35,7 +35,7 @@ export const workExamples = [
   {
     slug: "exterior-roof",
     title: "外壁と屋根を整え、これからも安心して暮らせる住まいへ",
-    image: "/service-exterior.webp",
+    image: "/house-exterior.webp",
     alt: "外壁と屋根をリフォームした住宅",
     tags: ["戸建て", "外壁", "屋根"],
     request: "色あせと細かなひび割れが気になり、雨漏りにつながらないか確認したい。",

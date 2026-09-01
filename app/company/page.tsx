@@ -12,7 +12,7 @@ export default function CompanyPage() {
   return (
     <SiteFrame>
       <main>
-        <PageHero title="会社情報" lead="福岡で、住まいの安心を支える地域のリフォーム会社です。" image="/service-exterior-old.webp" alt="地域の住まいを支えるやっとる建設" position="center 58%" />
+        <PageHero title="会社情報" lead="福岡で、住まいの安心を支える地域のリフォーム会社です。" image="/house-exterior-2.webp" alt="地域の住まいを支えるやっとる建設" position="center 58%" />
         <Breadcrumb items={[["会社情報"]]} />
         <PageLead title={<>近所の頼れる職人のような、<br />話しやすい会社でありたい。</>}><p>分からないことを分からないままにせず、納得して工事を任せていただけるよう、丁寧な説明を心がけています。</p></PageLead>
         <section className="image-copy-split section-wrap company-message">

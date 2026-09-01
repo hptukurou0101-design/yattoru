@@ -72,8 +72,8 @@
 === No.119 画像の alt（4 枚 / alt 属性なし 0 枚）===
   image          alt="入れ替えた浴室と洗面室"
   image          alt="外壁塗装後の戸建て住宅"
-  image          alt="塗装後の屋根と外壁"
-  image          alt="使いやすくリフォームしたキッチン"
+  image          alt="屋根の上でローラーを使って塗装する職人"
+  image          alt="入れ替えた洗面台と浴室"
 
 === No.120 アイコンだけのリンク・ボタン（3 箇所 / aria-label なし 0 箇所）===
   OK  a.reform-menu-image      aria-label="外壁塗装の詳細"  href=/reform/exterior
@@ -97,9 +97,9 @@
 
 === No.124 解像度（元画像幅 ÷ 表示幅）===
   NG   1.87倍  image          元 2399px / 表示 1280px
-  OK    4.8倍  image          元 1672px / 表示 348px
-  OK    4.8倍  image          元 1672px / 表示 348px
-  OK    4.8倍  image          元 1672px / 表示 348px
+  OK   4.41倍  image          元 1536px / 表示 348px
+  OK   4.41倍  image          元 1536px / 表示 348px
+  OK   4.41倍  image          元 1536px / 表示 348px
 
 === No.127 CLS（読み込み時のレイアウト移動）===
   CLS = 0  （Google の good 基準は 0.1 以下）

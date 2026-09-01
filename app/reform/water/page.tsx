@@ -10,7 +10,7 @@ export default function WaterPage() {
   return <ReformDetail data={{
     title: "水まわりリフォーム",
     lead: "設備を替えるだけでなく、毎日の使いやすさから整えます。",
-    image: "/service-kitchen.webp",
+    image: "/service-water.webp",
     alt: "使いやすくリフォームしたキッチン",
     position: "center",
     introTitle: <>キッチン・浴室・洗面・トイレを、<br />暮らしに合わせて使いやすく。</>,

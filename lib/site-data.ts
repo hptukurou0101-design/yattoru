@@ -9,15 +9,15 @@ export const reformServices = [
   {
     title: "屋根塗装",
     href: "/reform/roof",
-    image: "/service-exterior.webp",
-    alt: "塗装後の屋根と外壁",
+    image: "/service-roof.webp",
+    alt: "屋根の上でローラーを使って塗装する職人",
     text: "普段は見えにくい屋根を確認し、劣化の状態とご予算に合わせて工事方法をご提案します。",
   },
   {
     title: "水まわりリフォーム",
     href: "/reform/water",
-    image: "/service-kitchen.webp",
-    alt: "使いやすくリフォームしたキッチン",
+    image: "/service-water.webp",
+    alt: "入れ替えた洗面台と浴室",
     text: "キッチン・浴室・洗面・トイレを、毎日の動きや使い方に合わせて整えます。",
   },
 ] as const;
@@ -44,8 +44,8 @@ export const workExamples = [
   {
     slug: "kitchen-flow",
     title: "毎日の家事がしやすい、すっきりとしたキッチン",
-    image: "/service-kitchen.webp",
-    alt: "収納と動線を整えたキッチン",
+    image: "/hero-01-ldk.webp",
+    alt: "対面キッチンのあるリビングダイニング",
     tags: ["戸建て", "キッチン", "収納"],
     request: "物が出たままになりやすいキッチンを、片付けやすく使いやすい空間にしたい。",
     proposal: "よく使う物の置き場所と調理中の動きを確認し、収納量と作業スペースのバランスを整えました。",

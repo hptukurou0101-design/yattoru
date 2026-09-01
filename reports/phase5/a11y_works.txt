@@ -73,7 +73,7 @@
   image          alt="明るくリフォームしたリビングダイニング"
   image          alt="明るくリフォームしたリビングダイニング"
   image          alt="外壁と屋根をリフォームした住宅"
-  image          alt="収納と動線を整えたキッチン"
+  image          alt="対面キッチンのあるリビングダイニング"
 
 === No.120 アイコンだけのリンク・ボタン（3 箇所 / aria-label なし 0 箇所）===
   OK  a.works-list-image       aria-label="施工事例「明るさと動線を見直した、家族が集まる⁠LDK」の詳細"  href=/works/bright-ldk
@@ -98,8 +98,8 @@
 === No.124 解像度（元画像幅 ÷ 表示幅）===
   NG   1.31倍  image          元 1672px / 表示 1280px
   OK    3.1倍  image          元 1672px / 表示 540px
-  OK    3.1倍  image          元 1672px / 表示 540px
-  OK    3.1倍  image          元 1672px / 表示 540px
+  OK   2.84倍  image          元 1536px / 表示 540px
+  OK   4.44倍  image          元 2400px / 表示 540px
 
 === No.127 CLS（読み込み時のレイアウト移動）===
   CLS = 0  （Google の good 基準は 0.1 以下）

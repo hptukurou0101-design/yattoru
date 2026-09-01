@@ -13,7 +13,7 @@ export default function FaqPage() {
   return (
     <SiteFrame>
       <main>
-        <PageHero title="よくある質問" lead="ご相談前に多くいただく質問をまとめています。" image="/service-kitchen.webp" alt="使いやすく整えた明るいキッチン" />
+        <PageHero title="よくある質問" lead="ご相談前に多くいただく質問をまとめています。" image="/service-water.webp" alt="入れ替えた洗面台と浴室" />
         <Breadcrumb items={[["よくある質問"]]} />
         <PageLead title={<>費用や工事について、<br />気になることからご確認ください。</>}><p>ここにない質問や、住まいの状態に合わせた確認が必要な⁠ことは、お問い合わせページからご相談いただけます。</p></PageLead>
         <section className="sub-section narrow-section faq-groups">

@@ -10,7 +10,7 @@ export default function RoofPage() {
   return <ReformDetail data={{
     title: "屋根塗装",
     lead: "普段見えない場所だからこそ、状態を確認してから工事を考えます。",
-    image: "/service-exterior.webp",
+    image: "/service-roof.webp",
     alt: "塗装後の屋根と外壁",
     position: "70% 18%",
     introTitle: <>屋根材の状態を見て、<br />塗装で守れるかを判断します。</>,

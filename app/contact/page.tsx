@@ -12,7 +12,7 @@ export default function ContactPage() {
   return (
     <SiteFrame>
       <main>
-        <PageHero title="ご相談・お問い合わせ" lead="工事内容や費用が決まっていない段階でもご相談いただけます。" image="/service-kitchen.webp" alt="リフォーム後の明るいキッチン" />
+        <PageHero title="ご相談・お問い合わせ" lead="工事内容や費用が決まっていない段階でもご相談いただけます。" image="/service-water.webp" alt="入れ替えた洗面台と浴室" />
         <Breadcrumb items={[["ご相談・お問い合わせ"]]} />
         <PageLead title={<>住まいで気になることを、<br />まずはお聞かせください。</>}><p>必要なことはこちらから確認します。まだ希望がまとまっていない場合も、現在のお悩みから一緒に整理します。</p></PageLead>
         <section className="contact-choice section-wrap">

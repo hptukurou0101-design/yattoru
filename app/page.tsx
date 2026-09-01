@@ -27,15 +27,15 @@ const services = [
     title: "屋根塗装",
     description:
       "見えにくい屋根の状態も丁寧に確認します。\n劣化の程度とご予算を踏まえ、\n無理のない工事方法をご提案します。",
-    image: "/service-exterior.webp",
-    alt: "塗装後の屋根と外壁",
+    image: "/service-roof.webp",
+    alt: "屋根の上でローラーを使って塗装する職人",
   },
   {
     title: "水まわりリフォーム",
     description:
       "キッチン・浴室・洗面・トイレを、\n毎日の使いやすさから見直します。\nご希望と必要性を整理して形にします。",
-    image: "/service-kitchen.webp",
-    alt: "使いやすくリフォームしたキッチン",
+    image: "/service-water.webp",
+    alt: "入れ替えた洗面台と浴室",
   },
 ];
 
@@ -55,8 +55,8 @@ const works = [
   {
     title: "毎日の家事がしやすい、すっきりとしたキッチン",
     meta: ["戸建て", "キッチン", "収納"],
-    image: "/service-kitchen.webp",
-    alt: "収納と動線を整えたキッチン",
+    image: "/hero-01-ldk.webp",
+    alt: "対面キッチンのあるリビングダイニング",
   },
 ];
 
@@ -258,7 +258,7 @@ export default function Home() {
 
         <section id="contact" className="consultation section-wrap">
           <div className="consult-image">
-            <Image src="/service-kitchen.webp" alt="リフォーム後の明るいキッチン" fill sizes="(max-width: 800px) 100vw, 46vw" />
+            <Image src="/service-water.webp" alt="入れ替えた洗面台と浴室" fill sizes="(max-width: 800px) 100vw, 46vw" />
           </div>
           <div className="consult-copy">
             <h2>リフォームの<br />ご相談・お問い合わせ</h2>

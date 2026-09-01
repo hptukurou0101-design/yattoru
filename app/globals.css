@@ -359,7 +359,11 @@ summary:focus-visible {
   /* 位置は親（.hero）の grid が決める。重なり順のためだけに relative にする */
   position: relative;
   z-index: 1;
-  padding-left: 7.2%;
+  /* 左端を本文コンテンツに合わせる。
+     割合や max() の計算式では幅によってずれが出たため、
+     .section-wrap と同じ幅指定・同じ中央寄せをそのまま使う。 */
+  width: min(1120px, calc(100% - 64px));
+  margin-inline: auto;
   color: var(--paper);
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.42);
 }
@@ -1195,14 +1199,18 @@ summary:focus-visible {
 
 .page-hero-copy {
   position: absolute;
-  left: max(6vw, calc((100% - 1120px) / 2));
+  /* 左端を本文コンテナ（.section-wrap = min(1120px, 100% - 64px) の中央寄せ）に合わせる。
+     max(6vw, …) の計算式では幅によってずれが出ていた（1200px で 32px、768px で 14px）。
+     left と right を同じ式にして中央寄せを再現する。 */
+  left: calc((100% - min(1120px, 100% - 64px)) / 2);
   /* 文字のまとまりを下端から一定の距離に置く。
      以前は見出しが 1 行のページと 2 行のページが混在していたため上端を固定していたが、
      ページの呼び名を統一して見出しがすべて 1 行になったので、下端揃えに戻せる。
      （360〜1440px の全幅で h1 が 1 行であることを実測で確認済み）
      上端固定のままだと文字群が画像の中ほどに浮いて見えるため。 */
   bottom: 64px;
-  width: min(680px, calc(100% - 48px));
+  /* 文字の折り返し幅は本文コンテナの中で 680px までに抑える */
+  width: min(680px, min(1120px, calc(100% - 64px)));
   color: var(--paper);
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.36);
 }
@@ -2175,10 +2183,6 @@ summary:focus-visible {
     font-weight: 700;
   }
 
-  .hero-copy {
-    padding-left: 6%;
-  }
-
   .first-guide,
   .consultation {
     grid-template-columns: minmax(0, 1fr);
@@ -2299,9 +2303,9 @@ summary:focus-visible {
       linear-gradient(0deg, rgba(0, 0, 0, 0.25), transparent 48%);
   }
 
+  /* この幅では .section-wrap が calc(100% - 36px) になるため、ヒーローも合わせる */
   .hero-copy {
-    padding-left: 24px;
-    padding-right: 20px;
+    width: calc(100% - 36px);
   }
 
   .hero-copy p {
@@ -2498,9 +2502,10 @@ summary:focus-visible {
     height: 330px;
   }
 
+  /* この幅では .section-wrap が calc(100% - 36px) なので、左右 18px に揃える */
   .page-hero-copy {
-    left: 22px;
-    right: 22px;
+    left: 18px;
+    right: 18px;
     bottom: 43px;
     width: auto;
   }

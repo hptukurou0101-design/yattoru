@@ -1,13 +1,13 @@
 {
   "base": "http://127.0.0.1:4173",
-  "checkedAt": "2026-08-31T15:28:33.763Z",
+  "checkedAt": "2026-09-01T00:57:56.006Z",
   "rows": [
     {
       "route": "/",
       "widthsNG": 0,
       "overflow": 0,
-      "consoleErr": 0,
-      "pageErr": 0,
+      "consoleErr": 1,
+      "pageErr": 1,
       "h1": 1,
       "contrastNG": 1,
       "tapNG": 0,

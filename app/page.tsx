@@ -155,7 +155,9 @@ export default function Home() {
           <div className="feature-content">
             <p className="feature-lead">やっとる建設のリフォーム</p>
             <h2>相談しやすく、仕事はきっちり。</h2>
-            <p><WrapText text={"ご希望とご予算を最初に整理し、\n必要な工事と選べる方法を丁寧にご説明します。\n工事が終わったあとも、\n住まいのことを気軽に相談できる関係を大切にしています。"} /></p>
+            {/* 360px 幅でも折り返さないよう、各行を 18 字以内に収めている。
+                「気に|なる」は文節境界のため auto-phrase が割る。U+2060 で禁止する */}
+            <p><WrapText text={"ご希望とご予算を丁寧に伺い、\n住まいに必要な工事と、\nご予算に合わせた選択肢を\n分かりやすくご提案します。\n工事が終わったあとも、\n住まいのことで気⁠に⁠な⁠る⁠ことがあれば、\nいつでもご相談いただけます。"} /></p>
             <a className="white-button" href="/features">
               大切にしていることを見る
               <SectionArrow />

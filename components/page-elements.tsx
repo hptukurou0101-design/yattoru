@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight, Mail, Phone } from "lucide-react";
+import { WrapText } from "@/components/wrap-text";
 
 export function PageHero({
   title,
@@ -68,7 +69,8 @@ export function SectionTitle({
   return (
     <div className={`sub-section-title${centered ? " centered" : ""}`}>
       <h2>{title}</h2>
-      {text && <p>{text}</p>}
+      {/* text に "\n" が入っていれば改行する。入っていなければ従来どおり 1 行 */}
+      {text && <p><WrapText text={text} /></p>}
     </div>
   );
 }
@@ -88,7 +90,7 @@ export function ConsultationBand() {
       <div className="section-wrap sub-consult-inner">
         <div>
           <h2>住まいで気になることがあれば、<br />まずはお話をお聞かせください。</h2>
-          <p>工事内容や費用が決まっていなくても大丈夫です。今のお悩みを伺い、必要な進め方をご案内します。</p>
+          <p><WrapText text={"工事内容や費用が決まっていなくても大丈夫です。\n今のお悩みを伺い、必要な進め方をご案内します。"} /></p>
         </div>
         <div className="sub-consult-actions">
           <a href="/contact"><Mail aria-hidden="true" />住まいのことを相談する<ChevronRight aria-hidden="true" /></a>

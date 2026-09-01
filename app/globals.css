@@ -923,13 +923,15 @@ summary:focus-visible {
   border-top: 1px solid var(--line);
 }
 
+/* 隣の「よくある質問」と並べて置くため、文字サイズと 1 行の高さを揃える。
+   以前は 13px / 行高 54px で、FAQ の 14px / 行高 63px と食い違っていた。 */
 .company-card dl > div {
   display: grid;
   grid-template-columns: 105px minmax(0, 1fr);
   gap: 18px;
-  padding: 15px 0;
+  padding: 18px 0;
   border-bottom: 1px solid var(--line);
-  font-size: var(--fs-caption);
+  font-size: var(--fs-ui-sm);
 }
 
 .company-card dt {
@@ -950,12 +952,12 @@ summary:focus-visible {
 }
 
 .faq-list [data-slot="accordion-trigger"] {
-  /* shadcn 既定の items-start だと min-height の余りが下に落ち、上 17px / 下 30px になる。
-     中央揃えにして上下を対称にする。 */
+  /* shadcn 既定の items-start だと余りが下に落ちて上下が非対称になるため中央揃えにする。
+     高さは min-height の決め打ちではなく余白で決める。
+     こうすると会社情報の一覧と 1 行の高さが揃う。 */
   align-items: center;
-  min-height: 63px;
   border-radius: 0;
-  padding: 15px 4px;
+  padding: 18px 4px;
   font-size: var(--fs-ui-sm);
   font-weight: 700;
   line-height: var(--lh-base);

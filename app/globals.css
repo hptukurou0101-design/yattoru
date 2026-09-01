@@ -313,8 +313,20 @@ summary:focus-visible {
 }
 
 .hero-image {
+  /* next/image の fill をやめて素の <img> にしたため、
+     枠いっぱいに広げる指定をここで持つ。 */
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center 53%;
+}
+
+.hero-slide picture {
+  display: block;
+  position: absolute;
+  inset: 0;
 }
 
 /* =========================================================================
@@ -2248,6 +2260,12 @@ summary:focus-visible {
     --section-gap: 96px;
   }
 
+  /* この幅から縦長のスマホ用ヒーロー画像に切り替わる（components/hero-slideshow.tsx）。
+     横長画像用の寄せ（58% center）を中央に戻す。 */
+  .hero-image {
+    object-position: center;
+  }
+
   body {
     font-size: var(--fs-ui);
     line-height: var(--lh-base);
@@ -2295,6 +2313,8 @@ summary:focus-visible {
     height: 560px;
   }
 
+  /* 横長の画像を狭い画面に収めるため、被写体が残る位置へ寄せる。
+     760px 以下では縦長のスマホ用画像に切り替わるので、そちらは中央に戻す。 */
   .hero-image {
     object-position: 58% center;
   }

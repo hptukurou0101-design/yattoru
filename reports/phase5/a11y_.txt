@@ -2,7 +2,7 @@
 
 === No.116 コントラスト比（実測 52 箇所 / 基準未満 1 箇所）===
   比率   基準  判定  文字色 / 背景色                             サイズ  抜粋
-     2.3  4.5  NG   rgb(255, 255, 255)     / rgb(165, 172, 174)    12px  scroll  ※描画ピクセルから実測  ※aria-hidden の装飾
+    1.63  4.5  NG   rgb(255, 255, 255)     / rgb(200, 203, 205)    12px  scroll  ※描画ピクセルから実測  ※aria-hidden の装飾
     3.29    3  OK   rgb(255, 255, 255)     / rgb(129, 144, 154)   39.04px  ご予算も、仕上がりも。納得できるリフォームを。
     4.62  4.5  OK   rgb(104, 109, 112)     / rgb(238, 241, 243)    10px  プライバシーポリシー
     4.62  4.5  OK   rgb(104, 109, 112)     / rgb(238, 241, 243)    10px  © YATTORU CONSTRUCTION C
@@ -82,7 +82,7 @@
   21. <button> 相談したら、すぐ契約しなければ⁠いけませんか？      フォーカス表示: outline 3px rgb(36, 36, 36)
   22. <button> 費用はどのように決まりますか？              フォーカス表示: outline 3px rgb(36, 36, 36)
   23. <button> 予算が決まっていても相談できますか？           フォーカス表示: outline 3px rgb(36, 36, 36)
-  24. <button> 工事中も住み続けられますか？               フォーカス表示: outline 3px rgba(36, 37, 37, 0.98)
+  24. <button> 工事中も住み続けられますか？               フォーカス表示: outline 3px rgb(36, 36, 36)
   25. <button> 工事後の相談にも対応してもらえますか？          フォーカス表示: outline 3px rgb(36, 36, 36)
   26. <a> 2026.08.31 ホームページを公開しました。    フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
   27. <a> 2026.08.20 住まいのリフォーム相談を受け付   フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
@@ -101,9 +101,9 @@
   40. <a> 利用規約                         フォーカス表示: outline 3px rgba(23, 109, 163, 0.35)
 
 === No.119 画像の alt（12 枚 / alt 属性なし 0 枚）===
-  image          alt="梁をあらわしにした明るいリビングダイニング"
-  image          alt=""
-  image          alt=""
+  hero-01-ldk.webp alt="梁をあらわしにした明るいリビングダイニング"
+  hero-02-exterior.webp alt=""
+  hero-03-water.webp alt=""
   image          alt="丁寧に外壁と屋根を整えた住宅"
   image          alt="暮らしに合わせて整えた住まい"
   image          alt="外壁塗装後の戸建て住宅"
@@ -122,10 +122,10 @@
 === No.121 配信形式 ===
   webp: 12 枚
 
-=== No.122 width/height または aspect-ratio（欠落 12 枚）===
-  NG  image          width=- height=- aspect-ratio=auto
-  NG  image          width=- height=- aspect-ratio=auto
-  NG  image          width=- height=- aspect-ratio=auto
+=== No.122 width/height または aspect-ratio（欠落 9 枚）===
+  OK  hero-01-ldk.webp width=2400 height=1000 aspect-ratio=auto 2400 / 1000
+  OK  hero-02-exterior.webp width=2400 height=1000 aspect-ratio=auto 2400 / 1000
+  OK  hero-03-water.webp width=2400 height=1000 aspect-ratio=auto 2400 / 1000
   NG  image          width=- height=- aspect-ratio=auto
   NG  image          width=- height=- aspect-ratio=auto
   NG  image          width=- height=- aspect-ratio=auto
@@ -137,9 +137,9 @@
   NG  image          width=- height=- aspect-ratio=auto
 
 === No.123 loading 属性 ===
-  image          loading=eager    fetchpriority=high   FV内=true
-  image          loading=lazy     fetchpriority=(なし)   FV内=true
-  image          loading=lazy     fetchpriority=(なし)   FV内=true
+  hero-01-ldk.webp loading=eager    fetchpriority=high   FV内=true
+  hero-02-exterior.webp loading=lazy     fetchpriority=(なし)   FV内=true
+  hero-03-water.webp loading=lazy     fetchpriority=(なし)   FV内=true
   image          loading=lazy     fetchpriority=(なし)   FV内=false
   image          loading=lazy     fetchpriority=(なし)   FV内=false
   image          loading=lazy     fetchpriority=(なし)   FV内=false
@@ -151,9 +151,9 @@
   image          loading=lazy     fetchpriority=(なし)   FV内=false
 
 === No.124 解像度（元画像幅 ÷ 表示幅）===
-  NG   1.88倍  image          元 2400px / 表示 1280px
-  NG   1.87倍  image          元 2399px / 表示 1280px
-  NG   1.87倍  image          元 2399px / 表示 1280px
+  NG   1.88倍  hero-01-ldk.webp 元 2400px / 表示 1280px
+  NG   1.87倍  hero-02-exterior.webp 元 2399px / 表示 1280px
+  NG   1.87倍  hero-03-water.webp 元 2399px / 表示 1280px
   NG   1.46倍  image          元 1672px / 表示 1148px
   OK   2.82倍  image          元 1672px / 表示 594px
   OK    4.8倍  image          元 1672px / 表示 348px

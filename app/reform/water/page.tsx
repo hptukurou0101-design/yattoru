@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { ReformDetail } from "@/components/reform-detail";
-import { WaterFloorPlan } from "@/components/floor-plan";
 
 export const metadata: Metadata = {
   title: "水まわりリフォーム｜やっとる建設",
@@ -15,8 +14,6 @@ export default function WaterPage() {
     alt: "キッチンの給排水を交換する職人",
     // ヒーローは 3.7:1 まで横に伸びる。配管をつないでいる手元を見せたいので下寄せにする
     position: "center 60%",
-    // 下部は「設備を選ぶ前に間取りと使い方を整理する」話なので、写真ではなく間取り図を置く
-    splitVisual: <WaterFloorPlan />,
     introTitle: <>キッチン・浴室・洗面・トイレを、<br />暮らしに合わせて使いやすく。</>,
     intro: "使いにくさの原因は、設備の古さだけとは限りません。収納、動線、お手入れ、段差や寒さなど、日々感じている⁠ことを伺い、必要な改善を考えます。",
     signsTitle: "このようなお悩みをご相談いただけます",

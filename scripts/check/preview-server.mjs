@@ -75,6 +75,10 @@ const server = createServer(async (req, res) => {
     res.writeHead(200, {
       "content-type": MIME[ext] ?? "application/octet-stream",
       "content-length": statSync(file).size,
+      // 検証用サーバなのでブラウザにキャッシュさせない。
+      // ヘッダを付けていなかったため、ブラウザが独自判断で古い内容を出し続け、
+      // 修正したのに反映されていないように見えることがあった。
+      "cache-control": "no-store, must-revalidate",
       "x-served-by": "preview-server(static)",
     });
     createReadStream(file).pipe(res);
@@ -92,6 +96,10 @@ const server = createServer(async (req, res) => {
     delete headers["content-encoding"];
     delete headers["content-length"];
     delete headers["transfer-encoding"];
+    delete headers["etag"];
+    delete headers["last-modified"];
+    // HTML も同様にキャッシュさせない
+    headers["cache-control"] = "no-store, must-revalidate";
     headers["x-served-by"] = "preview-server(proxy)";
     res.writeHead(upstreamRes.status, headers);
     res.end(buf);

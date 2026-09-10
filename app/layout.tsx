@@ -18,6 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      {/*
+        公開前のテストサイトのため検索避けを入れている。本番公開時に外すこと。
+        metadata.robots は vinext 0.0.50 が出力しないため、React 19 の
+        hoisting でこの meta を <head> へ持ち上げている。
+        全ページがこのレイアウトを通るので、下層ページ側の対応は不要。
+        解除手順は docs/noindex.md を参照。
+      */}
+      <meta name="robots" content="noindex, nofollow" />
       <body>{children}</body>
     </html>
   );
